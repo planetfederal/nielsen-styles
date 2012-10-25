@@ -1,0 +1,20 @@
+name: Style for minor_city
+feature-styles:
+
+# 432562.34619140625
+- rules:
+  - max: 432562.34619140625
+    symbolizers:
+      text:
+        halo:
+          radius: 2
+          color: '#ffffff'
+        font:
+          size: 10
+          family: Droid Sans
+        fill:
+          color: '#000000'
+        label:
+          property: name
+
+

@@ -1,0 +1,6 @@
+name: Style for railroad
+feature-styles:
+- rules:
+  - symbolizers:
+      line:
+        stroke: {color: '#FF00AA'}

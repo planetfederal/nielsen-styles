@@ -1,0 +1,6 @@
+name: Style for shop_ctr
+feature-styles:
+- rules:
+  - symbolizers:
+      polygon:
+        fill: {color: '#9B30FF'}

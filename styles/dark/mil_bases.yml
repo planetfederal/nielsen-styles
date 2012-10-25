@@ -1,0 +1,6 @@
+name: Style for mil_bases
+feature-styles:
+- rules:
+  - symbolizers:
+      polygon:
+        fill: {color: '#9B30FF'}

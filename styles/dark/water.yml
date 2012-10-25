@@ -1,0 +1,8 @@
+name: Style for water
+feature-styles:
+- rules:
+  - max: 432562.34619140625
+    symbolizers:
+      polygon:
+        fill:
+          color: '#000000'

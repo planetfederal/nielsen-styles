@@ -1,0 +1,5 @@
+name: Style for cemeterys
+feature-styles:
+- rules:
+  - symbolizers:
+      graphic: {}

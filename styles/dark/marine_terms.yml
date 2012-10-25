@@ -1,0 +1,5 @@
+name: Style for marine_terms
+feature-styles:
+- rules:
+  - symbolizers:
+      graphic: {}

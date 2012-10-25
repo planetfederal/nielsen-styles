@@ -1,0 +1,6 @@
+name: Style for parks
+feature-styles:
+- rules:
+  - symbolizers:
+      polygon:
+        fill: {color: '#9B30FF'}

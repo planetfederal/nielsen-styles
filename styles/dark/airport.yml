@@ -1,0 +1,8 @@
+name: Style for airport
+feature-styles:
+- name: airport
+  rules:
+  - symbolizers:
+      polygon:
+        fill: 
+          color: '#eeeeee'

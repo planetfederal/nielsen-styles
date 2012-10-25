@@ -1,0 +1,5 @@
+name: Style for govt_centers
+feature-styles:
+- rules:
+  - symbolizers:
+      graphic: {}

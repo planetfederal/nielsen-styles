@@ -1,0 +1,15 @@
+name: Style for major_city
+feature-styles:
+- rules:
+  - symbolizers:
+      text:
+        halo:
+          radius: 3
+          color: '#ffffff'
+        font:
+          size: 25
+          family: Droid Sans
+        fill:
+          color: '#000000'
+        label:
+          property: name

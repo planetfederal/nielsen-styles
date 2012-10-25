@@ -1,0 +1,6 @@
+name: Style for golf_courses_poly
+feature-styles:
+- rules:
+  - symbolizers:
+      polygon:
+        fill: {color: '#9B30FF'}

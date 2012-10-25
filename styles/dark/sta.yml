@@ -1,0 +1,25 @@
+name: Style for sta
+feature-styles:
+- rules:
+
+  - symbolizers:
+      line:
+        stroke:
+          width: 2
+          color: '#000000'
+
+  - symbolizers:
+      text:
+        font:
+          size: 30
+          family: Droid Sans
+        fill:
+          color: '#cecece'
+        label:
+          property: name
+
+      polygon:
+        stroke:
+          color: '#ffffff'
+        fill:
+          color: '#ffffff'

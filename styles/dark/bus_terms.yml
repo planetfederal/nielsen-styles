@@ -1,0 +1,5 @@
+name: Style for bus_terms
+feature-styles:
+- rules:
+  - symbolizers:
+      graphic: {}

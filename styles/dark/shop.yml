@@ -1,0 +1,5 @@
+name: Style for shop
+feature-styles:
+- rules:
+  - symbolizers:
+      graphic: {}

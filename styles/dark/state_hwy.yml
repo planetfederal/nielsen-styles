@@ -1,0 +1,6 @@
+name: Style for state_hwy
+feature-styles:
+- rules:
+  - symbolizers:
+      line:
+        stroke: {color: '#FF00AA'}

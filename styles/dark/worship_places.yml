@@ -1,0 +1,5 @@
+name: Style for worship_places
+feature-styles:
+- rules:
+  - symbolizers:
+      graphic: {}

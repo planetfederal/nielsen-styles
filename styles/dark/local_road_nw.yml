@@ -1,0 +1,6 @@
+name: Style for local_road_nw
+feature-styles:
+- rules:
+  - symbolizers:
+      line:
+        stroke: {color: '#FF00AA'}

@@ -1,0 +1,6 @@
+name: Style for amusement_centers
+feature-styles:
+- rules:
+  - symbolizers:
+      polygon:
+        fill: {color: '#9B30FF'}

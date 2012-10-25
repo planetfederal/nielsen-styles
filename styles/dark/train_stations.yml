@@ -1,0 +1,5 @@
+name: Style for train_stations
+feature-styles:
+- rules:
+  - symbolizers:
+      graphic: {}

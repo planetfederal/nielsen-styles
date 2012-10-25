@@ -1,0 +1,7 @@
+name: Style for major_hwy
+feature-styles:
+- rules:
+  - symbolizers:
+      line:
+        stroke: 
+          color: '#FF00AA'

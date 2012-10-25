@@ -1,0 +1,25 @@
+name: Style for state_capital
+feature-styles:
+- rules:
+  - symbolizers:
+      text:
+        halo:
+          radius: 2
+          color: '#ffffff'
+        fill:
+          color: '#911926'
+        font:
+          size: 20
+          family: Droid Sans
+        label:
+          property: name
+      graphic:
+        size: 5
+        symbols:
+          - mark:
+              name: square
+              size: 10
+              stroke:
+                color: '#911926'
+              fill:
+                color: '#911926'

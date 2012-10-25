@@ -1,0 +1,5 @@
+name: Style for midsize_city
+feature-styles:
+- rules:
+  - symbolizers:
+      graphic: {}

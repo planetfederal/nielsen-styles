@@ -1,0 +1,5 @@
+name: Style for educ_inst
+feature-styles:
+- rules:
+  - symbolizers:
+      graphic: {}
