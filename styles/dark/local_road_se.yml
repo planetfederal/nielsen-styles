@@ -1,6 +1,11 @@
 name: Style for local_road_se
 feature-styles:
+
+
 - rules:
-  - symbolizers:
+  - zoom: [14, 16]
+    symbolizers:
       line:
-        stroke: {color: '#FF00AA'}
+        stroke:
+          width: 1
+          color: '#d9d9d9'

@@ -1,6 +1,18 @@
+
 name: Style for interstate
 feature-styles:
+
 - rules:
-  - symbolizers:
+  - zoom: [14, 16]
+    symbolizers:
       line:
-        stroke: {color: '#FF00AA'}
+        stroke:
+          width: 8
+          color: '#8d8d8d'
+
+  - zoom: [12, 14]
+    symbolizers:
+      line:
+        stroke:
+          width: 6
+          color: '#8d8d8d'

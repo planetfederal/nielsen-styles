@@ -1,6 +1,9 @@
 name: Style for state_hwy
 feature-styles:
 - rules:
-  - symbolizers:
+  - zoom: [12, 16]
+    symbolizers:
       line:
-        stroke: {color: '#FF00AA'}
+        stroke:
+          width: 3
+          color: '#8d8d8d'

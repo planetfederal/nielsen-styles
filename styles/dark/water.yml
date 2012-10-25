@@ -1,8 +1,10 @@
 name: Style for water
 feature-styles:
 - rules:
-  - max: 432562.34619140625
+  - zoom: [8, null]
     symbolizers:
       polygon:
+        stroke:
+          color: '#d9d9d9'
         fill:
-          color: '#000000'
+          color: '#d9d9d9'

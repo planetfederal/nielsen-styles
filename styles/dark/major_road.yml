@@ -1,16 +1,18 @@
 name: Style for major_road
 feature-styles:
 
-# - rules:
-#   - max: 54070.29327392578
-#     symbolizers:
-#       line:
-#         stroke:
-#           color: '#000000'
+- rules:
+    - zoom: [14, 16]
+      symbolizers:
+        line:
+          stroke:
+            width: 2.5
+            color: '#8d8d8d'
 
 - rules:
-  - zoom: [10, 12]
+  - zoom: [10, 14]
     symbolizers:
       line:
-        stroke: 
-          color: '#eeeeee'
+        stroke:
+          width: .05
+          color: '#8d8d8d'

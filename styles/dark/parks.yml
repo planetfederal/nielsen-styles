@@ -1,6 +1,19 @@
 name: Style for parks
 feature-styles:
+
 - rules:
-  - symbolizers:
+  - zoom: [10, 12]
+    symbolizers:
       polygon:
-        fill: {color: '#9B30FF'}
+        stroke:
+          color: '#b4d3b8'
+        fill:
+          color: '#b4d3b8'
+
+  - zoom: [12, 18]
+    symbolizers:
+      polygon:
+        stroke:
+          color: '#89bf91'
+        fill:
+          color: '#89bf91'

@@ -1,39 +1,103 @@
+road_label: &roadLabelLarge
+  halo:
+    radius: 2
+    color: '#ffffff'
+  fill:
+    color: '#000000'
+  placement:
+    displacment: 10
+    line:
+      offset: 10
+  vendor:
+    followLine: 'true'
+  label:
+    property: name
+  font:
+    family: Liberation Sans
+    size: 14
+
+roadd_label: &roadLabelSmall
+  halo:
+    radius: 1
+    color: '#ffffff'
+  fill:
+    color: '#000000'
+  placement:
+    displacment: 10
+    line:
+      offset: 10
+  vendor:
+    followLine: 'true'
+  label:
+    property: name
+  font:
+    family: Liberation Sans
+    size: 10
+
+
+
+
 name: Style for us_hwy
 feature-styles:
 
-# mid rang zooms
-# 14 ->
-- rules:
-    - max: 54070.29327392578
-      symbolizers:
-        line:
-          stroke:
-            width: 3
-            color: '#000000'
-- rules:
-    - max: 54070.29327392578
-      symbolizers:
-        line:
-          stroke:
-            width: 5
-            color: '#ffffff'
 
-
-# high level zooms 
-# 4 -> 13
-# 1730249.384765625
 - rules:
-  - max: 1730249.384765625
+  - zoom: [14, 16]
     symbolizers:
       line:
         stroke:
-          width: 4
+          width: 7
           color: '#ffffff'
-        
+
 - rules:
-  - max: 1730249.384765625
+  - zoom: [14, 16]
+    symbolizers:
+      text: *roadLabelLarge
+      line:
+        stroke:
+          width: 5
+          color: '#8d8d8d'
+
+
+- rules:
+  - zoom: [12, 14]
+    symbolizers:
+      line:
+        stroke:
+          width: 5
+          color: '#ffffff'
+
+- rules:
+  - zoom: [12, 14]
+    symbolizers:
+      text: *roadLabelSmall
+      line:
+        stroke:
+          width: 3
+          color: '#8d8d8d'
+
+
+- rules:
+  - zoom: [10, 12]
     symbolizers:
       line:
         stroke:
           width: 2
-          color: '#000000'
+          color: '#8d8d8d'
+        
+- rules:
+  - zoom: [8, 10]
+    symbolizers:
+      line:
+        stroke:
+          width: 1
+          color: '#8d8d8d'
+
+
+- rules:
+  - zoom: [6, 8]
+    symbolizers:
+      line:
+        stroke:
+          width: .5
+          color: '#8d8d8d'

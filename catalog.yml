@@ -6,8 +6,8 @@ workspace: nielsen
 maps:
   - name: Dark
     epsg: 4326
-    bgcolor: '#000000'
-    bbox: [-78.475736040683,38.312407818946,-76.337521929355,39.504424420508]
+    bgcolor: '#d9d9d9'
+    bbox: [-77.034166703208,38.887645093116,-76.967347512228,38.930045453224]
     layers:
 
       - table: sta_clip
@@ -16,11 +16,25 @@ maps:
       - table: water_clip
         style: dark-water
 
+      - table: local_road_se_clip
+        style: dark-local_road_se
+
       - table: major_road_clip
         style: dark-major_road
 
+
+      - table: state_hwy_clip
+        style: dark-us_hwy
+
+      - table: major_hwy_clip
+        style: dark-us_hwy
+
       - table: us_hwy_clip
         style: dark-us_hwy
+
+
+      - table: interstate_clip
+        style: dark-interstate
 
       - table: major_city_clip
         style: dark-major_city

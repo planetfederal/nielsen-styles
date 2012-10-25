@@ -9,15 +9,6 @@ feature-styles:
           color: '#000000'
 
   - symbolizers:
-      text:
-        font:
-          size: 30
-          family: Droid Sans
-        fill:
-          color: '#cecece'
-        label:
-          property: name
-
       polygon:
         stroke:
           color: '#ffffff'
