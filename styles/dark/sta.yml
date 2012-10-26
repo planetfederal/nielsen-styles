@@ -2,7 +2,8 @@ name: Style for sta
 feature-styles:
 - rules:
 
-  - symbolizers:
+  - zoom: [null, 3]
+    symbolizers:
       line:
         stroke:
           width: 2

@@ -10,9 +10,18 @@ feature-styles:
             color: '#8d8d8d'
 
 - rules:
-  - zoom: [10, 14]
+  - zoom: [12, 14]
     symbolizers:
       line:
         stroke:
-          width: .05
+          width: 1
           color: '#8d8d8d'
+
+
+- rules:
+  - zoom: [10, 12]
+    symbolizers:
+      line:
+        stroke:
+          width: 1
+          color: '#eeeeee'

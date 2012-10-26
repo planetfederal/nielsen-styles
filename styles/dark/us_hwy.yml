@@ -3,7 +3,7 @@ road_label: &roadLabelLarge
     radius: 2
     color: '#ffffff'
   fill:
-    color: '#000000'
+    color: '#8d8d8d'
   placement:
     displacment: 10
     line:
@@ -14,20 +14,21 @@ road_label: &roadLabelLarge
     property: name
   font:
     family: Liberation Sans
-    size: 14
+    size: 20
 
 roadd_label: &roadLabelSmall
   halo:
     radius: 1
     color: '#ffffff'
   fill:
-    color: '#000000'
+    color: '#8d8d8d'
   placement:
     displacment: 10
     line:
       offset: 10
   vendor:
     followLine: 'true'
+    maxAngleDelta: '90'
   label:
     property: name
   font:
@@ -46,7 +47,7 @@ feature-styles:
     symbolizers:
       line:
         stroke:
-          width: 7
+          width: 5
           color: '#ffffff'
 
 - rules:
@@ -55,7 +56,7 @@ feature-styles:
       text: *roadLabelLarge
       line:
         stroke:
-          width: 5
+          width: 3
           color: '#8d8d8d'
 
 
@@ -64,7 +65,7 @@ feature-styles:
     symbolizers:
       line:
         stroke:
-          width: 5
+          width: 3
           color: '#ffffff'
 
 - rules:
@@ -73,7 +74,7 @@ feature-styles:
       text: *roadLabelSmall
       line:
         stroke:
-          width: 3
+          width: 2
           color: '#8d8d8d'
 
 
@@ -82,7 +83,7 @@ feature-styles:
     symbolizers:
       line:
         stroke:
-          width: 2
+          width: 1
           color: '#8d8d8d'
         
 - rules:
