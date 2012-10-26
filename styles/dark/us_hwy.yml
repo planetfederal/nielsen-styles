@@ -42,6 +42,17 @@ name: Style for us_hwy
 feature-styles:
 
 
+
+- rules:
+  - zoom: [16, 18]
+    symbolizers:
+      line:
+        stroke:
+          width: 8
+          color: '#8d8d8d'
+
+
+
 - rules:
   - zoom: [14, 16]
     symbolizers:
