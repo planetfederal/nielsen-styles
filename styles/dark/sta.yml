@@ -2,7 +2,8 @@ name: Style for sta
 feature-styles:
 - rules:
 
-  - zoom: [null, 3]
+  - zoom-levels:
+      min: 3
     symbolizers:
       line:
         stroke:

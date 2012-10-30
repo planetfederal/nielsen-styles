@@ -1,7 +1,8 @@
 name: Style for water
 feature-styles:
 - rules:
-  - zoom: [8, null]
+  - zoom-levels: 
+      max: 8
     symbolizers:
       polygon:
         stroke:
