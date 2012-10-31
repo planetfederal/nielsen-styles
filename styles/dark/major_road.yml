@@ -1,8 +1,78 @@
+
+roadd_label: &roadLabelLarge
+  halo:
+    radius: 3
+    color: '#ffffff'
+  fill:
+    color: '#000000'
+  vendor:
+    followLine: 'true'
+  label:
+    property: name
+  font:
+    family: Liberation Sans
+    size: 16
+
+
+roadd_label: &roadLabelSmall
+  halo:
+    radius: 3
+    color: '#ffffff'
+  fill:
+    color: '#000000'
+  vendor:
+    followLine: 'true'
+  label:
+    property: name
+  font:
+    family: Liberation Sans
+    size: 12
+
+
+
 name: Style for major_road
 feature-styles:
 
 - rules:
-    - zoom: [14, 16]
+
+
+  - zoom-levels: 
+      max: 16
+      min: 18
+    symbolizers:
+      text: *roadLabelLarge
+
+  - zoom-levels: 
+      max: 14
+      min: 16
+    symbolizers:
+      text: *roadLabelSmall
+
+
+  - zoom-levels: 
+      max: 16
+      min: 18
+    symbolizers:
+      line:
+        stroke:
+          width: 8
+          color: '#8d8d8d'
+
+
+- rules:
+
+    - zoom-levels: 
+        max: 14 
+        min: 16
+      symbolizers:
+        line:
+          stroke:
+            width: 5
+            color: '#ffffff'
+
+    - zoom-levels: 
+        max: 14 
+        min: 16
       symbolizers:
         line:
           stroke:
@@ -10,7 +80,9 @@ feature-styles:
             color: '#8d8d8d'
 
 - rules:
-  - zoom: [12, 14]
+  - zoom-levels: 
+      max: 12
+      min: 14
     symbolizers:
       line:
         stroke:
@@ -19,7 +91,9 @@ feature-styles:
 
 
 - rules:
-  - zoom: [10, 12]
+  - zoom-levels:
+      max: 10
+      min: 12
     symbolizers:
       line:
         stroke:

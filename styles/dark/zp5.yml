@@ -1,6 +1,11 @@
 name: Style for zp5
 feature-styles:
 - rules:
-  - symbolizers:
-      polygon:
-        fill: {color: '#9B30FF'}
+  - zoom-levels:
+      max: 12
+      min: 18
+    symbolizers:
+      line:
+        stroke:
+          dash-array: [2, 2]
+          color: '#000000'

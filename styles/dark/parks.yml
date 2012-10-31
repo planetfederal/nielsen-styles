@@ -2,7 +2,9 @@ name: Style for parks
 feature-styles:
 
 - rules:
-  - zoom: [10, 12]
+  - zoom-levels: 
+      max: 10
+      min: 12
     symbolizers:
       polygon:
         stroke:
@@ -10,7 +12,9 @@ feature-styles:
         fill:
           color: '#b4d3b8'
 
-  - zoom: [12, 18]
+  - zoom-levels: 
+      max: 12
+      min: 18
     symbolizers:
       polygon:
         stroke:

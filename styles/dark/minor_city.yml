@@ -1,9 +1,10 @@
 name: Style for minor_city
 feature-styles:
 
-# 432562.34619140625
 - rules:
-  - max: 432562.34619140625
+  - zoom-levels:
+      max: 8
+      min: 10
     symbolizers:
       text:
         halo:

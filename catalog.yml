@@ -7,11 +7,18 @@ maps:
   - name: Dark
     epsg: 4326
     bgcolor: '#d9d9d9'
-    bbox: [-77.034166703208,38.887645093116,-76.967347512228,38.930045453224]
+    bbox: [-76.81392873460105,39.08612883480558,-76.32915700608562,39.41659355305707]
+    # bbox: [-76.62719334822296,39.28606771832687,-76.59689511519085,39.302225548717146]
     layers:
 
       - table: sta_clip
         style: dark-sta
+
+      - table: parks_clip
+        style: dark-parks
+
+      - table: airport_clip
+        style: dark-airport
 
       - table: water_clip
         style: dark-water
@@ -22,7 +29,6 @@ maps:
       - table: major_road_clip
         style: dark-major_road
 
-
       - table: state_hwy_clip
         style: dark-us_hwy
 
@@ -32,18 +38,17 @@ maps:
       - table: us_hwy_clip
         style: dark-us_hwy
 
-
       - table: interstate_clip
         style: dark-interstate
 
       - table: major_city_clip
         style: dark-major_city
 
-      - table: minor_city_clip
-        style: dark-minor_city
-
       - table: state_capital_clip
         style: dark-state_capital
+
+      # - table: zp5_clip
+      #   style: dark-zp5
 
 
 datastores:
@@ -55,6 +60,7 @@ datastores:
 
 
 styles:
+
 - {name: dark-airport, type: yaml, path: nielsen-data/styles/dark/airport.yml}
 - {name: dark-amusement_centers, type: yaml, path: nielsen-data/styles/dark/amusement_centers.yml}
 - {name: dark-bgp, type: yaml, path: nielsen-data/styles/dark/bgp.yml}
@@ -110,118 +116,6 @@ styles:
 - {name: dark-worship_places, type: yaml, path: nielsen-data/styles/dark/worship_places.yml}
 - {name: dark-zip, type: yaml, path: nielsen-data/styles/dark/zip.yml}
 - {name: dark-zp5, type: yaml, path: nielsen-data/styles/dark/zp5.yml}
-- {name: light-airport, type: yaml, path: nielsen-data/styles/light/airport.yml}
-- {name: light-amusement_centers, type: yaml, path: nielsen-data/styles/light/amusement_centers.yml}
-- {name: light-bgp, type: yaml, path: nielsen-data/styles/light/bgp.yml}
-- {name: light-blk, type: yaml, path: nielsen-data/styles/light/blk.yml}
-- {name: light-bus_terms, type: yaml, path: nielsen-data/styles/light/bus_terms.yml}
-- {name: light-cbs, type: yaml, path: nielsen-data/styles/light/cbs.yml}
-- {name: light-cemeterys, type: yaml, path: nielsen-data/styles/light/cemeterys.yml}
-- {name: light-cemeterys_poly, type: yaml, path: nielsen-data/styles/light/cemeterys_poly.yml}
-- {name: light-csa, type: yaml, path: nielsen-data/styles/light/csa.yml}
-- {name: light-cty, type: yaml, path: nielsen-data/styles/light/cty.yml}
-- {name: light-dma, type: yaml, path: nielsen-data/styles/light/dma.yml}
-- {name: light-educ_inst, type: yaml, path: nielsen-data/styles/light/educ_inst.yml}
-- {name: light-educ_inst_poly, type: yaml, path: nielsen-data/styles/light/educ_inst_poly.yml}
-- {name: light-golf_courses, type: yaml, path: nielsen-data/styles/light/golf_courses.yml}
-- {name: light-golf_courses_poly, type: yaml, path: nielsen-data/styles/light/golf_courses_poly.yml}
-- {name: light-govt_centers, type: yaml, path: nielsen-data/styles/light/govt_centers.yml}
-- {name: light-great_lake, type: yaml, path: nielsen-data/styles/light/great_lake.yml}
-- {name: light-hospitals, type: yaml, path: nielsen-data/styles/light/hospitals.yml}
-- {name: light-hospitals_poly, type: yaml, path: nielsen-data/styles/light/hospitals_poly.yml}
-- {name: light-indstr_ofic_bldgs, type: yaml, path: nielsen-data/styles/light/indstr_ofic_bldgs.yml}
-- {name: light-interstate, type: yaml, path: nielsen-data/styles/light/interstate.yml}
-- {name: light-local_road_ne, type: yaml, path: nielsen-data/styles/light/local_road_ne.yml}
-- {name: light-local_road_nne, type: yaml, path: nielsen-data/styles/light/local_road_nne.yml}
-- {name: light-local_road_nw, type: yaml, path: nielsen-data/styles/light/local_road_nw.yml}
-- {name: light-local_road_se, type: yaml, path: nielsen-data/styles/light/local_road_se.yml}
-- {name: light-local_road_sw, type: yaml, path: nielsen-data/styles/light/local_road_sw.yml}
-- {name: light-major_city, type: yaml, path: nielsen-data/styles/light/major_city.yml}
-- {name: light-major_hwy, type: yaml, path: nielsen-data/styles/light/major_hwy.yml}
-- {name: light-major_road, type: yaml, path: nielsen-data/styles/light/major_road.yml}
-- {name: light-marine_terms, type: yaml, path: nielsen-data/styles/light/marine_terms.yml}
-- {name: light-mcd, type: yaml, path: nielsen-data/styles/light/mcd.yml}
-- {name: light-midsize_city, type: yaml, path: nielsen-data/styles/light/midsize_city.yml}
-- {name: light-mil_bases, type: yaml, path: nielsen-data/styles/light/mil_bases.yml}
-- {name: light-minor_city, type: yaml, path: nielsen-data/styles/light/minor_city.yml}
-- {name: light-ocean, type: yaml, path: nielsen-data/styles/light/ocean.yml}
-- {name: light-parks, type: yaml, path: nielsen-data/styles/light/parks.yml}
-- {name: light-pla, type: yaml, path: nielsen-data/styles/light/pla.yml}
-- {name: light-pois, type: yaml, path: nielsen-data/styles/light/pois.yml}
-- {name: light-railroad, type: yaml, path: nielsen-data/styles/light/railroad.yml}
-- {name: light-shop, type: yaml, path: nielsen-data/styles/light/shop.yml}
-- {name: light-shop_ctr, type: yaml, path: nielsen-data/styles/light/shop_ctr.yml}
-- {name: light-sta, type: yaml, path: nielsen-data/styles/light/sta.yml}
-- {name: light-stadiums, type: yaml, path: nielsen-data/styles/light/stadiums.yml}
-- {name: light-state_capital, type: yaml, path: nielsen-data/styles/light/state_capital.yml}
-- {name: light-state_hwy, type: yaml, path: nielsen-data/styles/light/state_hwy.yml}
-- {name: light-tdz, type: yaml, path: nielsen-data/styles/light/tdz.yml}
-- {name: light-traffic, type: yaml, path: nielsen-data/styles/light/traffic.yml}
-- {name: light-train_stations, type: yaml, path: nielsen-data/styles/light/train_stations.yml}
-- {name: light-trx, type: yaml, path: nielsen-data/styles/light/trx.yml}
-- {name: light-us_hwy, type: yaml, path: nielsen-data/styles/light/us_hwy.yml}
-- {name: light-usa, type: yaml, path: nielsen-data/styles/light/usa.yml}
-- {name: light-water, type: yaml, path: nielsen-data/styles/light/water.yml}
-- {name: light-worship_places, type: yaml, path: nielsen-data/styles/light/worship_places.yml}
-- {name: light-zip, type: yaml, path: nielsen-data/styles/light/zip.yml}
-- {name: light-zp5, type: yaml, path: nielsen-data/styles/light/zp5.yml}
-- {name: brooklyn-airport, type: yaml, path: nielsen-data/styles/brooklyn/airport.yml}
-- {name: brooklyn-amusement_centers, type: yaml, path: nielsen-data/styles/brooklyn/amusement_centers.yml}
-- {name: brooklyn-bgp, type: yaml, path: nielsen-data/styles/brooklyn/bgp.yml}
-- {name: brooklyn-blk, type: yaml, path: nielsen-data/styles/brooklyn/blk.yml}
-- {name: brooklyn-bus_terms, type: yaml, path: nielsen-data/styles/brooklyn/bus_terms.yml}
-- {name: brooklyn-cbs, type: yaml, path: nielsen-data/styles/brooklyn/cbs.yml}
-- {name: brooklyn-cemeterys, type: yaml, path: nielsen-data/styles/brooklyn/cemeterys.yml}
-- {name: brooklyn-cemeterys_poly, type: yaml, path: nielsen-data/styles/brooklyn/cemeterys_poly.yml}
-- {name: brooklyn-csa, type: yaml, path: nielsen-data/styles/brooklyn/csa.yml}
-- {name: brooklyn-cty, type: yaml, path: nielsen-data/styles/brooklyn/cty.yml}
-- {name: brooklyn-dma, type: yaml, path: nielsen-data/styles/brooklyn/dma.yml}
-- {name: brooklyn-educ_inst, type: yaml, path: nielsen-data/styles/brooklyn/educ_inst.yml}
-- {name: brooklyn-educ_inst_poly, type: yaml, path: nielsen-data/styles/brooklyn/educ_inst_poly.yml}
-- {name: brooklyn-golf_courses, type: yaml, path: nielsen-data/styles/brooklyn/golf_courses.yml}
-- {name: brooklyn-golf_courses_poly, type: yaml, path: nielsen-data/styles/brooklyn/golf_courses_poly.yml}
-- {name: brooklyn-govt_centers, type: yaml, path: nielsen-data/styles/brooklyn/govt_centers.yml}
-- {name: brooklyn-great_lake, type: yaml, path: nielsen-data/styles/brooklyn/great_lake.yml}
-- {name: brooklyn-hospitals, type: yaml, path: nielsen-data/styles/brooklyn/hospitals.yml}
-- {name: brooklyn-hospitals_poly, type: yaml, path: nielsen-data/styles/brooklyn/hospitals_poly.yml}
-- {name: brooklyn-indstr_ofic_bldgs, type: yaml, path: nielsen-data/styles/brooklyn/indstr_ofic_bldgs.yml}
-- {name: brooklyn-interstate, type: yaml, path: nielsen-data/styles/brooklyn/interstate.yml}
-- {name: brooklyn-local_road_ne, type: yaml, path: nielsen-data/styles/brooklyn/local_road_ne.yml}
-- {name: brooklyn-local_road_nne, type: yaml, path: nielsen-data/styles/brooklyn/local_road_nne.yml}
-- {name: brooklyn-local_road_nw, type: yaml, path: nielsen-data/styles/brooklyn/local_road_nw.yml}
-- {name: brooklyn-local_road_se, type: yaml, path: nielsen-data/styles/brooklyn/local_road_se.yml}
-- {name: brooklyn-local_road_sw, type: yaml, path: nielsen-data/styles/brooklyn/local_road_sw.yml}
-- {name: brooklyn-major_city, type: yaml, path: nielsen-data/styles/brooklyn/major_city.yml}
-- {name: brooklyn-major_hwy, type: yaml, path: nielsen-data/styles/brooklyn/major_hwy.yml}
-- {name: brooklyn-major_road, type: yaml, path: nielsen-data/styles/brooklyn/major_road.yml}
-- {name: brooklyn-marine_terms, type: yaml, path: nielsen-data/styles/brooklyn/marine_terms.yml}
-- {name: brooklyn-mcd, type: yaml, path: nielsen-data/styles/brooklyn/mcd.yml}
-- {name: brooklyn-midsize_city, type: yaml, path: nielsen-data/styles/brooklyn/midsize_city.yml}
-- {name: brooklyn-mil_bases, type: yaml, path: nielsen-data/styles/brooklyn/mil_bases.yml}
-- {name: brooklyn-minor_city, type: yaml, path: nielsen-data/styles/brooklyn/minor_city.yml}
-- {name: brooklyn-ocean, type: yaml, path: nielsen-data/styles/brooklyn/ocean.yml}
-- {name: brooklyn-parks, type: yaml, path: nielsen-data/styles/brooklyn/parks.yml}
-- {name: brooklyn-pla, type: yaml, path: nielsen-data/styles/brooklyn/pla.yml}
-- {name: brooklyn-pois, type: yaml, path: nielsen-data/styles/brooklyn/pois.yml}
-- {name: brooklyn-railroad, type: yaml, path: nielsen-data/styles/brooklyn/railroad.yml}
-- {name: brooklyn-shop, type: yaml, path: nielsen-data/styles/brooklyn/shop.yml}
-- {name: brooklyn-shop_ctr, type: yaml, path: nielsen-data/styles/brooklyn/shop_ctr.yml}
-- {name: brooklyn-sta, type: yaml, path: nielsen-data/styles/brooklyn/sta.yml}
-- {name: brooklyn-stadiums, type: yaml, path: nielsen-data/styles/brooklyn/stadiums.yml}
-- {name: brooklyn-state_capital, type: yaml, path: nielsen-data/styles/brooklyn/state_capital.yml}
-- {name: brooklyn-state_hwy, type: yaml, path: nielsen-data/styles/brooklyn/state_hwy.yml}
-- {name: brooklyn-tdz, type: yaml, path: nielsen-data/styles/brooklyn/tdz.yml}
-- {name: brooklyn-traffic, type: yaml, path: nielsen-data/styles/brooklyn/traffic.yml}
-- {name: brooklyn-train_stations, type: yaml, path: nielsen-data/styles/brooklyn/train_stations.yml}
-- {name: brooklyn-trx, type: yaml, path: nielsen-data/styles/brooklyn/trx.yml}
-- {name: brooklyn-us_hwy, type: yaml, path: nielsen-data/styles/brooklyn/us_hwy.yml}
-- {name: brooklyn-usa, type: yaml, path: nielsen-data/styles/brooklyn/usa.yml}
-- {name: brooklyn-water, type: yaml, path: nielsen-data/styles/brooklyn/water.yml}
-- {name: brooklyn-worship_places, type: yaml, path: nielsen-data/styles/brooklyn/worship_places.yml}
-- {name: brooklyn-zip, type: yaml, path: nielsen-data/styles/brooklyn/zip.yml}
-- {name: brooklyn-zp5, type: yaml, path: nielsen-data/styles/brooklyn/zp5.yml}
-
-
 
 tables:
 - name: airport_clip
