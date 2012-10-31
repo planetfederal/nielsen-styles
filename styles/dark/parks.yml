@@ -4,20 +4,10 @@ feature-styles:
 - rules:
   - zoom-levels: 
       max: 10
-      min: 12
-    symbolizers:
-      polygon:
-        stroke:
-          color: '#b4d3b8'
-        fill:
-          color: '#b4d3b8'
-
-  - zoom-levels: 
-      max: 12
       min: 18
     symbolizers:
       polygon:
         stroke:
-          color: '#89bf91'
+          color: '#b9d5b9'
         fill:
-          color: '#89bf91'
+          color: '#b9d5b9'

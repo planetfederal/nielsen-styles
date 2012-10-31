@@ -11,7 +11,7 @@ roadd_label: &roadLabelLarge
     property: name
   font:
     family: Liberation Sans
-    size: 16
+    size: 14
 
 
 roadd_label: &roadLabelSmall
@@ -26,7 +26,7 @@ roadd_label: &roadLabelSmall
     property: name
   font:
     family: Liberation Sans
-    size: 12
+    size: 10
 
 
 

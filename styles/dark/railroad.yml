@@ -1,6 +1,11 @@
 name: Style for railroad
 feature-styles:
+
 - rules:
-  - symbolizers:
+  - zoom-levels:
+      max: 10
+    symbolizers:
       line:
-        stroke: {color: '#FF00AA'}
+        stroke: 
+          color: '#bfbfbf'
+#          color: '#FF00AA'

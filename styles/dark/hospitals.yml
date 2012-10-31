@@ -1,5 +1,37 @@
 name: Style for hospitals
 feature-styles:
 - rules:
-  - symbolizers:
-      graphic: {}
+  - zoom-levels:
+      max: 13
+    symbolizers:
+      graphic:
+        size: 5
+        symbols:
+          - mark:
+              name: square
+              size: 10
+              stroke:
+                color: '#000000'
+              fill:
+                color: '#000000'
+      text:
+        halo:
+          radius: 2
+          color: '#ffffff'
+        placement:
+          displacment:
+            x: 10
+            y: 10
+          rotation: 0
+          point:
+            x: .5
+            y: .5
+        vendor:
+          autoWrap: '80'
+        font:
+          size: 10
+          family: Droid Sans
+        fill:
+          color: '#804d4d'
+        label:
+          property: name

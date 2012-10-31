@@ -1,6 +1,11 @@
 name: Style for educ_inst_poly
 feature-styles:
 - rules:
-  - symbolizers:
+  - zoom-levels:
+      max: 12
+    symbolizers:
       polygon:
-        fill: {color: '#9B30FF'}
+        stroke:
+          opacity: 0
+        fill:
+          color: '#ece8df'

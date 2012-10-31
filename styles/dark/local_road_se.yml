@@ -1,27 +1,48 @@
 roadd_label: &roadLabelSmall
   halo:
-    radius: 3
+    radius: 2
     color: '#ffffff'
   fill:
     color: '#000000'
   vendor:
     followLine: 'true'
-    maxAngleDelta: '90'
   label:
     property: name
   font:
     family: Liberation Sans
-    size: 16
+    size: 10
+
+roadd_label: &roadLabelLarge
+  halo:
+    radius: 2
+    color: '#ffffff'
+  fill:
+    color: '#000000'
+  vendor:
+    followLine: 'true'
+  label:
+    property: name
+  font:
+    family: Liberation Sans
+    size: 12
+
 
 name: Style for local_road_se
 feature-styles:
 
 
 - rules:
-  
+
   - zoom-levels: 
       max: 16
       min: 18
+    symbolizers:
+      text: *roadLabelLarge
+
+  
+  - zoom-levels: 
+      max: 14
+      min: 16
     symbolizers:
       text: *roadLabelSmall
 

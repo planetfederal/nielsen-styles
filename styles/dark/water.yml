@@ -1,11 +1,12 @@
 name: Style for water
 feature-styles:
+
 - rules:
   - zoom-levels: 
       max: 8
     symbolizers:
       polygon:
         stroke:
-          color: '#d9d9d9'
+          color: '#b9c9d5'
         fill:
-          color: '#d9d9d9'
+          color: '#b9c9d5'

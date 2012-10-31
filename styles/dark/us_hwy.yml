@@ -1,6 +1,6 @@
 road_label: &roadLabelLarge
   halo:
-    radius: 3
+    radius: 2
     color: '#ffffff'
   fill:
     color: '#000000'
@@ -11,7 +11,7 @@ road_label: &roadLabelLarge
   font:
     weight: bold
     family: Liberation Sans
-    size: 16
+    size: 12
 
 roadd_label: &roadLabelSmall
   halo:
@@ -29,11 +29,8 @@ roadd_label: &roadLabelSmall
     size: 12
 
 
-
-
 name: Style for us_hwy
 feature-styles:
-
 
 - rules:
   - zoom-levels:

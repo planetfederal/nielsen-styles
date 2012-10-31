@@ -1,7 +1,31 @@
+
+road_label: &roadLabelLarge
+  halo:
+    radius: 2
+    color: '#ffffff'
+  fill:
+    color: '#000000'
+  vendor:
+    followLine: 'true'
+  label:
+    property: name
+  font:
+    weight: bold
+    family: Liberation Sans
+    size: 16
+
+
 name: Style for interstate
 feature-styles:
 
 - rules:
+
+  - zoom-levels: 
+      max: 14
+      min: 18
+    symbolizers:
+      text: *roadLabelLarge
+
   - zoom-levels: 
       max: 16
       min: 18
@@ -29,6 +53,7 @@ feature-styles:
           width: 8
           color: '#8d8d8d'
 
+
   - zoom-levels: 
       max: 12
       min: 14
@@ -36,6 +61,16 @@ feature-styles:
       line:
         stroke:
           width: 4
+          color: '#8d8d8d'
+
+
+  - zoom-levels: 
+      max: 10
+      min: 12
+    symbolizers:
+      line:
+        stroke:
+          width: 2
           color: '#8d8d8d'
 
 
