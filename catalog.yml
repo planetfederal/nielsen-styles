@@ -8,7 +8,6 @@ maps:
     epsg: 4326
     bgcolor: '#d9d9d9'
     bbox: [-76.81392873460105,39.08612883480558,-76.32915700608562,39.41659355305707]
-    # bbox: [-76.62719334822296,39.28606771832687,-76.59689511519085,39.302225548717146]
     layers:
 
       - table: sta_clip
@@ -46,9 +45,6 @@ maps:
 
       - table: state_capital_clip
         style: dark-state_capital
-
-      # - table: zp5_clip
-      #   style: dark-zp5
 
 
 datastores:
