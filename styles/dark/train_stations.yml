@@ -1,5 +1,17 @@
 name: Style for train_stations
+
 feature-styles:
 - rules:
-  - symbolizers:
-      graphic: {}
+  - zoom-levels:
+      max: 13
+    symbolizers:
+      graphic:
+        size: 5
+        symbols:
+          - mark:
+              name: square
+              size: 10
+              stroke:
+                color: '#1161d9'
+              fill:
+                color: '#1161d9'
