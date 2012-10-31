@@ -7,11 +7,7 @@ maps:
   - name: Dark
     epsg: 4326
     bgcolor: '#b9c9d5'
-#    bbox: [-76.81392873460105,39.08612883480558,-76.32915700608562,39.41659355305707]
-#    bbox: [-76.6366762091328,39.31087722825907,-76.62152709261585,39.32119475284448]
-#    bbox: [-77.06826651698651,38.84239031625101,-76.09872305995566,39.5517150170797]
     bbox: [-76.6543666401107,39.25947584737311,-76.5937701740465,39.30375589056871]
-    # bbox: [-76.62719334822296,39.28606771832687,-76.59689511519085,39.302225548717146]
     layers:
 
       - table: sta_clip
@@ -26,12 +22,18 @@ maps:
       - table: airport_clip
         style: dark-airport
 
+      - table: indstr_ofic_bldgs_clip
+        style: dark-airport
+
       - table: water_clip
         style: dark-water
 
+      - table: shop_ctr_clip
+        style: dark-shop_ctr
 
       - table: shop_clip
         style: dark-shop
+
 
 
       - table: hospitals_poly_clip

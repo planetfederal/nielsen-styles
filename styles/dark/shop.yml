@@ -17,21 +17,13 @@ feature-styles:
           point:
             x: .5
             y: .5
+        vendor:
+          autoWrap: '80'
         font:
           size: 10
           family: Droid Sans
         fill:
-          color: '#d91161'
+          color: '#804d7d'
         label:
           property: name
-      graphic:
-        size: 5
-        symbols:
-          - mark:
-              name: square
-              size: 10
-              stroke:
-                color: '#d91161'
-              fill:
-                color: '#d91161'
 

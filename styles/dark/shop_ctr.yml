@@ -1,6 +1,11 @@
 name: Style for shop_ctr
 feature-styles:
 - rules:
-  - symbolizers:
+  - zoom-levels:
+      max: 14      
+    symbolizers:
       polygon:
-        fill: {color: '#9B30FF'}
+        stroke:
+          opacity: 0
+        fill:
+          color: '#e2cfe2'
