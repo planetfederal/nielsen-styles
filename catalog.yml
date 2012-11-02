@@ -7,8 +7,8 @@ maps:
   - name: Dark
     epsg: 4326
     bgcolor: '#b9c9d5'
-    bbox: [-77.08342281050629,38.78232136602879,-76.96222987837787,38.91955053548136]
-#    bbox: [-77.08630385921896,38.82356917976385,-76.96511092709056,38.96071881435874]
+    bbox: [-77.75724521136364,38.4341247681839,-75.80167880511434,39.30444772046713]
+    # bbox: [-77.08342281050629,38.78232136602879,-76.96222987837787,38.91955053548136]
     layers:
 
       - table: sta_clip
@@ -17,6 +17,10 @@ maps:
       - table: parks_clip
         style: dark-parks
 
+      - table: water_clip
+        style: dark-water
+
+        # polygon areas
       - table: golf_courses_poly_clip
         style: dark-parks
 
@@ -26,29 +30,25 @@ maps:
       - table: indstr_ofic_bldgs_clip
         style: dark-airport
 
-      - table: water_clip
-        style: dark-water
+      - table: stadiums_clip
+        style: dark-airport
 
       - table: shop_ctr_clip
         style: dark-shop_ctr
 
-      - table: shop_clip
-        style: dark-shop
-
       - table: hospitals_poly_clip
         style: dark-hospitals_poly
 
-      - table: hospitals_clip
-        style: dark-hospitals
+      - table: cemeterys_poly_clip
+        style: dark-cemeterys_poly
 
+      - table: amusement_centers_clip
+        style: dark-airport
 
       - table: educ_inst_poly_clip
         style: dark-educ_inst_poly
 
-      - table: educ_inst_clip
-        style: dark-educ_inst
-
-
+        # roads layers
       - table: railroad_clip
         style: dark-railroad
 
@@ -70,9 +70,21 @@ maps:
       - table: interstate_clip
         style: dark-interstate
 
+        # icon layers
+      - table: shop_clip
+        style: dark-shop
+
+      - table: educ_inst_clip
+        style: dark-educ_inst
+
+      - table: hospitals_clip
+        style: dark-hospitals
 
       - table: train_stations_clip
         style: dark-train_stations
+
+      - table: govt_centers_clip
+        style: dark-govt_centers
 
       - table: major_city_clip
         style: dark-major_city
@@ -86,6 +98,7 @@ datastores:
   host: localhost
   port: 5432
   user: postgres
+  password: pass
   type: postgis
 
 

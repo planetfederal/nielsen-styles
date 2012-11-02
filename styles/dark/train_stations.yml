@@ -1,17 +1,34 @@
 name: Style for train_stations
-
 feature-styles:
 - rules:
   - zoom-levels:
       max: 13
     symbolizers:
+      text:
+        halo:
+          radius: 1
+          color: '#ffffff'
+        placement:
+          displacment:
+            x: 10
+            y: 10
+          rotation: 0
+          point:
+            x: .7
+            y: .2
+        vendor:
+          autoWrap: '90'
+        font:
+          size: 10
+          family: Droid Sans
+        fill:
+          color: '#1161d9'
+        label:
+          property: name
+
       graphic:
-        size: 5
+        size: 25
         symbols:
-          - mark:
-              name: square
-              size: 10
-              stroke:
-                color: '#1161d9'
-              fill:
-                color: '#1161d9'
+          - online:
+              format: image/svg+xml
+              uri: file:nielsen-data/icons/rail_inv.svg

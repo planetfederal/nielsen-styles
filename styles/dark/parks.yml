@@ -1,5 +1,6 @@
 name: Style for parks
 feature-styles:
+# label color #4d804d
 
 - rules:
   - zoom-levels: 

@@ -5,6 +5,13 @@ feature-styles:
   - zoom-levels:
       max: 13
     symbolizers:
+      graphic:
+        size: 25
+        symbols:
+          - online:
+              format: image/svg+xml
+              uri: file:nielsen-data/icons/shopping_bag.svg
+
       text:
         halo:
           radius: 2

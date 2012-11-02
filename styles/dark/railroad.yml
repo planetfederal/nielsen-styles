@@ -8,4 +8,16 @@ feature-styles:
       line:
         stroke: 
           color: '#bfbfbf'
-#          color: '#FF00AA'
+
+  - zoom-levels:
+      max: 10
+    symbolizers:
+      line:
+        stroke: 
+          graphic-stroke:
+            size: 6
+            symbols:
+              - mark:
+                  name: shape://vertline
+                  stroke:
+                    color: '#bfbfbf'

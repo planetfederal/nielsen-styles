@@ -2,18 +2,19 @@ name: Style for hospitals
 feature-styles:
 - rules:
   - zoom-levels:
-      max: 13
+      max: 14
     symbolizers:
       graphic:
-        size: 5
+        size: 25
         symbols:
-          - mark:
-              name: square
-              size: 10
-              stroke:
-                color: '#000000'
-              fill:
-                color: '#000000'
+          - online:
+              format: image/svg+xml
+              uri: file:nielsen-data/icons/hospital_cross.svg
+
+
+  - zoom-levels:
+      max: 13
+    symbolizers:
       text:
         halo:
           radius: 2

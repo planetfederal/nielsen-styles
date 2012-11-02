@@ -1,5 +1,34 @@
 name: Style for govt_centers
 feature-styles:
 - rules:
-  - symbolizers:
-      graphic: {}
+  - zoom-levels:
+      max: 14
+    symbolizers:
+      text:
+        halo:
+          radius: 1
+          color: '#ffffff'
+        placement:
+          displacment:
+            x: 10
+            y: 10
+          rotation: 0
+          point:
+            x: .7
+            y: .2
+        vendor:
+          autoWrap: '90'
+        font:
+          size: 10
+          family: Droid Sans
+        fill:
+          color: '#ff33ff'
+        label:
+          property: name
+      graphic:
+        size: 25
+        symbols:
+        symbols:
+          - online:
+              format: image/svg+xml
+              uri: file:nielsen-data/icons/government.svg
