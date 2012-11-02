@@ -11,7 +11,6 @@ feature-styles:
           - online:
               format: image/svg+xml
               uri: https://raw.github.com/opengeo/nielsen-styles/master/icons/shopping_bag.svg
-
       text:
         halo:
           radius: 2
