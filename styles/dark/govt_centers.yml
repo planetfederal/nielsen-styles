@@ -31,4 +31,4 @@ feature-styles:
         symbols:
           - online:
               format: image/svg+xml
-              uri: file:nielsen-data/icons/government.svg
+              uri: https://raw.github.com/opengeo/nielsen-styles/master/icons/government.svg

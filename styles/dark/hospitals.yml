@@ -9,7 +9,7 @@ feature-styles:
         symbols:
           - online:
               format: image/svg+xml
-              uri: file:nielsen-data/icons/hospital_cross.svg
+              uri: https://raw.github.com/opengeo/nielsen-styles/master/icons/hospital_cross.svg
 
 
   - zoom-levels:

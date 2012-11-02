@@ -10,7 +10,7 @@ feature-styles:
         symbols:
           - online:
               format: image/svg+xml
-              uri: file:nielsen-data/icons/shopping_bag.svg
+              uri: https://raw.github.com/opengeo/nielsen-styles/master/icons/shopping_bag.svg
 
       text:
         halo:

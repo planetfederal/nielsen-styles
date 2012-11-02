@@ -78,17 +78,6 @@ feature-styles:
       max: 8
       min: 10
     symbolizers:
-      text:
-        label:
-          property: name
-        fill: 
-          opacity: 0
-        graphic:
-          size: 24
-          symbols:
-            - online:
-                format: image/svg+xml
-                uri: file:nielsen-data/icons/shield_interstate.svg
       line:
         stroke:
           width: .5
