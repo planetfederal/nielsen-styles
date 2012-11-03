@@ -4,7 +4,7 @@
 workspace: nielsen
 
 maps:
-  - name: Dark
+  - name: light
     epsg: 4326
     bgcolor: '#b9c9d5'
     bbox: [-77.09163824122207,38.858978635249166,-76.96941534083204,38.91336209502852]
@@ -28,6 +28,9 @@ maps:
 
       - table: indstr_ofic_bldgs_clip
         style: dark-airport
+
+      - table: mil_bases_clip
+        style: dark-mil_bases
 
       - table: stadiums_clip
         style: dark-airport
@@ -70,6 +73,22 @@ maps:
         style: dark-interstate
 
         # icon layers
+
+      - table: airport_point_clip
+        style: dark-airport_point
+
+      - table: parks_point_clip
+        style: dark-parks_point
+
+      - table: marine_terms_clip
+        style: dark-marine_terms
+
+      - table: cemeterys_clip
+        style: dark-cemeterys
+
+      - table: bus_terms_clip
+        style: dark-bus_terms
+
       - table: shop_clip
         style: dark-shop
 
@@ -88,8 +107,8 @@ maps:
       - table: major_city_clip
         style: dark-major_city
 
-      - table: state_capital_clip
-        style: dark-state_capital
+      # - table: state_capital_clip
+      #   style: dark-state_capital
 
 
 datastores:
@@ -159,8 +178,26 @@ styles:
 - {name: dark-zip, type: yaml, path: nielsen-data/styles/dark/zip.yml}
 - {name: dark-zp5, type: yaml, path: nielsen-data/styles/dark/zp5.yml}
 
+- name: dark-airport_point
+  type: yaml
+  path: nielsen-data/styles/dark/airport_point.yml
+
+- name: dark-parks_point
+  type: yaml
+  path: nielsen-data/styles/dark/parks_point.yml
+
+
 tables:
+
 - name: airport_clip
+  datastore: nielsen
+
+
+- name: airport_point_clip
+  datastore: nielsen
+
+
+- name: parks_point_clip
   datastore: nielsen
 
 
