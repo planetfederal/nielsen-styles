@@ -3,18 +3,6 @@ feature-styles:
 - name: airport
   rules:
   - zoom-levels:
-      max: 10
-    symbolizers:
-      text:
-        fill:
-          color: '#000000'
-        font:
-          family: Droid Sans
-        label:
-          property: name
-
-
-  - zoom-levels:
       max: 8
       min: 14
     symbolizers:

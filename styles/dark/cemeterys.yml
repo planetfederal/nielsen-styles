@@ -1,5 +1,17 @@
 name: Style for cemeterys
 feature-styles:
 - rules:
-  - symbolizers:
-      graphic: {}
+  - zoom-levels:
+      max: 14
+    symbolizers:
+      text:
+        font:
+          family: Droid Sans
+        label:
+          property: name
+      graphic:
+        size: 25
+        symbols:
+          - online:
+              format: image/svg+xml
+              uri: https://raw.github.com/opengeo/nielsen-styles/master/icons/cemetery.svg

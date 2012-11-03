@@ -1,5 +1,12 @@
 name: Style for bus_terms
 feature-styles:
 - rules:
-  - symbolizers:
-      graphic: {}
+  - zoom-levels:
+      max: 13
+    symbolizers:
+      graphic:
+        size: 25
+        symbols:
+          - online:
+              format: image/svg+xml
+              uri: https://raw.github.com/opengeo/nielsen-styles/master/icons/bus_inv.svg

@@ -2,7 +2,7 @@ name: Style for educ_inst
 feature-styles:
 - rules:
   - zoom-levels:
-      max: 13
+      max: 14
     symbolizers:
       graphic:
         size: 25
@@ -10,7 +10,6 @@ feature-styles:
           - online:
               format: image/svg+xml
               uri: https://raw.github.com/opengeo/nielsen-styles/master/icons/education_book.svg
-
       text:
         halo:
           radius: 2

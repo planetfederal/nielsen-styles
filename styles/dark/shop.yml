@@ -3,7 +3,7 @@ name: Style for shop
 feature-styles:
 - rules:
   - zoom-levels:
-      max: 13
+      max: 14
     symbolizers:
       graphic:
         size: 25

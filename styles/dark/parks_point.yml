@@ -1,4 +1,4 @@
-name: Style for marine_terms
+name: Style for educ_inst
 feature-styles:
 - rules:
   - zoom-levels:
@@ -9,5 +9,4 @@ feature-styles:
         symbols:
           - online:
               format: image/svg+xml
-              uri: https://raw.github.com/opengeo/nielsen-styles/master/icons/water_ferry.svg
-
+              uri: https://raw.github.com/opengeo/nielsen-styles/master/icons/park.svg
