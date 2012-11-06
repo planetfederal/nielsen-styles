@@ -1,0 +1,30 @@
+name: Style for cty
+feature-styles:
+- rules:
+  - symbolizers:
+      line:
+        stroke:
+          color: '#ffffff'
+
+
+  - zoom-levels:
+      max: 8
+    symbolizers:
+      text:
+        halo:
+          radius: 1
+          color: '#4e4e4e'
+        placement:
+          displacment:
+            x: 10
+            y: 10
+          point:
+            x: .7
+            y: .2
+        fill:
+          color: '#ffffff'
+        font:
+          weight: bold
+          family: Droid Sans
+        label:
+          property: name

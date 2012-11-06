@@ -2,23 +2,24 @@ name: Style for train_stations
 feature-styles:
 - rules:
   - zoom-levels:
-      max: 13
+      max: 14
     symbolizers:
       text:
         halo:
-          radius: 1
+          radius: 2
           color: '#ffffff'
         placement:
           displacment:
             x: 10
-            y: 10
+            y: 20
           rotation: 0
           point:
             x: .7
-            y: .2
+            y: .5
         vendor:
           autoWrap: '90'
         font:
+          weight: bold
           size: 10
           family: Droid Sans
         fill:
@@ -27,7 +28,7 @@ feature-styles:
           property: name
 
       graphic:
-        size: 25
+        size: 32
         symbols:
           - online:
               format: image/svg+xml

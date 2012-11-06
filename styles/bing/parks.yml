@@ -1,0 +1,13 @@
+name: Style for parks
+feature-styles:
+# label color #4d804d
+
+- rules:
+  - zoom-levels: 
+      max: 10
+      min: 18
+    symbolizers:
+      polygon:
+        fill:
+          opacity: .5
+          color: '#000000'
