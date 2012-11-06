@@ -1,0 +1,35 @@
+name: Style for shop
+feature-styles:
+- rules:
+  - zoom-levels:
+      max: 14
+    symbolizers:
+      graphic:
+        size: 25
+        symbols:
+          - online:
+              format: image/svg+xml
+              uri: https://raw.github.com/opengeo/nielsen-styles/master/icons/shopping_bag.svg
+      text:
+        halo:
+          radius: 2
+          opacity: .4
+          color: '#804d7d'
+        placement:
+          displacment:
+            x: 10
+            y: 10
+          rotation: 0
+          point:
+            x: .5
+            y: .5
+        vendor:
+          autoWrap: '80'
+        font:
+          size: 10
+          family: Droid Sans
+        fill:
+          color: '#ffffff'
+        label:
+          property: name
+

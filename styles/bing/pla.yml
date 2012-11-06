@@ -1,0 +1,17 @@
+name: Style for pla
+feature-styles:
+- rules:
+
+  - symbolizers:
+      text:
+        fill:
+          color: '#ffffff'
+        font:
+          family: Droid Sans
+        label:
+          property: label
+
+  - symbolizers:
+      line:
+        stroke: 
+          color: '#ff33cc'

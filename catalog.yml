@@ -7,32 +7,94 @@ maps:
 
   - name: bing
     bgcolor: '#ffffff'
+    bbox: [-79.85618466857362,37.32401751809592,-71.30332822326132,41.13081828533442]
+    layers:
+
+
+      # geography layers
+
+      # - table: zp5_clip
+      #   style: bing-zp5
+
+      - table: bgp_clip
+        style: bing-bpg
+
+      # - table: cbs_clip
+      #   style: bing-cbs
+
+      # - table: mcd_clip
+      #   style: bing-mcd
+
+      # - table: pla_clip
+      #   style: bing-pla
+
+      # - table: trx_clip
+      #   style: bing-trx
+
+      # - table: water_clip
+      #   style: dark-water
+
+      # - table: sta_clip
+      #   style: bing-sta
+
+      # - table: cty_clip
+      #   style: bing-cty
+
+      # - table: parks_clip
+      #   style: bing-parks
+
+
+      - table: sta_clip
+        style: bing-sta
+
+
+      - table: railroad_clip
+        style: dark-railroad
+
+      # # icon layers
+      - table: airport_point_clip
+        style: bing-airport_point
+
+      - table: parks_point_clip
+        style: dark-parks_point
+
+      - table: marine_terms_clip
+        style: dark-marine_terms
+
+      - table: cemeterys_clip
+        style: dark-cemeterys
+
+      - table: bus_terms_clip
+        style: dark-bus_terms
+
+      - table: shop_clip
+        style: bing-shop
+
+      - table: educ_inst_clip
+        style: bing-educ_inst
+
+      - table: hospitals_clip
+        style: bing-hospitals
+
+      - table: train_stations_clip
+        style: bing-train_stations
+
+      - table: govt_centers_clip
+        style: bing-govt_centers
+
+
+  - name: icons
+    bgcolor: '#ffffff'
     bbox: [-77.09163824122207,
            38.858978635249166,
            -76.96941534083204,
            38.91336209502852]
     layers:
 
-
-      - table: water_clip
-        style: dark-water
-
-      - table: sta_clip
-        style: bing-sta
-
-      - table: cty_clip
-        style: bing-cty
-
-      - table: zp5_clip
-        style: bing-zp5
-
-      - table: parks_clip
-        style: bing-parks
-
       - table: railroad_clip
         style: dark-railroad
 
-      # icon layers
+      # # icon layers
       - table: airport_point_clip
         style: dark-airport_point
 
@@ -58,7 +120,7 @@ maps:
         style: dark-hospitals
 
       - table: train_stations_clip
-        style: dark-train_stations
+        style: bing-train_stations
 
       - table: govt_centers_clip
         style: dark-govt_centers
@@ -67,7 +129,10 @@ maps:
 
   - name: light
     bgcolor: '#b9c9d5'
-    bbox: [-77.09163824122207,38.858978635249166,-76.96941534083204,38.91336209502852]
+    bbox: [-77.09163824122207,
+           38.858978635249166,
+           -76.96941534083204,
+           38.91336209502852]
     layers:
 
       - table: sta_clip
@@ -272,6 +337,64 @@ styles:
   type: yaml
   path: nielsen-data/styles/bing/parks.yml
 
+
+- name: bing-mcd
+  type: yaml
+  path: nielsen-data/styles/bing/mcd.yml
+
+
+- name: bing-train_stations
+  type: yaml
+  path: nielsen-data/styles/bing/train_stations.yml
+
+
+- name: bing-pla
+  type: yaml
+  path: nielsen-data/styles/bing/pla.yml
+
+
+- name: bing-trx
+  type: yaml
+  path: nielsen-data/styles/bing/trx.yml
+
+
+- name: bing-bpg
+  type: yaml
+  path: nielsen-data/styles/bing/bpg.yml
+
+
+- name: bing-cbs
+  type: yaml
+  path: nielsen-data/styles/bing/cbs.yml
+
+
+
+- name: bing-sta
+  type: yaml
+  path: nielsen-data/styles/bing/sta.yml
+
+
+- name: bing-airport_point
+  type: yaml
+  path: nielsen-data/styles/bing/airport_point.yml
+
+- name: bing-educ_inst
+  type: yaml
+  path: nielsen-data/styles/bing/educ_inst.yml
+
+
+- name: bing-shop
+  type: yaml
+  path: nielsen-data/styles/bing/shop.yml
+
+
+- name: bing-hospitals
+  type: yaml
+  path: nielsen-data/styles/bing/hospitals.yml
+
+- name: bing-govt_centers
+  type: yaml
+  path: nielsen-data/styles/bing/govt_centers.yml
 
 
 

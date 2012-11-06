@@ -1,0 +1,33 @@
+name: Style for airport point
+feature-styles:
+- rules:
+  - zoom-levels:
+      max: 10
+    symbolizers:
+      text:
+        halo:
+          radius: 2
+          opacity: .3
+          color: '#000000'
+        fill:
+          color: '#ffffff'
+        placement:
+          displacment:
+            x: 10
+            y: 10
+          point:
+            x: .7
+            y: .2
+        font:
+          weight: bold
+          size: 12
+          family: Droid Sans
+        label:
+          property: name
+
+      graphic:
+        size: 25
+        symbols:
+          - online:
+              format: image/svg+xml
+              uri: https://raw.github.com/opengeo/nielsen-styles/master/icons/airport.svg

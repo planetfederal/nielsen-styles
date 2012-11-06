@@ -1,0 +1,7 @@
+name: Style for trx
+feature-styles:
+- rules:
+  - symbolizers:
+      line:
+        stroke:
+          color: '#ffff33'

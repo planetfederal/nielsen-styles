@@ -2,8 +2,36 @@ name: Style for sta
 feature-styles:
 - rules:
 
+  - zoom-levels:
+      min: 8
+    symbolizers:
+      text:
+        placement:
+          point:
+            x: 0.5
+            y: 0.5
+        fill:
+          color: '#ffffff'
+        font:
+          size: 30
+          family: Droid Sans
+        label:
+          property: name
+
+
   - symbolizers:
       line:
         stroke:
           width: 4
-          color: '#eeeeee'
+          opacity: 1
+          color: '#000000'
+
+
+  - symbolizers:
+      line:
+        stroke:
+          width: 2
+          opacity: .8
+          color: '#d4afbc'
+
+

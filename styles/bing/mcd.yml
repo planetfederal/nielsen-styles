@@ -1,0 +1,23 @@
+name: Style for mcd
+feature-styles:
+- rules:
+  - symbolizers:
+      text:
+        halo:
+          radius: 2
+          color: '#ffffff'
+        fill:
+          color: '#EEAEEE'
+        font:
+          size: 20
+          weight: bold
+          family: Droid Sans
+        label:
+          property: name
+
+      polygon:
+        stroke:
+          width: 4
+          color: '#EEAEEE'
+        fill:
+          opacity: 0
