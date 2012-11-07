@@ -38,6 +38,10 @@ feature-styles:
       max: 12
     symbolizers:
       text:
+        halo:
+          radius: 2
+          opacity: .2
+          color: '#000000'
         placement:
           point:
             x: .5
@@ -45,6 +49,7 @@ feature-styles:
         fill:
           color: '#ffffff'
         font:
+          weight: bold
           family: Droid Sans
         label:
           property: label

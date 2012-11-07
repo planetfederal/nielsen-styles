@@ -5,11 +5,11 @@ feature-styles:
       max: 14
     symbolizers:
       graphic:
-        size: 25
+        size: 35
         symbols:
           - online:
               format: image/svg+xml
-              uri: https://raw.github.com/opengeo/nielsen-styles/master/icons/shopping_bag.svg
+              uri: https://raw.github.com/opengeo/nielsen-styles/master/icons/bing-shopping_bag.svg
       text:
         halo:
           radius: 2
@@ -17,7 +17,7 @@ feature-styles:
           color: '#804d7d'
         placement:
           displacment:
-            x: 10
+            x: 20
             y: 10
           rotation: 0
           point:

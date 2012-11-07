@@ -2,8 +2,31 @@ name: Style for cty
 feature-styles:
 - rules:
 
+
   - zoom-levels:
-      max: 8
+      max: 6
+    symbolizers:
+      line:
+        stroke:
+          width: 2
+          color: '#ffffff'
+
+
+  - zoom-levels:
+      max: 6
+    symbolizers:
+      line:
+        stroke:
+          width: 10
+          opacity: .2
+          color: '#000000'
+
+
+
+
+  - zoom-levels:
+      max: 6
+      min: 8
     symbolizers:
       line:
         stroke:
@@ -12,7 +35,8 @@ feature-styles:
 
 
   - zoom-levels:
-      max: 8
+      max: 6
+      min: 8
     symbolizers:
       line:
         stroke:
@@ -23,8 +47,8 @@ feature-styles:
 
 
   - zoom-levels:
-      max: 6
-      min: 8
+      max: 4
+      min: 6
     symbolizers:
       line:
         stroke:
@@ -35,7 +59,7 @@ feature-styles:
 
 
   - zoom-levels:
-      max: 8
+      max: 6
     symbolizers:
       text:
         halo:
@@ -52,6 +76,7 @@ feature-styles:
         fill:
           color: '#ffffff'
         font:
+          size: 14
           weight: bold
           family: Droid Sans
         label:

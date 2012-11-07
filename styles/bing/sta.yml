@@ -19,19 +19,19 @@ feature-styles:
           property: name
 
 
+
   - symbolizers:
       line:
         stroke:
           width: 4
-          opacity: 1
-          color: '#000000'
-
-
-  - symbolizers:
-      line:
-        stroke:
-          width: 2
           opacity: .8
           color: '#d4afbc'
 
 
+- rules:
+  - symbolizers:
+      line:
+        stroke:
+          width: 16
+          opacity: .2
+          color: '#000000'

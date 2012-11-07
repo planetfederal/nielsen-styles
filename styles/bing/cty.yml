@@ -7,7 +7,19 @@ feature-styles:
     symbolizers:
       line:
         stroke:
+          width: 1
           color: '#ffffff'
+
+
+  - zoom-levels:
+      max: 8
+    symbolizers:
+      line:
+        stroke:
+          width: 7
+          opacity: .2
+          color: '#000000'
+
 
 
   - zoom-levels:
@@ -27,8 +39,9 @@ feature-styles:
     symbolizers:
       text:
         halo:
-          radius: 1
-          color: '#4e4e4e'
+          radius: 2
+          opacity: .2
+          color: '#000000'
         placement:
           displacment:
             x: 10

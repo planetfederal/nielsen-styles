@@ -4,10 +4,12 @@ feature-styles:
 
 - rules:
   - zoom-levels: 
-      max: 10
+      max: 12
       min: 18
     symbolizers:
       polygon:
+        stroke:
+          opacity: 0
         fill:
-          opacity: .5
-          color: '#000000'
+          opacity: .8
+          color: '#4d804d'

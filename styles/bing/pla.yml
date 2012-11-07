@@ -1,17 +1,57 @@
-name: Style for pla
+name: Style for trx
 feature-styles:
 - rules:
 
-  - symbolizers:
+
+  - zoom-levels:
+      max: 10
+    symbolizers:
+      line:
+        stroke:
+          width: 1
+          color: '#ff33cc'
+
+
+  - zoom-levels:
+      max: 10
+    symbolizers:
+      line:
+        stroke:
+          width: 7
+          opacity: .2
+          color: '#000000'
+
+
+  - zoom-levels:
+      max: 8
+      min: 10
+    symbolizers:
+      line:
+        stroke:
+          width: .5
+          opacity: .8
+          color: '#ff33cc'
+
+
+
+  - zoom-levels:
+      max: 12
+    symbolizers:
+
       text:
+        halo:
+          radius: 2
+          color: '#ff33cc'
+          opacity: .4
+
+        placement:
+          point:
+            x: .5
+            y: .5
         fill:
           color: '#ffffff'
         font:
+          size: 14
           family: Droid Sans
         label:
           property: label
-
-  - symbolizers:
-      line:
-        stroke: 
-          color: '#ff33cc'
