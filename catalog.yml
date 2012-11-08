@@ -76,7 +76,7 @@ maps:
       #   style: bing-trx
 
       # - table: water_clip
-      #   style: dark-water
+      #   style: base-water
 
       - table: cty_clip
         style: bing-cty
@@ -96,23 +96,23 @@ maps:
 
 
       - table: railroad_clip
-        style: dark-railroad
+        style: base-railroad
 
       ## icon layers
       - table: airport_point_clip
         style: bing-airport_point
 
       - table: parks_point_clip
-        style: dark-parks_point
+        style: base-parks_point
 
       - table: marine_terms_clip
-        style: dark-marine_terms
+        style: base-marine_terms
 
       - table: cemeterys_clip
-        style: dark-cemeterys
+        style: base-cemeterys
 
       - table: bus_terms_clip
-        style: dark-bus_terms
+        style: base-bus_terms
 
       - table: shop_clip
         style: bing-shop
@@ -148,23 +148,23 @@ maps:
     layers:
 
       - table: railroad_clip
-        style: dark-railroad
+        style: base-railroad
 
       # # icon layers
       - table: airport_point_clip
         style: bing-airport_point
 
       - table: parks_point_clip
-        style: dark-parks_point
+        style: base-parks_point
 
       - table: marine_terms_clip
-        style: dark-marine_terms
+        style: base-marine_terms
 
       - table: cemeterys_clip
-        style: dark-cemeterys
+        style: base-cemeterys
 
       - table: bus_terms_clip
-        style: dark-bus_terms
+        style: base-bus_terms
 
       - table: shop_clip
         style: bing-shop
@@ -183,7 +183,7 @@ maps:
 
 
 
-  - name: light
+  - name: base-map
     bgcolor: '#b9c9d5'
     bbox: [-77.09163824122207,
            38.858978635249166,
@@ -192,104 +192,104 @@ maps:
     layers:
 
       - table: sta_clip
-        style: dark-sta
+        style: base-sta
 
       - table: parks_clip
-        style: dark-parks
+        style: base-parks
 
       - table: water_clip
-        style: dark-water
+        style: base-water
 
         # polygon areas
       - table: golf_courses_poly_clip
-        style: dark-parks
+        style: base-parks
 
       - table: airport_clip
-        style: dark-airport
+        style: base-airport
 
       - table: indstr_ofic_bldgs_clip
-        style: dark-airport
+        style: base-airport
 
       - table: mil_bases_clip
-        style: dark-mil_bases
+        style: base-mil_bases
 
       - table: stadiums_clip
-        style: dark-airport
+        style: base-airport
 
       - table: shop_ctr_clip
-        style: dark-shop_ctr
+        style: base-shop_ctr
 
       - table: hospitals_poly_clip
-        style: dark-hospitals_poly
+        style: base-hospitals_poly
 
       - table: cemeterys_poly_clip
-        style: dark-cemeterys_poly
+        style: base-cemeterys_poly
 
       - table: amusement_centers_clip
-        style: dark-airport
+        style: base-airport
 
       - table: educ_inst_poly_clip
-        style: dark-educ_inst_poly
+        style: base-educ_inst_poly
 
         # roads layers
       - table: railroad_clip
-        style: dark-railroad
+        style: base-railroad
 
       - table: local_road_se_clip
-        style: dark-local_road_se
+        style: base-local_road_se
 
       - table: major_road_clip
-        style: dark-major_road
+        style: base-major_road
 
       - table: state_hwy_clip
-        style: dark-us_hwy
+        style: base-us_hwy
 
       - table: major_hwy_clip
-        style: dark-us_hwy
+        style: base-us_hwy
 
       - table: us_hwy_clip
-        style: dark-us_hwy
+        style: base-us_hwy
 
       - table: interstate_clip
-        style: dark-interstate
+        style: base-interstate
 
         # icon layers
 
       - table: airport_point_clip
-        style: dark-airport_point
+        style: base-airport_point
 
       - table: parks_point_clip
-        style: dark-parks_point
+        style: base-parks_point
 
       - table: marine_terms_clip
-        style: dark-marine_terms
+        style: base-marine_terms
 
       - table: cemeterys_clip
-        style: dark-cemeterys
+        style: base-cemeterys
 
       - table: bus_terms_clip
-        style: dark-bus_terms
+        style: base-bus_terms
 
       - table: shop_clip
-        style: dark-shop
+        style: base-shop
 
       - table: educ_inst_clip
-        style: dark-educ_inst
+        style: base-educ_inst
 
       - table: hospitals_clip
-        style: dark-hospitals
+        style: base-hospitals
 
       - table: train_stations_clip
-        style: dark-train_stations
+        style: base-train_stations
 
       - table: govt_centers_clip
-        style: dark-govt_centers
+        style: base-govt_centers
 
       - table: major_city_clip
-        style: dark-major_city
+        style: base-major_city
 
       - table: state_capital_clip
-        style: dark-state_capital
+        style: base-state_capital
 
 
 datastores:
@@ -303,73 +303,226 @@ datastores:
 
 styles:
 
-- {name: dark-airport, type: yaml, path: nielsen-data/styles/dark/airport.yml}
-- {name: dark-amusement_centers, type: yaml, path: nielsen-data/styles/dark/amusement_centers.yml}
-- {name: dark-bgp, type: yaml, path: nielsen-data/styles/dark/bgp.yml}
-- {name: dark-blk, type: yaml, path: nielsen-data/styles/dark/blk.yml}
-- {name: dark-bus_terms, type: yaml, path: nielsen-data/styles/dark/bus_terms.yml}
-- {name: dark-cbs, type: yaml, path: nielsen-data/styles/dark/cbs.yml}
-- {name: dark-cemeterys, type: yaml, path: nielsen-data/styles/dark/cemeterys.yml}
-- {name: dark-cemeterys_poly, type: yaml, path: nielsen-data/styles/dark/cemeterys_poly.yml}
-- {name: dark-csa, type: yaml, path: nielsen-data/styles/dark/csa.yml}
-- {name: dark-cty, type: yaml, path: nielsen-data/styles/dark/cty.yml}
-- {name: dark-dma, type: yaml, path: nielsen-data/styles/dark/dma.yml}
-- {name: dark-educ_inst, type: yaml, path: nielsen-data/styles/dark/educ_inst.yml}
-- {name: dark-educ_inst_poly, type: yaml, path: nielsen-data/styles/dark/educ_inst_poly.yml}
-- {name: dark-golf_courses, type: yaml, path: nielsen-data/styles/dark/golf_courses.yml}
-- {name: dark-golf_courses_poly, type: yaml, path: nielsen-data/styles/dark/golf_courses_poly.yml}
-- {name: dark-govt_centers, type: yaml, path: nielsen-data/styles/dark/govt_centers.yml}
-- {name: dark-great_lake, type: yaml, path: nielsen-data/styles/dark/great_lake.yml}
-- {name: dark-hospitals, type: yaml, path: nielsen-data/styles/dark/hospitals.yml}
-- {name: dark-hospitals_poly, type: yaml, path: nielsen-data/styles/dark/hospitals_poly.yml}
-- {name: dark-indstr_ofic_bldgs, type: yaml, path: nielsen-data/styles/dark/indstr_ofic_bldgs.yml}
-- {name: dark-interstate, type: yaml, path: nielsen-data/styles/dark/interstate.yml}
-- {name: dark-local_road_ne, type: yaml, path: nielsen-data/styles/dark/local_road_ne.yml}
-- {name: dark-local_road_nne, type: yaml, path: nielsen-data/styles/dark/local_road_nne.yml}
-- {name: dark-local_road_nw, type: yaml, path: nielsen-data/styles/dark/local_road_nw.yml}
-- {name: dark-local_road_se, type: yaml, path: nielsen-data/styles/dark/local_road_se.yml}
-- {name: dark-local_road_sw, type: yaml, path: nielsen-data/styles/dark/local_road_sw.yml}
-- {name: dark-major_city, type: yaml, path: nielsen-data/styles/dark/major_city.yml}
-- {name: dark-major_hwy, type: yaml, path: nielsen-data/styles/dark/major_hwy.yml}
-- {name: dark-major_road, type: yaml, path: nielsen-data/styles/dark/major_road.yml}
-- {name: dark-marine_terms, type: yaml, path: nielsen-data/styles/dark/marine_terms.yml}
-- {name: dark-mcd, type: yaml, path: nielsen-data/styles/dark/mcd.yml}
-- {name: dark-midsize_city, type: yaml, path: nielsen-data/styles/dark/midsize_city.yml}
-- {name: dark-mil_bases, type: yaml, path: nielsen-data/styles/dark/mil_bases.yml}
-- {name: dark-minor_city, type: yaml, path: nielsen-data/styles/dark/minor_city.yml}
-- {name: dark-ocean, type: yaml, path: nielsen-data/styles/dark/ocean.yml}
-- {name: dark-parks, type: yaml, path: nielsen-data/styles/dark/parks.yml}
-- {name: dark-pla, type: yaml, path: nielsen-data/styles/dark/pla.yml}
-- {name: dark-pois, type: yaml, path: nielsen-data/styles/dark/pois.yml}
-- {name: dark-railroad, type: yaml, path: nielsen-data/styles/dark/railroad.yml}
-- {name: dark-shop, type: yaml, path: nielsen-data/styles/dark/shop.yml}
-- {name: dark-shop_ctr, type: yaml, path: nielsen-data/styles/dark/shop_ctr.yml}
-- {name: dark-sta, type: yaml, path: nielsen-data/styles/dark/sta.yml}
-- {name: dark-stadiums, type: yaml, path: nielsen-data/styles/dark/stadiums.yml}
-- {name: dark-state_capital, type: yaml, path: nielsen-data/styles/dark/state_capital.yml}
-- {name: dark-state_hwy, type: yaml, path: nielsen-data/styles/dark/state_hwy.yml}
-- {name: dark-tdz, type: yaml, path: nielsen-data/styles/dark/tdz.yml}
-- {name: dark-traffic, type: yaml, path: nielsen-data/styles/dark/traffic.yml}
-- {name: dark-train_stations, type: yaml, path: nielsen-data/styles/dark/train_stations.yml}
-- {name: dark-trx, type: yaml, path: nielsen-data/styles/dark/trx.yml}
-- {name: dark-us_hwy, type: yaml, path: nielsen-data/styles/dark/us_hwy.yml}
-- {name: dark-usa, type: yaml, path: nielsen-data/styles/dark/usa.yml}
-- {name: dark-water, type: yaml, path: nielsen-data/styles/dark/water.yml}
-- {name: dark-worship_places, type: yaml, path: nielsen-data/styles/dark/worship_places.yml}
-- {name: dark-zip, type: yaml, path: nielsen-data/styles/dark/zip.yml}
-- {name: dark-zp5, type: yaml, path: nielsen-data/styles/dark/zp5.yml}
-
-- name: dark-airport_point
+### Base map for Nielsen, includes full ###
+- name: base-airport
   type: yaml
-  path: nielsen-data/styles/dark/airport_point.yml
+  path: nielsen-data/styles/base/airport.yml
 
-- name: dark-parks_point
+- name: base-amusement_centers 
+  type: yaml 
+  path: nielsen-data/styles/base/amusement_centers.yml
+
+- name: base-bgp 
+  type: yaml 
+  path: nielsen-data/styles/base/bgp.yml
+
+- name: base-blk 
+  type: yaml 
+  path: nielsen-data/styles/base/blk.yml
+
+- name: base-bus_terms 
+  type: yaml 
+  path: nielsen-data/styles/base/bus_terms.yml
+
+- name: base-cbs 
+  type: yaml 
+  path: nielsen-data/styles/base/cbs.yml
+
+- name: base-cemeterys 
+  type: yaml 
+  path: nielsen-data/styles/base/cemeterys.yml
+
+- name: base-cemeterys_poly
+  type: yaml 
+  path: nielsen-data/styles/base/cemeterys_poly.yml
+
+- name: base-csa 
+  type: yaml 
+  path: nielsen-data/styles/base/csa.yml
+
+- name: base-cty 
+  type: yaml 
+  path: nielsen-data/styles/base/cty.yml
+
+- name: base-dma 
+  type: yaml 
+  path: nielsen-data/styles/base/dma.yml
+
+- name: base-educ_inst 
+  type: yaml 
+  path: nielsen-data/styles/base/educ_inst.yml
+
+- name: base-educ_inst_poly 
   type: yaml
-  path: nielsen-data/styles/dark/parks_point.yml
+  path: nielsen-data/styles/base/educ_inst_poly.yml
+
+- name: base-golf_courses 
+  type: yaml 
+  path: nielsen-data/styles/base/golf_courses.yml
+
+- name: base-golf_courses_poly 
+  type: yaml 
+  path: nielsen-data/styles/base/golf_courses_poly.yml
+
+- name: base-govt_centers 
+  type: yaml 
+  path: nielsen-data/styles/base/govt_centers.yml
+
+- name: base-great_lake 
+  type: yaml 
+  path: nielsen-data/styles/base/great_lake.yml
+
+- name: base-hospitals 
+  type: yaml 
+  path: nielsen-data/styles/base/hospitals.yml
+
+- name: base-hospitals_poly 
+  type: yaml 
+  path: nielsen-data/styles/base/hospitals_poly.yml
+
+- name: base-indstr_ofic_bldgs 
+  type: yaml 
+  path: nielsen-data/styles/base/indstr_ofic_bldgs.yml
+
+- name: base-interstate 
+  type: yaml 
+  path: nielsen-data/styles/base/interstate.yml
+
+- name: base-local_road_se 
+  type: yaml 
+  path: nielsen-data/styles/base/local_road_se.yml
+
+- name: base-local_road_sw 
+  type: yaml 
+  path: nielsen-data/styles/base/local_road_sw.yml
+
+- name: base-major_city 
+  type: yaml 
+  path: nielsen-data/styles/base/major_city.yml
+
+- name: base-major_hwy 
+  type: yaml 
+  path: nielsen-data/styles/base/major_hwy.yml
+
+- name: base-major_road 
+  type: yaml 
+  path: nielsen-data/styles/base/major_road.yml
+
+- name: base-marine_terms 
+  type: yaml 
+  path: nielsen-data/styles/base/marine_terms.yml
+
+- name: base-mcd 
+  type: yaml 
+  path: nielsen-data/styles/base/mcd.yml
+
+- name: base-midsize_city 
+  type: yaml 
+  path: nielsen-data/styles/base/midsize_city.yml
+
+- name: base-mil_bases 
+  type: yaml 
+  path: nielsen-data/styles/base/mil_bases.yml
+
+- name: base-minor_city 
+  type: yaml 
+  path: nielsen-data/styles/base/minor_city.yml
+
+- name: base-ocean 
+  type: yaml 
+  path: nielsen-data/styles/base/ocean.yml
+
+- name: base-parks 
+  type: yaml 
+  path: nielsen-data/styles/base/parks.yml
+
+- name: base-pla 
+  type: yaml 
+  path: nielsen-data/styles/base/pla.yml
+
+- name: base-pois 
+  type: yaml 
+  path: nielsen-data/styles/base/pois.yml
+
+- name: base-railroad 
+  type: yaml 
+  path: nielsen-data/styles/base/railroad.yml
+
+- name: base-shop 
+  type: yaml 
+  path: nielsen-data/styles/base/shop.yml
+
+- name: base-shop_ctr 
+  type: yaml 
+  path: nielsen-data/styles/base/shop_ctr.yml
+
+- name: base-sta 
+  type: yaml 
+  path: nielsen-data/styles/base/sta.yml
+
+- name: base-stadiums 
+  type: yaml 
+  path: nielsen-data/styles/base/stadiums.yml
+
+- name: base-state_capital 
+  type: yaml 
+  path: nielsen-data/styles/base/state_capital.yml
+
+- name: base-state_hwy 
+  type: yaml 
+  path: nielsen-data/styles/base/state_hwy.yml
+
+- name: base-tdz 
+  type: yaml 
+  path: nielsen-data/styles/base/tdz.yml
+
+- name: base-traffic 
+  type: yaml 
+  path: nielsen-data/styles/base/traffic.yml
+
+- name: base-train_stations 
+  type: yaml 
+  path: nielsen-data/styles/base/train_stations.yml
+
+- name: base-trx 
+  type: yaml
+  path: nielsen-data/styles/base/trx.yml
+
+- name: base-us_hwy 
+  type: yaml
+  path: nielsen-data/styles/base/us_hwy.yml
+
+- name: base-usa
+  type: yaml
+  path: nielsen-data/styles/base/usa.yml
+
+- name: base-water
+  type: yaml
+  path: nielsen-data/styles/base/water.yml
+
+- name: base-worship_places
+  type: yaml
+  path: nielsen-data/styles/base/worship_places.yml
+
+- name: base-zip 
+  type: yaml
+  path: nielsen-data/styles/base/zip.yml
+
+- name: base-zp5
+  type: yaml 
+  path: nielsen-data/styles/base/zp5.yml
+
+- name: base-airport_point
+  type: yaml
+  path: nielsen-data/styles/base/airport_point.yml
+
+- name: base-parks_point
+  type: yaml
+  path: nielsen-data/styles/base/parks_point.yml
 
 
 
-# bing styles
+#### Bing imagery #####
 - name: bing-sta
   type: yaml
   path: nielsen-data/styles/bing/sta.yml
