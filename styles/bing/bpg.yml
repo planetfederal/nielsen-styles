@@ -9,7 +9,7 @@ feature-styles:
       line:
         stroke:
           width: 1
-          color: '#ffffff'
+          color: '#E7E79D'
 
 
   - zoom-levels:
@@ -30,7 +30,7 @@ feature-styles:
         stroke:
           width: .5
           opacity: .5
-          color: '#ffffff'
+          color: '#E7E79D'
 
 
 
@@ -41,7 +41,7 @@ feature-styles:
         halo:
           radius: 2
           opacity: .2
-          color: '#000000'
+          color: '#E7E79D'
         placement:
           point:
             x: .5

@@ -3,36 +3,12 @@ feature-styles:
 - rules:
 
   - zoom-levels:
-      max: 8
-    symbolizers:
-      line:
-        stroke:
-          width: 1
-          color: '#ffffff'
-
-
-  - zoom-levels:
-      max: 8
-    symbolizers:
-      line:
-        stroke:
-          width: 7
-          opacity: .2
-          color: '#000000'
-
-
-
-  - zoom-levels:
       max: 6
-      min: 8
     symbolizers:
       line:
         stroke:
           width: .5
-          opacity: .4
-          color: '#ffffff'
-
-
+          color: '#ff33ff'
 
   - zoom-levels:
       max: 8
@@ -40,8 +16,7 @@ feature-styles:
       text:
         halo:
           radius: 2
-          opacity: .2
-          color: '#000000'
+          color: '#ffffff'
         placement:
           displacment:
             x: 10
@@ -50,8 +25,9 @@ feature-styles:
             x: .7
             y: .2
         fill:
-          color: '#ffffff'
+          color: '#ff33ff'
         font:
+          size: 12
           weight: bold
           family: Droid Sans
         label:

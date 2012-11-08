@@ -1,0 +1,11 @@
+name: Style for cty
+feature-styles:
+- rules:
+
+  - zoom-levels:
+      max: 8
+    symbolizers:
+      line:
+        stroke:
+          width: 1
+          color: '#000000'

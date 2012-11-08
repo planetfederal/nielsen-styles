@@ -6,12 +6,15 @@ feature-styles:
       min: 8
     symbolizers:
       text:
+        halo:
+          radius: 2
+          color: '#ffffff'
         placement:
           point:
             x: 0.5
             y: 0.5
         fill:
-          color: '#ffffff'
+          color: '#ff33ff'
         font:
           size: 30
           family: Droid Sans
@@ -23,15 +26,5 @@ feature-styles:
   - symbolizers:
       line:
         stroke:
-          width: 4
-          opacity: .8
-          color: '#d4afbc'
-
-
-- rules:
-  - symbolizers:
-      line:
-        stroke:
-          width: 16
-          opacity: .2
-          color: '#000000'
+          width: 2
+          color: '#ff33ff'

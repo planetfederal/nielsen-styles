@@ -8,8 +8,8 @@ feature-styles:
       text:
         halo:
           radius: 2
-          opacity: .2
-          color: '#000000'
+          opacity: .4
+          color: '#B69DE7'
         fill:
           color: '#ffffff'
         font:
@@ -25,8 +25,8 @@ feature-styles:
       text:
         halo:
           radius: 4
-          opacity: .2
-          color: '#000000'
+          opacity: .4
+          color: '#B69DE7'
         fill:
           color: '#ffffff'
         font:
@@ -43,7 +43,7 @@ feature-styles:
       line:
         stroke:
           width: 2
-          color: '#ffffff'
+          color: '#B69DE7'
 
 
   - zoom-levels:
@@ -64,7 +64,7 @@ feature-styles:
       line:
         stroke:
           width: 1
-          color: '#ffffff'
+          color: '#B69DE7'
 
 
   - zoom-levels:
@@ -85,4 +85,4 @@ feature-styles:
         stroke:
           width: 1
           opacity: .2
-          color: '#ffffff'
+          color: '#B69DE7'

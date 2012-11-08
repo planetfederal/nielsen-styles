@@ -9,7 +9,7 @@ feature-styles:
       line:
         stroke:
           width: 1
-          color: '#ff33cc'
+          color: '#E7B69D'
 
 
   - zoom-levels:
@@ -23,14 +23,14 @@ feature-styles:
 
 
   - zoom-levels:
-      max: 8
+      max: 6
       min: 10
     symbolizers:
       line:
         stroke:
-          width: .5
+          width: 1
           opacity: .8
-          color: '#ff33cc'
+          color: '#E7B69D'
 
 
 
@@ -41,7 +41,7 @@ feature-styles:
       text:
         halo:
           radius: 2
-          color: '#ff33cc'
+          color: '#E7B69D'
           opacity: .4
 
         placement:

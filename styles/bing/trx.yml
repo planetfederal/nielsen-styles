@@ -9,7 +9,7 @@ feature-styles:
       line:
         stroke:
           width: 1
-          color: '#ffff33'
+          color: '#E7E79D'
 
 
   - zoom-levels:
@@ -30,7 +30,7 @@ feature-styles:
         stroke:
           width: .5
           opacity: .5
-          color: '#ffff33'
+          color: '#E7E79D'
 
 
 
@@ -39,15 +39,15 @@ feature-styles:
     symbolizers:
       halo:
         radius: 2
-        color: '#000000'
-        opacity: .2
+        color: '#E7E79D'
+        opacity: .4
       text:
         placement:
           point:
             x: .5
             y: .5
         fill:
-          color: '#ffff33'
+          color: '#ffffff'
         font:
           family: Droid Sans
         label:

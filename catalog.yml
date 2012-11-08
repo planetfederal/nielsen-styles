@@ -5,12 +5,56 @@ workspace: nielsen
 
 maps:
 
+
+  - name: bing-road
+    bgcolor: '#ffffff'
+    bbox: [-79.40551229971192,37.654112521799384,-75.12908407705577,39.760699547115514]
+    layers:
+
+      ### census layers ###
+
+      - table: bgp_clip
+        style: bing-road-bgp
+
+      - table: bgp_point_clip
+        style: bing-road-bgp-label
+
+      - table: trx_clip
+        style: bing-road-trx
+
+      - table: trx_point_clip
+        style: bing-road-trx-label
+    
+      ### nielsen geography layers ###
+
+      - table: mcd_clip
+        style: bing-road-mcd
+
+
+      ### zip code ###
+
+      - table: zp5_clip
+        style: bing-road-zp5
+
+      - table: zp5_label
+        style: bing-road-zp5-label
+
+      ### county ###
+
+      - table: cty_clip
+        style: bing-road-cty
+
+      - table: cty_point_clip
+        style: bing-road-cty-label
+        
+      - table: sta_clip
+        style: bing-road-sta
+        
+
+
   - name: bing
     bgcolor: '#ffffff'
-    bbox: [-77.0446684345398,
-           38.888434551209734,
-           -77.01125883905014,
-           38.903381273636896]
+    bbox: [-79.40551229971192,37.654112521799384,-75.12908407705577,39.760699547115514]
     layers:
 
 
@@ -18,9 +62,6 @@ maps:
 
       # - table: zp5_clip
       #   style: bing-zp5
-
-      # - table: bgp_clip
-      #   style: bing-bpg
 
       # - table: cbs_clip
       #   style: bing-cbs
@@ -44,8 +85,11 @@ maps:
       #   style: bing-csa
 
 
-      - table: parks_clip
-        style: bing-parks
+      # - table: parks_clip
+      #   style: bing-parks
+
+      # - table: dma_clip
+      #   style: bing-dma
 
       - table: sta_clip
         style: bing-sta
@@ -54,7 +98,7 @@ maps:
       - table: railroad_clip
         style: dark-railroad
 
-      # # icon layers
+      ## icon layers
       - table: airport_point_clip
         style: bing-airport_point
 
@@ -85,6 +129,15 @@ maps:
       - table: govt_centers_clip
         style: bing-govt_centers
 
+        ### cities
+      # - table: major_city_clip
+      #   style: bing-major_city
+
+      # - table: midsize_city_clip
+      #   style: bing-midsize_city
+
+      # - table: minor_city_clip
+      #   style: bing-minor_city
 
   - name: icons
     bgcolor: '#ffffff'
@@ -404,11 +457,98 @@ styles:
   type: yaml
   path: nielsen-data/styles/bing/csa.yml
 
+- name: bing-dma
+  type: yaml
+  path: nielsen-data/styles/bing/dma.yml
+
+
+- name: bing-major_city
+  type: yaml
+  path: nielsen-data/styles/bing/major_city.yml
+
+
+- name: bing-midsize_city
+  type: yaml
+  path: nielsen-data/styles/bing/midsize_city.yml
+
+- name: bing-minor_city
+  type: yaml
+  path: nielsen-data/styles/bing/minor_city.yml
+
+#######################
+### bing road maps ####
+#######################
+
+- name: bing-road-cty
+  type: yaml
+  path: nielsen-data/styles/bing-road/cty.yml
+
+
+- name: bing-road-sta
+  type: yaml
+  path: nielsen-data/styles/bing-road/sta.yml
+
+
+- name: bing-road-bgp
+  type: yaml
+  path: nielsen-data/styles/bing-road/bgp.yml
+
+
+- name: bing-road-trx
+  type: yaml
+  path: nielsen-data/styles/bing-road/trx.yml
+
+
+- name: bing-road-cty-label
+  type: yaml
+  path: nielsen-data/styles/bing-road/cty_point.yml
+
+
+- name: bing-road-trx-label
+  type: yaml
+  path: nielsen-data/styles/bing-road/trx_label.yml
+
+
+- name: bing-road-bgp-label
+  type: yaml
+  path: nielsen-data/styles/bing-road/bgp_label.yml
+
+
+- name: bing-road-zp5
+  type: yaml
+  path: nielsen-data/styles/bing-road/zp5.yml
+
+
+- name: bing-road-mcd
+  type: yaml
+  path: nielsen-data/styles/bing-road/mcd.yml
+
+
+- name: bing-road-zp5-label
+  type: yaml
+  path: nielsen-data/styles/bing-road/zp5-label.yml
+
 
 
 tables:
 
 - name: airport_clip
+  datastore: nielsen
+
+
+- name: cty_point_clip
+  datastore: nielsen
+
+
+- name: trx_point_clip
+  datastore: nielsen
+
+
+- name: zp5_label
+  datastore: nielsen
+
+
+- name: bgp_point_clip
   datastore: nielsen
 
 

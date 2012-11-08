@@ -1,6 +1,5 @@
-name: Style for cbs
+name: Style for dma
 feature-styles:
-
 - rules:
 
   - zoom-levels:
@@ -9,7 +8,7 @@ feature-styles:
       line:
         stroke:
           width: 1
-          color: '#E7B69D'
+          color: '#B69DE7'
 
 
   - zoom-levels:
@@ -30,9 +29,8 @@ feature-styles:
         stroke:
           width: .5
           opacity: .5
-          color: '#E7B69D'
+          color: '#B69DE7'
 
-# labels
 
   - zoom-levels:
       max: 6
@@ -41,7 +39,7 @@ feature-styles:
         halo:
           radius: 2
           opacity: .4
-          color: '#E7B69D'
+          color: '#B69DE7'
         placement:
           point:
             x: .5

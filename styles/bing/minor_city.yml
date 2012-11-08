@@ -1,0 +1,36 @@
+name: Style for minor_city
+feature-styles:
+
+- rules:
+  - zoom-levels:
+      max: 10
+      min: 16
+    symbolizers:
+      text:
+        placement:
+          displacment:
+            x: 0
+            y: 5
+          point:
+            x: .5
+            y: 0
+        halo:
+          radius: 1
+          opacity: .4
+          color: '#000000'
+        fill:
+          color: '#ffffff'
+        font:
+          family: Droid Sans
+        label:
+          property: label
+      graphic:
+        size: 4
+        symbols:
+          - mark:
+              name: circle
+              stroke:
+                opacity: 0
+              fill:
+                color: '#ffffff'
+
