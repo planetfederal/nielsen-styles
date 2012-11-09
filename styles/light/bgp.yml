@@ -1,0 +1,27 @@
+name: Style for block groups
+feature-styles:
+- rules:
+
+  - zoom-levels:
+      max: 10
+      min: 12
+    symbolizers:
+      line:
+        stroke:
+          width: .5
+          opacity: .4
+          color: '#ffffff'
+
+
+  - zoom-levels:
+      max: 12
+      min: 20
+    symbolizers:
+      line:
+        stroke:
+          width: 1
+          opacity: .6
+          color: '#ffffff'
+
+
+

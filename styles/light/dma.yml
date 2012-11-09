@@ -1,0 +1,51 @@
+name: Style for dma
+feature-styles:
+- rules:
+
+  - zoom-levels:
+      min: 6
+    symbolizers:
+      line:
+        stroke:
+          width: .5
+          opacity: .4
+          color: '#ffffff0'
+
+  - zoom-levels:
+      max: 6
+      min: 8
+    symbolizers:
+      line:
+        stroke:
+          width: 1
+          opacity: .6
+          color: '#ffffff0'
+
+  - zoom-levels:
+      max: 6
+      min: 8
+    symbolizers:
+      line:
+        stroke:
+          width: 6
+          opacity: .1
+          color: '#ffffff0'
+
+  - zoom-levels:
+      max: 8
+      min: 20
+    symbolizers:
+      line:
+        stroke:
+          width: 2
+          color: '#ffffff0'
+
+  - zoom-levels:
+      max: 8
+      min: 20
+    symbolizers:
+      line:
+        stroke:
+          width: 8
+          opacity: .1
+          color: '#ffffff0'
