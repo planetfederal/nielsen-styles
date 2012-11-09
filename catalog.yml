@@ -13,11 +13,11 @@ maps:
 
       ### census layers ###
 
-      # - table: bgp_clip
-      #   style: bing-road-bgp
+      - table: bgp_clip
+        style: bing-road-bgp
 
-      # - table: bgp_point_clip
-      #   style: bing-road-bgp-label
+      - table: bgp_point_clip
+        style: bing-road-bgp-label
 
       # - table: trx_clip
       #   style: bing-road-trx
@@ -51,29 +51,31 @@ maps:
 
       ### zip code ###
 
-      # - table: zp5_clip
-      #   style: bing-road-zp5
+      - table: zp5_clip
+        style: bing-road-zp5
 
-      # - table: zp5_label
-      #   style: bing-road-zp5-label
+      - table: zp5_label
+        style: bing-road-zp5-label
 
       ### county ###
 
-      # - table: cty_clip
-      #   style: bing-road-cty
+      - table: cty_clip
+        style: bing-road-cty
 
-      # - table: cty_point_clip
-      #   style: bing-road-cty-label
+      - table: cty_point_clip
+        style: bing-road-cty-label
 
-      - table: dma_clip
-        style: bing-road-dma
+      ###############################
+      ### nielsen designated area ###
+      ###############################
+      # - table: dma_clip
+      #   style: bing-road-dma
 
+      # - table: dma_label
+      #   style: bing-road-dma-label
 
-      - table: dma_label
-        style: bing-road-dma-label
-
-      # - table: sta_clip
-      #   style: bing-road-sta
+      - table: sta_clip
+        style: bing-road-sta
         
 
 
@@ -706,6 +708,97 @@ styles:
 - name: bing-road-pla-label
   type: yaml
   path: nielsen-data/styles/bing-road/pla-label.yml
+
+######################
+### bing road dark ###
+######################
+
+
+# - name: bing-dark-cty
+#   type: yaml
+#   path: nielsen-data/styles/dark/cty.yml
+
+
+# - name: bing-dark-sta
+#   type: yaml
+#   path: nielsen-data/styles/dark/sta.yml
+
+
+# - name: bing-dark-bgp
+#   type: yaml
+#   path: nielsen-data/styles/dark/bgp.yml
+
+
+# - name: bing-dark-trx
+#   type: yaml
+#   path: nielsen-data/styles/dark/trx.yml
+
+
+# - name: bing-dark-cty-label
+#   type: yaml
+#   path: nielsen-data/styles/dark/cty_point.yml
+
+
+# - name: bing-dark-trx-label
+#   type: yaml
+#   path: nielsen-data/styles/dark/trx_label.yml
+
+
+# - name: bing-dark-bgp-label
+#   type: yaml
+#   path: nielsen-data/styles/dark/bgp_label.yml
+
+
+# - name: bing-dark-zp5
+#   type: yaml
+#   path: nielsen-data/styles/dark/zp5.yml
+
+
+# - name: bing-dark-pla
+#   type: yaml
+#   path: nielsen-data/styles/dark/pla.yml
+
+
+# - name: bing-dark-mcd
+#   type: yaml
+#   path: nielsen-data/styles/dark/mcd.yml
+
+
+# - name: bing-dark-zp5-label
+#   type: yaml
+#   path: nielsen-data/styles/dark/zp5-label.yml
+
+
+# - name: bing-dark-mcd-label
+#   type: yaml
+#   path: nielsen-data/styles/dark/mcd-label.yml
+
+
+# - name: bing-dark-csa
+#   type: yaml
+#   path: nielsen-data/styles/dark/csa.yml
+
+
+# - name: bing-dark-csa-label
+#   type: yaml
+#   path: nielsen-data/styles/dark/csa-label.yml
+
+
+# - name: bing-dark-dma
+#   type: yaml
+#   path: nielsen-data/styles/dark/dma.yml
+
+
+# - name: bing-dark-dma-label
+#   type: yaml
+#   path: nielsen-data/styles/dark/dma-label.yml
+
+
+# - name: bing-dark-pla-label
+#   type: yaml
+#   path: nielsen-data/styles/dark/pla-label.yml
+
+
 
 
 tables:
