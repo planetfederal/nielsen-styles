@@ -1,4 +1,4 @@
-name: Style for the county layer
+name: Style for dma
 feature-styles:
 - rules:
 
@@ -9,7 +9,7 @@ feature-styles:
         stroke:
           width: .5
           opacity: .4
-          color: '#043f4c'
+          color: '#000000'
 
   - zoom-levels:
       max: 6
@@ -19,7 +19,7 @@ feature-styles:
         stroke:
           width: 1
           opacity: .6
-          color: '#043f4c'
+          color: '#000000'
 
   - zoom-levels:
       max: 6
@@ -29,7 +29,7 @@ feature-styles:
         stroke:
           width: 6
           opacity: .1
-          color: '#043f4c'
+          color: '#000000'
 
 
   - zoom-levels:
@@ -39,7 +39,7 @@ feature-styles:
       line:
         stroke:
           width: 2
-          color: '#043f4c'
+          color: '#000000'
 
 
   - zoom-levels:
@@ -50,4 +50,4 @@ feature-styles:
         stroke:
           width: 8
           opacity: .1
-          color: '#043f4c'
+          color: '#000000'

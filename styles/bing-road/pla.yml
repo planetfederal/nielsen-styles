@@ -1,53 +1,52 @@
-name: Style for the county layer
+name: Style for zp5
 feature-styles:
 - rules:
 
   - zoom-levels:
-      min: 6
+      max: 6
+      min: 10
     symbolizers:
       line:
         stroke:
           width: .5
-          opacity: .4
-          color: '#043f4c'
+          opacity: .6
+          color: '#000000'
 
   - zoom-levels:
-      max: 6
-      min: 8
+      max: 10
+      min: 12
     symbolizers:
       line:
         stroke:
           width: 1
           opacity: .6
-          color: '#043f4c'
+          color: '#000000'
 
   - zoom-levels:
-      max: 6
-      min: 8
+      max: 10
+      min: 12
     symbolizers:
       line:
         stroke:
           width: 6
           opacity: .1
-          color: '#043f4c'
-
+          color: '#000000'
 
   - zoom-levels:
-      max: 8
+      max: 12
       min: 16
     symbolizers:
       line:
         stroke:
           width: 2
-          color: '#043f4c'
-
+          color: '#000000'
 
   - zoom-levels:
-      max: 8
+      max: 12
       min: 16
     symbolizers:
       line:
         stroke:
-          width: 8
+          width: 6
           opacity: .1
-          color: '#043f4c'
+          color: '#000000'

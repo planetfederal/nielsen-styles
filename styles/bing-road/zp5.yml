@@ -1,5 +1,4 @@
 name: Style for zp5
-
 feature-styles:
 - rules:
 
@@ -23,7 +22,6 @@ feature-styles:
           opacity: .6
           color: '#4c0f27'
 
-
   - zoom-levels:
       max: 10
       min: 12
@@ -34,7 +32,6 @@ feature-styles:
           opacity: .1
           color: '#4c0f27'
 
-
   - zoom-levels:
       max: 12
       min: 16
@@ -43,7 +40,6 @@ feature-styles:
         stroke:
           width: 2
           color: '#4c0f27'
-
 
   - zoom-levels:
       max: 12

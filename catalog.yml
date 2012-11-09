@@ -13,42 +13,67 @@ maps:
 
       ### census layers ###
 
-      - table: bgp_clip
-        style: bing-road-bgp
+      # - table: bgp_clip
+      #   style: bing-road-bgp
 
-      - table: bgp_point_clip
-        style: bing-road-bgp-label
+      # - table: bgp_point_clip
+      #   style: bing-road-bgp-label
 
-      - table: trx_clip
-        style: bing-road-trx
+      # - table: trx_clip
+      #   style: bing-road-trx
 
-      - table: trx_point_clip
-        style: bing-road-trx-label
+      # - table: trx_point_clip
+      #   style: bing-road-trx-label
     
+      # census place
+      - table: pla_clip
+        style: bing-road-pla
+
+      - table: pla_label
+        style: bing-road-pla-label
+
+
       ### nielsen geography layers ###
 
-      - table: mcd_clip
-        style: bing-road-mcd
+      # - table: mcd_clip
+      #   style: bing-road-mcd
+
+      # - table: mcd_label
+      #   style: bing-road-mcd-label
+
+      ## Combined Statical Area ###
+      # - table: csa_clip
+      #   style: bing-road-csa
+
+      # - table: csa_label
+      #   style: bing-road-csa-label
 
 
       ### zip code ###
 
-      - table: zp5_clip
-        style: bing-road-zp5
+      # - table: zp5_clip
+      #   style: bing-road-zp5
 
-      - table: zp5_label
-        style: bing-road-zp5-label
+      # - table: zp5_label
+      #   style: bing-road-zp5-label
 
       ### county ###
 
-      - table: cty_clip
-        style: bing-road-cty
+      # - table: cty_clip
+      #   style: bing-road-cty
 
-      - table: cty_point_clip
-        style: bing-road-cty-label
-        
-      - table: sta_clip
-        style: bing-road-sta
+      # - table: cty_point_clip
+      #   style: bing-road-cty-label
+
+      - table: dma_clip
+        style: bing-road-dma
+
+
+      - table: dma_label
+        style: bing-road-dma-label
+
+      # - table: sta_clip
+      #   style: bing-road-sta
         
 
 
@@ -58,38 +83,8 @@ maps:
     layers:
 
 
-      # geography layers
-
-      # - table: zp5_clip
-      #   style: bing-zp5
-
-      # - table: cbs_clip
-      #   style: bing-cbs
-
-      # - table: mcd_clip
-      #   style: bing-mcd
-
-      # - table: pla_clip
-      #   style: bing-pla
-
-      # - table: trx_clip
-      #   style: bing-trx
-
-      # - table: water_clip
-      #   style: base-water
-
       - table: cty_clip
         style: bing-cty
-
-      # - table: csa_clip
-      #   style: bing-csa
-
-
-      # - table: parks_clip
-      #   style: bing-parks
-
-      # - table: dma_clip
-      #   style: bing-dma
 
       - table: sta_clip
         style: bing-sta
@@ -129,15 +124,6 @@ maps:
       - table: govt_centers_clip
         style: bing-govt_centers
 
-        ### cities
-      # - table: major_city_clip
-      #   style: bing-major_city
-
-      # - table: midsize_city_clip
-      #   style: bing-midsize_city
-
-      # - table: minor_city_clip
-      #   style: bing-minor_city
 
   - name: icons
     bgcolor: '#ffffff'
@@ -303,7 +289,10 @@ datastores:
 
 styles:
 
-### Base map for Nielsen, includes full ###
+#############################################################
+### Base map for Nielsen, includes a style for each style ###
+#############################################################
+
 - name: base-airport
   type: yaml
   path: nielsen-data/styles/base/airport.yml
@@ -521,8 +510,10 @@ styles:
   path: nielsen-data/styles/base/parks_point.yml
 
 
-
+#######################
 #### Bing imagery #####
+#######################
+
 - name: bing-sta
   type: yaml
   path: nielsen-data/styles/bing/sta.yml
@@ -672,6 +663,11 @@ styles:
   path: nielsen-data/styles/bing-road/zp5.yml
 
 
+- name: bing-road-pla
+  type: yaml
+  path: nielsen-data/styles/bing-road/pla.yml
+
+
 - name: bing-road-mcd
   type: yaml
   path: nielsen-data/styles/bing-road/mcd.yml
@@ -681,6 +677,35 @@ styles:
   type: yaml
   path: nielsen-data/styles/bing-road/zp5-label.yml
 
+
+- name: bing-road-mcd-label
+  type: yaml
+  path: nielsen-data/styles/bing-road/mcd-label.yml
+
+
+- name: bing-road-csa
+  type: yaml
+  path: nielsen-data/styles/bing-road/csa.yml
+
+
+- name: bing-road-csa-label
+  type: yaml
+  path: nielsen-data/styles/bing-road/csa-label.yml
+
+
+- name: bing-road-dma
+  type: yaml
+  path: nielsen-data/styles/bing-road/dma.yml
+
+
+- name: bing-road-dma-label
+  type: yaml
+  path: nielsen-data/styles/bing-road/dma-label.yml
+
+
+- name: bing-road-pla-label
+  type: yaml
+  path: nielsen-data/styles/bing-road/pla-label.yml
 
 
 tables:
@@ -698,6 +723,20 @@ tables:
 
 
 - name: zp5_label
+  datastore: nielsen
+
+- name: mcd_label
+  datastore: nielsen
+
+- name: pla_label
+  datastore: nielsen
+
+
+- name: csa_label
+  datastore: nielsen
+
+
+- name: dma_label
   datastore: nielsen
 
 

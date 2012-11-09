@@ -1,7 +1,6 @@
-name: Style for trx
+name: Style for block groups
 feature-styles:
 - rules:
-
 
   - zoom-levels:
       max: 10
