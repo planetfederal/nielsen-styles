@@ -46,7 +46,7 @@ feature-styles:
 
   - zoom-levels:
       max: 8
-      min: 14
+      min: 20
     symbolizers:
       line:
         stroke:
@@ -57,7 +57,7 @@ feature-styles:
 
   - zoom-levels:
       max: 8
-      min: 14
+      min: 20
     symbolizers:
       line:
         stroke:

@@ -31,20 +31,18 @@ feature-styles:
           opacity: .1
           color: '#000000'
 
-
   - zoom-levels:
       max: 8
-      min: 16
+      min: 20
     symbolizers:
       line:
         stroke:
           width: 2
           color: '#000000'
 
-
   - zoom-levels:
       max: 8
-      min: 16
+      min: 20
     symbolizers:
       line:
         stroke:
