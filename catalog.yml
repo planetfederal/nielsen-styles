@@ -13,19 +13,18 @@ maps:
 
       ### census layers ###
 
-      - table: bgp_clip
-        style: bing-road-bgp
+      # - table: bgp_clip
+      #   style: bing-road-bgp
 
-      - table: bgp_point_clip
-        style: bing-road-bgp-label
+      # - table: bgp_point_clip
+      #   style: bing-road-bgp-label
 
       # - table: trx_clip
       #   style: bing-road-trx
 
       # - table: trx_point_clip
       #   style: bing-road-trx-label
-    
-      # census place
+
       - table: pla_clip
         style: bing-road-pla
 
@@ -35,96 +34,230 @@ maps:
 
       ### nielsen geography layers ###
 
+      - table: mcd_clip
+        style: bing-road-mcd
+
+      - table: mcd_label
+        style: bing-road-mcd-label
+
+      ## Combined Statical Area ###
+      - table: csa_clip
+        style: bing-road-csa
+
+      - table: csa_label
+        style: bing-road-csa-label
+
+
+      ###############################
+      ### nielsen designated area ###
+      ###############################
+      - table: dma_clip
+        style: bing-road-dma
+
+      - table: dma_label
+        style: bing-road-dma-label
+
+
+
+      ### zip code ###
+
+      # - table: zp5_clip
+      #   style: bing-road-zp5
+
+      # - table: zp5_label
+      #   style: bing-road-zp5-label
+
+      # ### county ###
+
+      # - table: cty_clip
+      #   style: bing-road-cty
+
+      # - table: cty_point_clip
+      #   style: bing-road-cty-label
+
+
+      - table: sta_clip
+        style: bing-road-sta
+
+
+      # - table: airport_point_clip
+      #   style: base-airport_point
+
+      # - table: parks_point_clip
+      #   style: base-parks_point
+
+      # - table: marine_terms_clip
+      #   style: base-marine_terms
+
+      # - table: cemeterys_clip
+      #   style: base-cemeterys
+
+      # - table: bus_terms_clip
+      #   style: base-bus_terms
+
+      # - table: shop_clip
+      #   style: base-shop
+
+      # - table: educ_inst_clip
+      #   style: base-educ_inst
+
+      # - table: hospitals_clip
+      #   style: base-hospitals
+
+      # - table: train_stations_clip
+      #   style: base-train_stations
+
+      # - table: govt_centers_clip
+      #   style: base-govt_centers
+
+        
+  - name: bing-dark-road
+    bgcolor: '#ffffff'
+    bbox: [-79.40551229971192,37.654112521799384,-75.12908407705577,39.760699547115514]
+    layers:
+
+      ### census layers ###
+
+      - table: bgp_clip
+        style: bing-dark-bgp
+
+      - table: bgp_point_clip
+        style: bing-dark-bgp-label
+
+      # - table: trx_clip
+      #   style: bing-dark-trx
+
+      # - table: trx_point_clip
+      #   style: bing-dark-trx-label
+    
+      # census place
+      - table: pla_clip
+        style: bing-dark-pla
+
+      - table: pla_label
+        style: bing-dark-pla-label
+
+
+      ### nielsen geography layers ###
+
       # - table: mcd_clip
-      #   style: bing-road-mcd
+      #   style: bing-dark-mcd
 
       # - table: mcd_label
-      #   style: bing-road-mcd-label
+      #   style: bing-dark-mcd-label
 
       ## Combined Statical Area ###
       # - table: csa_clip
-      #   style: bing-road-csa
+      #   style: bing-dark-csa
 
       # - table: csa_label
-      #   style: bing-road-csa-label
+      #   style: bing-dark-road-csa-label
 
 
       ### zip code ###
 
       - table: zp5_clip
-        style: bing-road-zp5
+        style: bing-dark-zp5
 
       - table: zp5_label
-        style: bing-road-zp5-label
+        style: bing-dark-zp5-label
 
       ### county ###
 
       - table: cty_clip
-        style: bing-road-cty
+        style: bing-dark-cty
 
       - table: cty_point_clip
-        style: bing-road-cty-label
+        style: bing-dark-cty-label
+
+      ###############################
+      ### nielsen designated area ###
+      ###############################
+
+      - table: dma_clip
+        style: bing-dark-road-dma
+
+      - table: dma_label
+        style: bing-dark-road-dma-label
+
+      - table: sta_clip
+        style: bing-dark-sta
+
+
+
+  - name: bing-light-road
+    bgcolor: '#ffffff'
+    bbox: [-79.40551229971192,37.654112521799384,-75.12908407705577,39.760699547115514]
+    layers:
+
+      ### census layers ###
+
+      - table: bgp_clip
+        style: bing-light-bgp
+
+      - table: bgp_point_clip
+        style: bing-light-bgp-label
+
+      # - table: trx_clip
+      #   style: bing-light-trx
+
+      # - table: trx_point_clip
+      #   style: bing-light-trx-label
+    
+      # census place
+      - table: pla_clip
+        style: bing-light-pla
+
+      - table: pla_label
+        style: bing-light-pla-label
+
+
+      ### nielsen geography layers ###
+
+      # - table: mcd_clip
+      #   style: bing-light-mcd
+
+      # - table: mcd_label
+      #   style: bing-light-mcd-label
+
+      ## Combined Statical Area ###
+      # - table: csa_clip
+      #   style: bing-light-csa
+
+      # - table: csa_label
+      #   style: bing-light-road-csa-label
+
+
+      ### zip code ###
+
+      - table: zp5_clip
+        style: bing-light-zp5
+
+      - table: zp5_label
+        style: bing-light-zp5-label
+
+      ### county ###
+
+      - table: cty_clip
+        style: bing-light-cty
+
+      - table: cty_point_clip
+        style: bing-light-cty-label
 
       ###############################
       ### nielsen designated area ###
       ###############################
       # - table: dma_clip
-      #   style: bing-road-dma
+      #   style: bing-light-road-dma
 
       # - table: dma_label
-      #   style: bing-road-dma-label
+      #   style: bing-light-road-dma-label
 
       - table: sta_clip
-        style: bing-road-sta
-        
+        style: bing-light-sta
 
 
-  - name: bing
-    bgcolor: '#ffffff'
-    bbox: [-79.40551229971192,37.654112521799384,-75.12908407705577,39.760699547115514]
-    layers:
 
-
-      - table: cty_clip
-        style: bing-cty
-
-      - table: sta_clip
-        style: bing-sta
-
-
-      - table: railroad_clip
-        style: base-railroad
-
-      ## icon layers
-      - table: airport_point_clip
-        style: bing-airport_point
-
-      - table: parks_point_clip
-        style: base-parks_point
-
-      - table: marine_terms_clip
-        style: base-marine_terms
-
-      - table: cemeterys_clip
-        style: base-cemeterys
-
-      - table: bus_terms_clip
-        style: base-bus_terms
-
-      - table: shop_clip
-        style: bing-shop
-
-      - table: educ_inst_clip
-        style: bing-educ_inst
-
-      - table: hospitals_clip
-        style: bing-hospitals
-
-      - table: train_stations_clip
-        style: bing-train_stations
-
-      - table: govt_centers_clip
-        style: bing-govt_centers
 
 
   - name: icons
@@ -569,8 +702,6 @@ styles:
   type: yaml
   path: nielsen-data/styles/bing/cbs.yml
 
-
-
 - name: bing-sta
   type: yaml
   path: nielsen-data/styles/bing/sta.yml
@@ -714,89 +845,179 @@ styles:
 ######################
 
 
-# - name: bing-dark-cty
-#   type: yaml
-#   path: nielsen-data/styles/dark/cty.yml
+- name: bing-dark-cty
+  type: yaml
+  path: nielsen-data/styles/dark/cty.yml
 
 
-# - name: bing-dark-sta
-#   type: yaml
-#   path: nielsen-data/styles/dark/sta.yml
+- name: bing-dark-sta
+  type: yaml
+  path: nielsen-data/styles/dark/sta.yml
 
 
-# - name: bing-dark-bgp
-#   type: yaml
-#   path: nielsen-data/styles/dark/bgp.yml
+- name: bing-dark-bgp
+  type: yaml
+  path: nielsen-data/styles/dark/bgp.yml
 
 
-# - name: bing-dark-trx
-#   type: yaml
-#   path: nielsen-data/styles/dark/trx.yml
+- name: bing-dark-trx
+  type: yaml
+  path: nielsen-data/styles/dark/trx.yml
 
 
-# - name: bing-dark-cty-label
-#   type: yaml
-#   path: nielsen-data/styles/dark/cty_point.yml
+- name: bing-dark-cty-label
+  type: yaml
+  path: nielsen-data/styles/dark/cty-label.yml
 
 
-# - name: bing-dark-trx-label
-#   type: yaml
-#   path: nielsen-data/styles/dark/trx_label.yml
+- name: bing-dark-trx-label
+  type: yaml
+  path: nielsen-data/styles/dark/trx-label.yml
 
 
-# - name: bing-dark-bgp-label
-#   type: yaml
-#   path: nielsen-data/styles/dark/bgp_label.yml
+- name: bing-dark-bgp-label
+  type: yaml
+  path: nielsen-data/styles/dark/bgp-label.yml
 
 
-# - name: bing-dark-zp5
-#   type: yaml
-#   path: nielsen-data/styles/dark/zp5.yml
+- name: bing-dark-zp5
+  type: yaml
+  path: nielsen-data/styles/dark/zp5.yml
 
 
-# - name: bing-dark-pla
-#   type: yaml
-#   path: nielsen-data/styles/dark/pla.yml
+- name: bing-dark-pla
+  type: yaml
+  path: nielsen-data/styles/dark/pla.yml
 
 
-# - name: bing-dark-mcd
-#   type: yaml
-#   path: nielsen-data/styles/dark/mcd.yml
+- name: bing-dark-mcd
+  type: yaml
+  path: nielsen-data/styles/dark/mcd.yml
 
 
-# - name: bing-dark-zp5-label
-#   type: yaml
-#   path: nielsen-data/styles/dark/zp5-label.yml
+- name: bing-dark-zp5-label
+  type: yaml
+  path: nielsen-data/styles/dark/zp5-label.yml
 
 
-# - name: bing-dark-mcd-label
-#   type: yaml
-#   path: nielsen-data/styles/dark/mcd-label.yml
+- name: bing-dark-mcd-label
+  type: yaml
+  path: nielsen-data/styles/dark/mcd-label.yml
 
 
-# - name: bing-dark-csa
-#   type: yaml
-#   path: nielsen-data/styles/dark/csa.yml
+- name: bing-dark-csa
+  type: yaml
+  path: nielsen-data/styles/dark/csa.yml
 
 
-# - name: bing-dark-csa-label
-#   type: yaml
-#   path: nielsen-data/styles/dark/csa-label.yml
+- name: bing-dark-csa-label
+  type: yaml
+  path: nielsen-data/styles/dark/csa-label.yml
 
 
-# - name: bing-dark-dma
-#   type: yaml
-#   path: nielsen-data/styles/dark/dma.yml
+- name: bing-dark-dma
+  type: yaml
+  path: nielsen-data/styles/dark/dma.yml
 
 
-# - name: bing-dark-dma-label
-#   type: yaml
-#   path: nielsen-data/styles/dark/dma-label.yml
+- name: bing-dark-dma-label
+  type: yaml
+  path: nielsen-data/styles/dark/dma-label.yml
 
 
-# - name: bing-dark-pla-label
-#   type: yaml
-#   path: nielsen-data/styles/dark/pla-label.yml
+- name: bing-dark-pla-label
+  type: yaml
+  path: nielsen-data/styles/dark/pla-label.yml
+
+
+#######################
+### bing road light ###
+#######################
+
+
+- name: bing-light-cty
+  type: yaml
+  path: nielsen-data/styles/light/cty.yml
+
+
+- name: bing-light-sta
+  type: yaml
+  path: nielsen-data/styles/light/sta.yml
+
+
+- name: bing-light-bgp
+  type: yaml
+  path: nielsen-data/styles/light/bgp.yml
+
+
+- name: bing-light-trx
+  type: yaml
+  path: nielsen-data/styles/light/trx.yml
+
+
+- name: bing-light-cty-label
+  type: yaml
+  path: nielsen-data/styles/light/cty-label.yml
+
+
+- name: bing-light-trx-label
+  type: yaml
+  path: nielsen-data/styles/light/trx-label.yml
+
+
+- name: bing-light-bgp-label
+  type: yaml
+  path: nielsen-data/styles/light/bgp-label.yml
+
+
+- name: bing-light-zp5
+  type: yaml
+  path: nielsen-data/styles/light/zp5.yml
+
+
+- name: bing-light-pla
+  type: yaml
+  path: nielsen-data/styles/light/pla.yml
+
+
+- name: bing-light-mcd
+  type: yaml
+  path: nielsen-data/styles/light/mcd.yml
+
+
+- name: bing-light-zp5-label
+  type: yaml
+  path: nielsen-data/styles/light/zp5-label.yml
+
+
+- name: bing-light-mcd-label
+  type: yaml
+  path: nielsen-data/styles/light/mcd-label.yml
+
+
+- name: bing-light-csa
+  type: yaml
+  path: nielsen-data/styles/light/csa.yml
+
+
+- name: bing-light-csa-label
+  type: yaml
+  path: nielsen-data/styles/light/csa-label.yml
+
+
+- name: bing-light-dma
+  type: yaml
+  path: nielsen-data/styles/light/dma.yml
+
+
+- name: bing-light-dma-label
+  type: yaml
+  path: nielsen-data/styles/light/dma-label.yml
+
+
+- name: bing-light-pla-label
+  type: yaml
+  path: nielsen-data/styles/light/pla-label.yml
 
 
 

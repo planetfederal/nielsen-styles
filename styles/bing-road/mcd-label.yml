@@ -11,7 +11,7 @@ feature-styles:
           radius: 1
           color: '#ffffff'
         fill:
-          color: '#7f0606'
+          color: '#bf4c26'
         placement:
           point:
             x: .5
@@ -33,7 +33,7 @@ feature-styles:
           opacity: .6
           color: '#ffffff'
         fill:
-          color: '#7f0606'
+          color: '#bf4c26'
         placement:
           point:
             x: .5

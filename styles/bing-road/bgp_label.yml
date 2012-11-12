@@ -12,7 +12,8 @@ feature-styles:
           opacity: .6
           color: '#ffffff'
         fill:
-          color: '#ff6633'
+          color: '#4c0f27'
+          #color: '#ff6633'
         placement:
           point:
             x: .5
@@ -34,7 +35,8 @@ feature-styles:
           opacity: .6
           color: '#ffffff'
         fill:
-          color: '#ff6633'
+          color: '#4c0f27'
+#          color: '#ff6633'
         placement:
           point:
             x: .5

@@ -1,3 +1,4 @@
+# #bf4c26
 name: Labels for csa labels
 feature-styles:
 - rules:
@@ -12,7 +13,7 @@ feature-styles:
           opacity: .6
           color: '#ffffff'
         fill:
-          color: '#043f4c'
+          color: '#bf4c26'
         placement:
           point:
             x: .5
@@ -35,7 +36,7 @@ feature-styles:
           opacity: .6
           color: '#ffffff'
         fill:
-          color: '#043f4c'
+          color: '#bf4c26'
         placement:
           point:
             x: .5
