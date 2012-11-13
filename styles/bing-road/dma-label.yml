@@ -13,7 +13,6 @@ feature-styles:
           color: '#ffffff'
         fill:
           color: '#bf4c26'
-          #color: '#000000'
         placement:
           point:
             x: .5
@@ -37,7 +36,6 @@ feature-styles:
           color: '#ffffff'
         fill:
           color: '#bf4c26'
-          #color: '#000000'
         placement:
           point:
             x: .5
