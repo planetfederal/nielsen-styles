@@ -34,8 +34,8 @@ maps:
 
       # ### nielsen geography layers ###
 
-      - table: mcd_clip
-        style: bing-road-mcd
+      # - table: mcd_clip
+      #   style: bing-road-mcd
 
       # - table: mcd_label
       #   style: bing-road-mcd-label
@@ -47,8 +47,11 @@ maps:
       # - table: csa_label
       #   style: bing-road-csa-label
 
-      - table: cbs_clip
-        style: bing-road-cbs
+      # - table: cbs_clip
+      #   style: bing-road-cbs
+
+      # - table: cbs_label
+      #   style: bing-road-cbs-label
 
       ###############################
       ### nielsen designated area ###
@@ -63,14 +66,17 @@ maps:
 
       ### zip code ###
 
-      # - table: tdz_clip
-      #   style: bing-road-tdz
+      - table: tdz_clip
+        style: bing-road-tdz
 
-      # - table: zp5_clip
-      #   style: bing-road-zp5
+      - table: tdz_label
+        style: bing-road-tdz-label
 
-      # - table: zp5_label
-      #   style: bing-road-zp5-label
+      - table: zp5_clip
+        style: bing-road-zp5
+
+      - table: zp5_label
+        style: bing-road-zp5-label
 
       # ### county ###
 
@@ -851,10 +857,21 @@ styles:
   path: nielsen-data/styles/bing-road/tdz.yml
 
 
-
 - name: bing-road-cbs
   type: yaml
   path: nielsen-data/styles/bing-road/cbs.yml
+
+
+- name: bing-road-cbs-label
+  type: yaml
+  path: nielsen-data/styles/bing-road/cbs-label.yml
+
+
+- name: bing-road-tdz-label
+  type: yaml
+  path: nielsen-data/styles/bing-road/tdz-label.yml
+
+
 
 
 ######################
@@ -1066,10 +1083,14 @@ tables:
 - name: csa_label
   datastore: nielsen
 
-
 - name: dma_label
   datastore: nielsen
 
+- name: cbs_label
+  datastore: nielsen
+
+- name: tdz_label
+  datastore: nielsen
 
 - name: bgp_point_clip
   datastore: nielsen
