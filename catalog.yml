@@ -25,41 +25,46 @@ maps:
       # - table: trx_point_clip
       #   style: bing-road-trx-label
 
-      - table: pla_clip
-        style: bing-road-pla
+      # - table: pla_clip
+      #   style: bing-road-pla
 
-      - table: pla_label
-        style: bing-road-pla-label
+      # - table: pla_label
+      #   style: bing-road-pla-label
 
 
-      ### nielsen geography layers ###
+      # ### nielsen geography layers ###
 
       - table: mcd_clip
         style: bing-road-mcd
 
-      - table: mcd_label
-        style: bing-road-mcd-label
+      # - table: mcd_label
+      #   style: bing-road-mcd-label
 
-      ## Combined Statical Area ###
-      - table: csa_clip
-        style: bing-road-csa
+      # ## Combined Statical Area ###
+      # - table: csa_clip
+      #   style: bing-road-csa
 
-      - table: csa_label
-        style: bing-road-csa-label
+      # - table: csa_label
+      #   style: bing-road-csa-label
 
+      - table: cbs_clip
+        style: bing-road-cbs
 
       ###############################
       ### nielsen designated area ###
       ###############################
-      - table: dma_clip
-        style: bing-road-dma
+      # - table: dma_clip
+      #   style: bing-road-dma
 
-      - table: dma_label
-        style: bing-road-dma-label
+      # - table: dma_label
+      #   style: bing-road-dma-label
 
 
 
       ### zip code ###
+
+      # - table: tdz_clip
+      #   style: bing-road-tdz
 
       # - table: zp5_clip
       #   style: bing-road-zp5
@@ -76,8 +81,8 @@ maps:
       #   style: bing-road-cty-label
 
 
-      - table: sta_clip
-        style: bing-road-sta
+      # - table: sta_clip
+      #   style: bing-road-sta
 
 
       # - table: airport_point_clip
@@ -839,6 +844,18 @@ styles:
 - name: bing-road-pla-label
   type: yaml
   path: nielsen-data/styles/bing-road/pla-label.yml
+
+
+- name: bing-road-tdz
+  type: yaml
+  path: nielsen-data/styles/bing-road/tdz.yml
+
+
+
+- name: bing-road-cbs
+  type: yaml
+  path: nielsen-data/styles/bing-road/cbs.yml
+
 
 ######################
 ### bing road dark ###
