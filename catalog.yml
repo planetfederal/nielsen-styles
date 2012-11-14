@@ -131,11 +131,11 @@ maps:
       - table: bgp_clip
         style: bing-aerial-bgp
 
-      - table: bgp_point_clip
-        style: bing-aerial-bgp-label
+      # - table: bgp_point_clip
+      #   style: bing-aerial-bgp-label
 
-      # - table: trx_clip
-      #   style: bing-aerial-trx
+      - table: trx_clip
+        style: bing-aerial-trx
 
       # - table: trx_point_clip
       #   style: bing-aerial-trx-label

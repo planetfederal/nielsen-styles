@@ -1,4 +1,4 @@
-name: Style for zp5
+name: Style for Census Place
 feature-styles:
 - rules:
 
@@ -10,6 +10,16 @@ feature-styles:
         stroke:
           width: .5
           opacity: .6
+          color: '#0000FF'
+
+  - zoom-levels:
+      max: 10
+      min: 12
+    symbolizers:
+      line:
+        stroke:
+          width: 6
+          opacity: .1
           color: '#0000000'
 
   - zoom-levels:
@@ -20,33 +30,42 @@ feature-styles:
         stroke:
           width: 1
           opacity: .6
-          color: '#0000000'
+          color: '#0000FF'
 
   - zoom-levels:
-      max: 10
-      min: 12
+      max: 12
+      min: 16
     symbolizers:
       line:
         stroke:
           width: 6
-          opacity: .1
+          opacity: .33
           color: '#0000000'
 
   - zoom-levels:
       max: 12
-      min: 20
+      min: 16
     symbolizers:
       line:
         stroke:
           width: 2
-          color: '#0000000'
+          color: '#0000FF'
 
   - zoom-levels:
-      max: 12
+      max: 16
       min: 20
     symbolizers:
       line:
         stroke:
-          width: 6
-          opacity: .1
-          color: '#0000000'
+          width: 9
+          opacity: .67
+          color: '#0000000' 
+
+  - zoom-levels:
+      max: 16
+      min: 20
+    symbolizers:
+      line:
+        stroke:
+          width: 3
+          color: '#0000FF'         
