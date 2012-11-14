@@ -1,0 +1,70 @@
+name: Labels for county layers
+feature-styles:
+- rules:
+
+  - zoom-levels:
+      max: 6
+      min: 8
+    symbolizers:
+      text:
+        halo:
+          radius: 2
+          opacity: .6
+          color: '#ffffff'
+        fill:
+          color: '#000000'
+        placement:
+          point:
+            x: .5
+            y: .5
+        font:
+          weight: bold
+          size: 10
+          family: Droid Sans
+        label:
+          property: name
+
+  - zoom-levels:
+      max: 8
+      min: 10
+    symbolizers:
+      text:
+        halo:
+          radius: 2
+          opacity: .6
+          color: '#ffffff'
+        fill:
+          color: '#000000'
+        placement:
+          point:
+            x: .5
+            y: .5
+        font:
+          weight: bold
+          size: 12
+          family: Droid Sans
+        label:
+          property: name
+
+
+  - zoom-levels:
+      max: 10
+      min: 12
+    symbolizers:
+      text:
+        halo:
+          radius: 4
+          opacity: .6
+          color: '#ffffff'
+        fill:
+          color: '#000000'
+        placement:
+          point:
+            x: .5
+            y: .5
+        font:
+          weight: bold
+          size: 14
+          family: Droid Sans
+        label:
+          property: name

@@ -1,0 +1,46 @@
+name: zp5 labels
+feature-styles:
+- rules:
+
+  - zoom-levels:
+      max: 10
+      min: 12
+    symbolizers:
+      text:
+        halo:
+          radius: 1
+          color: '#ffffff'
+        fill:
+          color: '#0000000'
+        placement:
+          point:
+            x: .5
+            y: .5
+        font:
+          weight: bold
+          size: 12
+          family: Droid Sans
+        label:
+          property: label
+
+  - zoom-levels:
+      max: 12
+      min: 16
+    symbolizers:
+      text:
+        halo:
+          radius: 2
+          opacity: .6
+          color: '#ffffff'
+        fill:
+          color: '#0000000'
+        placement:
+          point:
+            x: .5
+            y: .5
+        font:
+          weight: bold
+          size: 16
+          family: Droid Sans
+        label:
+          property: label

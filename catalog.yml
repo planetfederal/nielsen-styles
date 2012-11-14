@@ -121,7 +121,125 @@ maps:
       # - table: govt_centers_clip
       #   style: base-govt_centers
 
+  - name: bing-aerial
+    bgcolor: '#000000'
+    bbox: [-79.40551229971192,37.654112521799384,-75.12908407705577,39.760699547115514]
+    layers:
+
+      ### census layers ###
+
+      - table: bgp_clip
+        style: bing-aerial-bgp
+
+      - table: bgp_point_clip
+        style: bing-aerial-bgp-label
+
+      # - table: trx_clip
+      #   style: bing-aerial-trx
+
+      # - table: trx_point_clip
+      #   style: bing-aerial-trx-label
+
+      # - table: pla_clip
+      #   style: bing-aerial-pla
+
+      # - table: pla_label
+      #   style: bing-aerial-pla-label
+
+
+      # ### nielsen geography layers ###
+
+      # - table: mcd_clip
+      #   style: bing-aerial-mcd
+
+      # - table: mcd_label
+      #   style: bing-aerial-mcd-label
+
+      # ## Combined Statical Area ###
+      # - table: csa_clip
+      #   style: bing-aerial-csa
+
+      # - table: csa_label
+      #   style: bing-aerial-csa-label
+
+      # - table: cbs_clip
+      #   style: bing-aerial-cbs
+
+      # - table: cbs_label
+      #   style: bing-aerial-cbs-label
+
+      ###############################
+      ### nielsen designated area ###
+      ###############################
+      - table: dma_clip
+        style: bing-aerial-dma
+
+      - table: dma_label
+        style: bing-aerial-dma-label
+
+
+
+      ### zip code ###
+
+      - table: zp5_clip
+        style: bing-aerial-zp5
+
+      - table: zp5_label
+        style: bing-aerial-zp5-label
         
+      - table: tdz_clip
+        style: bing-aerial-tdz
+
+      # - table: tdz_label
+      #   style: bing-aerial-tdz-label
+
+      
+
+      ### county ###
+
+      - table: cty_clip
+        style: bing-aerial-cty
+
+      - table: cty_point_clip
+        style: bing-aerial-cty-label
+
+
+      - table: sta_clip
+        style: bing-aerial-sta
+
+      ### Culture ###
+      
+      # - table: airport_point_clip
+      #   style: base-airport_point
+
+      # - table: parks_point_clip
+      #   style: base-parks_point
+
+      # - table: marine_terms_clip
+      #   style: base-marine_terms
+
+      # - table: cemeterys_clip
+      #   style: base-cemeterys
+
+      # - table: bus_terms_clip
+      #   style: base-bus_terms
+
+      # - table: shop_clip
+      #   style: base-shop
+
+      # - table: educ_inst_clip
+      #   style: base-educ_inst
+
+      # - table: hospitals_clip
+      #   style: base-hospitals
+
+      # - table: train_stations_clip
+      #   style: base-train_stations
+
+      # - table: govt_centers_clip
+      #   style: base-govt_centers
+
+       
   - name: bing-dark-road
     bgcolor: '#ffffff'
     bbox: [-79.40551229971192,37.654112521799384,-75.12908407705577,39.760699547115514]
@@ -426,10 +544,10 @@ maps:
 
 datastores:
 - name: nielsen
-  host: localhost
+  host: 192.168.56.101
   port: 5432
-  user: postgres
-  password: pass
+  user: geonode
+  password: geonode
   type: postgis
 
 
@@ -660,108 +778,110 @@ styles:
 #### Bing imagery #####
 #######################
 
-- name: bing-sta
+- name: bing-aerial-cty
   type: yaml
-  path: nielsen-data/styles/bing/sta.yml
+  path: nielsen-data/styles/bing-aerial/cty.yml
 
-- name: bing-blk
+
+- name: bing-aerial-sta
   type: yaml
-  path: nielsen-data/styles/bing/blk.yml
+  path: nielsen-data/styles/bing-aerial/sta.yml
 
 
-- name: bing-cty
+- name: bing-aerial-bgp
   type: yaml
-  path: nielsen-data/styles/bing/cty.yml
+  path: nielsen-data/styles/bing-aerial/bgp.yml
 
 
-- name: bing-zp5
+- name: bing-aerial-trx
   type: yaml
-  path: nielsen-data/styles/bing/zp5.yml
+  path: nielsen-data/styles/bing-aerial/trx.yml
 
 
-- name: bing-parks
+- name: bing-aerial-cty-label
   type: yaml
-  path: nielsen-data/styles/bing/parks.yml
+  path: nielsen-data/styles/bing-aerial/cty-label.yml
 
 
-- name: bing-mcd
+- name: bing-aerial-trx-label
   type: yaml
-  path: nielsen-data/styles/bing/mcd.yml
+  path: nielsen-data/styles/bing-aerial/trx-label.yml
 
 
-- name: bing-train_stations
+- name: bing-aerial-bgp-label
   type: yaml
-  path: nielsen-data/styles/bing/train_stations.yml
+  path: nielsen-data/styles/bing-aerial/bgp-label.yml
 
 
-- name: bing-pla
+- name: bing-aerial-zp5
   type: yaml
-  path: nielsen-data/styles/bing/pla.yml
+  path: nielsen-data/styles/bing-aerial/zp5.yml
 
 
-- name: bing-trx
+- name: bing-aerial-pla
   type: yaml
-  path: nielsen-data/styles/bing/trx.yml
+  path: nielsen-data/styles/bing-aerial/pla.yml
 
 
-- name: bing-bpg
+- name: bing-aerial-mcd
   type: yaml
-  path: nielsen-data/styles/bing/bpg.yml
+  path: nielsen-data/styles/bing-aerial/mcd.yml
 
 
-- name: bing-cbs
+- name: bing-aerial-zp5-label
   type: yaml
-  path: nielsen-data/styles/bing/cbs.yml
+  path: nielsen-data/styles/bing-aerial/zp5-label.yml
 
-- name: bing-sta
+
+- name: bing-aerial-mcd-label
   type: yaml
-  path: nielsen-data/styles/bing/sta.yml
+  path: nielsen-data/styles/bing-aerial/mcd-label.yml
 
 
-- name: bing-airport_point
+- name: bing-aerial-csa
   type: yaml
-  path: nielsen-data/styles/bing/airport_point.yml
+  path: nielsen-data/styles/bing-aerial/csa.yml
 
-- name: bing-educ_inst
+
+- name: bing-aerial-csa-label
   type: yaml
-  path: nielsen-data/styles/bing/educ_inst.yml
+  path: nielsen-data/styles/bing-aerial/csa-label.yml
 
 
-- name: bing-shop
+- name: bing-aerial-dma
   type: yaml
-  path: nielsen-data/styles/bing/shop.yml
+  path: nielsen-data/styles/bing-aerial/dma.yml
 
 
-- name: bing-hospitals
+- name: bing-aerial-dma-label
   type: yaml
-  path: nielsen-data/styles/bing/hospitals.yml
+  path: nielsen-data/styles/bing-aerial/dma-label.yml
 
-- name: bing-govt_centers
+
+- name: bing-aerial-pla-label
   type: yaml
-  path: nielsen-data/styles/bing/govt_centers.yml
+  path: nielsen-data/styles/bing-aerial/pla-label.yml
 
 
-- name: bing-csa
+- name: bing-aerial-tdz
   type: yaml
-  path: nielsen-data/styles/bing/csa.yml
+  path: nielsen-data/styles/bing-aerial/tdz.yml
 
-- name: bing-dma
+
+- name: bing-aerial-cbs
   type: yaml
-  path: nielsen-data/styles/bing/dma.yml
+  path: nielsen-data/styles/bing-aerial/cbs.yml
 
 
-- name: bing-major_city
+- name: bing-aerial-cbs-label
   type: yaml
-  path: nielsen-data/styles/bing/major_city.yml
+  path: nielsen-data/styles/bing-aerial/cbs-label.yml
 
 
-- name: bing-midsize_city
+- name: bing-aerial-tdz-label
   type: yaml
-  path: nielsen-data/styles/bing/midsize_city.yml
+  path: nielsen-data/styles/bing-aerial/tdz-label.yml
 
-- name: bing-minor_city
-  type: yaml
-  path: nielsen-data/styles/bing/minor_city.yml
 
 #######################
 ### bing road maps ####
