@@ -20,7 +20,7 @@ feature-styles:
         font:
           weight: bold
           size: 10
-          family: Droid Sans
+          family: Droid Serif
         label:
           property: name
 
@@ -42,7 +42,7 @@ feature-styles:
         font:
           weight: bold
           size: 12
-          family: Droid Sans
+          family: Droid Serif
         label:
           property: name
 
@@ -65,6 +65,6 @@ feature-styles:
         font:
           weight: bold
           size: 18
-          family: Droid Sans
+          family: Droid Serif
         label:
           property: name

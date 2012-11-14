@@ -3,7 +3,7 @@ feature-styles:
 - rules:
 
   - zoom-levels:
-      min: 6
+      min: 10
     symbolizers:
       line:
         stroke:
@@ -12,8 +12,8 @@ feature-styles:
           color: '#ff6633'
           
   - zoom-levels:
-      max: 6
-      min: 8
+      max: 10
+      min: 14
     symbolizers:
       line:
         stroke:
@@ -24,8 +24,8 @@ feature-styles:
 
 
   - zoom-levels:
-      max: 6
-      min: 8
+      max: 10
+      min: 14
     symbolizers:
       line:
         stroke:
@@ -36,7 +36,7 @@ feature-styles:
 #          color: '#043f4c'
 
   - zoom-levels:
-      max: 8
+      max: 14
       min: 20
     symbolizers:
       line:
@@ -48,7 +48,7 @@ feature-styles:
 
 
   - zoom-levels:
-      max: 8
+      max: 14
       min: 20
     symbolizers:
       line:
