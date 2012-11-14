@@ -3,25 +3,62 @@ feature-styles:
 - rules:
 
   - zoom-levels:
+      max: 6
+      min: 10
+    symbolizers:
+      line:
+        stroke:
+          width: .25
+          opacity: .33
+          color: '#00C9F3'
+
+  - zoom-levels:
       max: 10
       min: 12
     symbolizers:
       line:
         stroke:
           width: .5
-          opacity: .4
-          color: '#000000'
+          opacity: .5
+          color: '#00C9F3'
 
 
   - zoom-levels:
       max: 12
-      min: 20
+      min: 14
+    symbolizers:
+      line:
+        stroke:
+          width: 4
+          opacity: .33
+          color: '#000000'
+
+  - zoom-levels:
+      max: 12
+      min: 14
     symbolizers:
       line:
         stroke:
           width: 1
-          opacity: .6
+          color: '#00C9F3'
+
+
+  - zoom-levels:
+      max: 14
+      min: 20
+    symbolizers:
+      line:
+        stroke:
+          width: 6
+          opacity: .33
           color: '#000000'
 
-
+  - zoom-levels:
+      max: 14
+      min: 20
+    symbolizers:
+      line:
+        stroke:
+          width: 2
+          color: '#00C9F3'
 
