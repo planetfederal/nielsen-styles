@@ -1,4 +1,4 @@
-name: Style for mcd
+name: Style for Census Place
 feature-styles:
 - rules:
 
@@ -8,45 +8,45 @@ feature-styles:
     symbolizers:
       line:
         stroke:
-          width: .5
-          opacity: .6
-          color: '#000000'
-
-  - zoom-levels:
-      max: 10
-      min: 12
-    symbolizers:
-      line:
-        stroke:
           width: 1
-          opacity: .6
-          color: '#000000'
+          opacity: .66
+          color: '#640064'
 
   - zoom-levels:
       max: 10
-      min: 12
+      min: 14
     symbolizers:
       line:
         stroke:
           width: 6
-          opacity: .1
-          color: '#000000'
+          opacity: .33
+          color: '#0000000'
 
   - zoom-levels:
-      max: 12
-      min: 20
+      max: 10
+      min: 14
     symbolizers:
       line:
         stroke:
           width: 2
-          color: '#000000'
+          color: '#640064'
 
+  
   - zoom-levels:
-      max: 12
+      max: 14
       min: 20
     symbolizers:
       line:
         stroke:
-          width: 6
-          opacity: .1
-          color: '#000000'
+          width: 9
+          opacity: .67
+          color: '#0000000' 
+
+  - zoom-levels:
+      max: 14
+      min: 20
+    symbolizers:
+      line:
+        stroke:
+          width: 3
+          color: '#640064'         

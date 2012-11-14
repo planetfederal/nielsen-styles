@@ -140,30 +140,29 @@ maps:
       # - table: trx_point_clip
       #   style: bing-aerial-trx-label
 
-      # - table: pla_clip
-      #   style: bing-aerial-pla
+      - table: pla_clip
+        style: bing-aerial-pla
 
       # - table: pla_label
       #   style: bing-aerial-pla-label
 
-
-      # ### nielsen geography layers ###
-
-      # - table: mcd_clip
-      #   style: bing-aerial-mcd
+      - table: mcd_clip
+        style: bing-aerial-mcd
 
       # - table: mcd_label
       #   style: bing-aerial-mcd-label
 
+      # ### nielsen geography layers ###
+
       # ## Combined Statical Area ###
-      # - table: csa_clip
-      #   style: bing-aerial-csa
+      - table: csa_clip
+        style: bing-aerial-csa
 
       # - table: csa_label
       #   style: bing-aerial-csa-label
 
-      # - table: cbs_clip
-      #   style: bing-aerial-cbs
+      - table: cbs_clip
+        style: bing-aerial-cbs
 
       # - table: cbs_label
       #   style: bing-aerial-cbs-label
@@ -184,9 +183,9 @@ maps:
       - table: zp5_clip
         style: bing-aerial-zp5
 
-      - table: zp5_label
-        style: bing-aerial-zp5-label
-        
+      # - table: zp5_label
+      #   style: bing-aerial-zp5-label
+
       - table: tdz_clip
         style: bing-aerial-tdz
 
