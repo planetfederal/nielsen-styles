@@ -9,9 +9,11 @@ feature-styles:
       text:
         halo:
           radius: 1
-          color: '#ffffff'
+          color: '#000000'
+#          color: '#ffffff'
         fill:
-          color: '#0000000'
+          color: '#FFFF3C'
+#          color: '#0000000'
         placement:
           point:
             x: .5
@@ -31,9 +33,11 @@ feature-styles:
         halo:
           radius: 2
           opacity: .6
-          color: '#ffffff'
+          color: '#000000'
+#          color: '#ffffff'
         fill:
-          color: '#0000000'
+          color: '#FFFF3C'
+          # color: '#0000000'
         placement:
           point:
             x: .5

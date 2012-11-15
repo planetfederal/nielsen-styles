@@ -10,9 +10,11 @@ feature-styles:
         halo:
           radius: 2
           opacity: .6
-          color: '#ffffff'
-        fill:
           color: '#000000'
+#          color: '#ffffff'
+        fill:
+          color: '#0000FF'
+          #color: '#000000'
         placement:
           point:
             x: .5
@@ -32,9 +34,10 @@ feature-styles:
         halo:
           radius: 2
           opacity: .6
-          color: '#ffffff'
-        fill:
           color: '#000000'
+        fill:
+          color: '#0000FF'
+          #color: '#000000'
         placement:
           point:
             x: .5
@@ -53,11 +56,13 @@ feature-styles:
     symbolizers:
       text:
         halo:
-          radius: 4
-          opacity: .6
-          color: '#ffffff'
-        fill:
+          radius: 3
+          opacity: .4
           color: '#000000'
+          #color: '#ffffff'
+        fill:
+          color: '#0000FF'
+          # color: '#000000'
         placement:
           point:
             x: .5
