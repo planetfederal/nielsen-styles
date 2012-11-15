@@ -10,7 +10,7 @@ feature-styles:
         stroke:
           width: .25
           opacity: .33
-          color: '#00C9F3'
+          color: &lclr '#00C9F3'
 
   - zoom-levels:
       max: 10
@@ -20,7 +20,7 @@ feature-styles:
         stroke:
           width: .5
           opacity: .5
-          color: '#00C9F3'
+          color: *lclr
 
 
   - zoom-levels:
@@ -31,7 +31,7 @@ feature-styles:
         stroke:
           width: 4
           opacity: .33
-          color: '#000000'
+          color: &cclr '#000000'
 
   - zoom-levels:
       max: 12
@@ -40,7 +40,7 @@ feature-styles:
       line:
         stroke:
           width: 1
-          color: '#00C9F3'
+          color: *lclr
 
 
   - zoom-levels:
@@ -51,7 +51,7 @@ feature-styles:
         stroke:
           width: 6
           opacity: .33
-          color: '#000000'
+          color: *cclr
 
   - zoom-levels:
       max: 14
@@ -60,5 +60,5 @@ feature-styles:
       line:
         stroke:
           width: 2
-          color: '#00C9F3'
+          color: *lclr
 
