@@ -9,7 +9,7 @@ feature-styles:
         stroke:
           width: .5
           opacity: .4
-          color: '#FF8000'
+          color: '#FFFF3C'
 
 
   - zoom-levels:
@@ -30,7 +30,7 @@ feature-styles:
         stroke:
           width: 1
           opacity: .6
-          color: '#FF8000'
+          color: '#FFFF3C'
 
 
   - zoom-levels:
@@ -50,7 +50,7 @@ feature-styles:
       line:
         stroke:
           width: 2
-          color: '#FF8000'
+          color: '#FFFF3C'
 
 
   - zoom-levels:
@@ -70,7 +70,7 @@ feature-styles:
       line:
         stroke:
           width: 3
-          color: '#FF8000'
+          color: '#FFFF3C'
 
 
   - zoom-levels:
@@ -81,4 +81,4 @@ feature-styles:
         stroke:
           width: 9
           opacity: .33
-          color: '#FF8000'
+          color: '#FFFF3C'
