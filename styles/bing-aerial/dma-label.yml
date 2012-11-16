@@ -32,7 +32,7 @@ feature-styles:
           size: 12
           family: *font-family
         label: *label-property
-        vendor: &vendor-options
+        vendor: *vendor-options
 
   - zoom-levels:
       max: 10
