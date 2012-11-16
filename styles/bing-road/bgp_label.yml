@@ -13,13 +13,11 @@ feature-styles:
           color: '#ffffff'
         fill:
           color: '#4c0f27'
-          #color: '#ff6633'
         placement:
           point:
             x: .5
             y: .5
         font:
-          weight: bold
           size: 10
           family: Droid Sans
         label:
@@ -36,13 +34,11 @@ feature-styles:
           color: '#ffffff'
         fill:
           color: '#4c0f27'
-#          color: '#ff6633'
         placement:
           point:
             x: .5
             y: .5
         font:
-          weight: bold
           size: 12
           family: Droid Sans
         label:
