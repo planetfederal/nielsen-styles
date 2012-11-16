@@ -1,66 +1,84 @@
-name: Style for sta
+name: Style for DMA
+defaults:
+  line-color: &line-color '#000000'
+  casing-color: &casing-color '#000000'
+  zooms:
+    0: &zoom-0
+      min: 6
+    1: &zoom-1
+      max: 6
+      min: 8
+    2: &zoom-2
+      max: 8
+      min: 12
+    3: &zoom-3
+      max: 12
+      min: 20
+
 feature-styles:
 - rules:
 
-  - zoom-levels:
-      min: 6
-    symbolizers:
-      line:
-        stroke:
-          width: 1
-          opacity: .6
-          color: '#000000'
-
-
-  - zoom-levels:
-      min: 6
+  - zoom-levels: *zoom-0
     symbolizers:
       line:
         stroke:
           width: 6
-          opacity: .1
-          color: '#000000'
+          opacity: .33
+          color: *casing-color
 
-
-  - zoom-levels:
-      max: 6
-      min: 8
+  - zoom-levels: *zoom-0
     symbolizers:
       line:
         stroke:
           width: 1
-          color: '#000000'
+          opacity: .33
+          color: *line-color
 
 
-  - zoom-levels:
-      max: 6
-      min: 8
-    symbolizers:
-      line:
-        stroke:
-          width: 4
-          opacity: .1
-          color: '#000000'
-
-
-
-  - zoom-levels:
-      max: 8
-      min: 20
-    symbolizers:
-      line:
-        stroke:
-          width: 2
-          color: '#000000'
-
-
-
-  - zoom-levels:
-      max: 8
-      min: 20
+  - zoom-levels: *zoom-1
     symbolizers:
       line:
         stroke:
           width: 8
-          opacity: .1
-          color: '#000000'
+          opacity: .33
+          color: *casing-color
+
+  - zoom-levels: *zoom-1
+    symbolizers:
+      line:
+        stroke:
+          width: 2
+          opacity: .66
+          color: *line-color
+
+
+  - zoom-levels: *zoom-2
+    symbolizers:
+      line:
+        stroke:
+          width: 10
+          opacity: .33
+          color: *casing-color
+
+  - zoom-levels: *zoom-2
+    symbolizers:
+      line:
+        stroke:
+          width: 2
+          color: *line-color
+
+  - zoom-levels: *zoom-3
+    symbolizers:
+      line:
+        stroke:
+          width: 10
+          opacity: .33
+          color: *casing-color
+
+  - zoom-levels: *zoom-3
+    symbolizers:
+      line:
+        stroke:
+          width: 3
+          color: *line-color           
+
