@@ -22,6 +22,17 @@ feature-styles:
           color: '#4c0f27'
 
 
+
+  - zoom-levels:
+      max: 6
+      min: 8
+    symbolizers:
+      line:
+        stroke:
+          width: 6
+          opacity: .1
+          color: '#4c0f27'
+
   - zoom-levels:
       max: 6
       min: 8
@@ -33,16 +44,14 @@ feature-styles:
 
 
   - zoom-levels:
-      max: 6
-      min: 8
+      max: 8
+      min: 20
     symbolizers:
       line:
         stroke:
-          width: 4
+          width: 6
           opacity: .1
           color: '#4c0f27'
-
-
 
   - zoom-levels:
       max: 8
@@ -51,16 +60,4 @@ feature-styles:
       line:
         stroke:
           width: 2
-          color: '#4c0f27'
-
-
-
-  - zoom-levels:
-      max: 8
-      min: 20
-    symbolizers:
-      line:
-        stroke:
-          width: 8
-          opacity: .1
           color: '#4c0f27'

@@ -12,14 +12,12 @@ feature-styles:
           color: '#ffffff'
         fill:
           color: '#4c0f27'
-          #color: '#000000'
         placement:
           point:
             x: .5
             y: .5
         font:
-          weight: bold
-          size: 12
+          size: 14
           family: Droid Sans
         label:
           property: name
@@ -30,7 +28,7 @@ feature-styles:
     symbolizers:
       text:
         halo:
-          radius: 2
+          radius: 4
           opacity: .6
           color: '#ffffff'
         fill:
@@ -40,8 +38,7 @@ feature-styles:
             x: .5
             y: .5
         font:
-          weight: bold
-          size: 16
+          size: 20
           family: Droid Sans
         label:
           property: name
