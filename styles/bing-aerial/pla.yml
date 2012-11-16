@@ -4,49 +4,51 @@ feature-styles:
 
   - zoom-levels:
       max: 6
-      min: 10
+      min: 8
     symbolizers:
       line:
         stroke:
           width: .75
-          opacity: .6
-          color: '#0000FF'
+          opacity: .66
+          color: &lclr '#00C9F3'
+
 
   - zoom-levels:
-      max: 10
-      min: 14
-    symbolizers:
-      line:
-        stroke:
-          width: 6
-          opacity: .33
-          color: '#0000000'
-
-  - zoom-levels:
-      max: 10
-      min: 14
-    symbolizers:
-      line:
-        stroke:
-          width: 2
-          color: '#0000FF'
-
-  
-  - zoom-levels:
-      max: 14
-      min: 20
-    symbolizers:
-      line:
-        stroke:
-          width: 9
-          opacity: .67
-          color: '#0000000' 
-
-  - zoom-levels:
-      max: 14
-      min: 20
+      max: 8
+      min: 10
     symbolizers:
       line:
         stroke:
           width: 3
-          color: '#0000FF'         
+          opacity: .5
+          color: &cclr '#0000000'
+
+  - zoom-levels:
+      max: 8
+      min: 10
+    symbolizers:
+      line:
+        stroke:
+          width: 1
+          opacity: .66
+          color: *lclr
+
+
+  - zoom-levels:
+      max: 10
+      min: 20
+    symbolizers:
+      line:
+        stroke:
+          width: 8
+          opacity: .5
+          color: *cclr
+
+  - zoom-levels:
+      max: 10
+      min: 20
+    symbolizers:
+      line:
+        stroke:
+          width: 2
+          color: *lclr  
