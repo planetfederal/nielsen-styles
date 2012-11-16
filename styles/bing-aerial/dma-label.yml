@@ -2,7 +2,6 @@ name: Style for csa label
 feature-styles:
 - rules:
 
-
   - zoom-levels:
       max: 6
       min: 10
@@ -13,7 +12,7 @@ feature-styles:
           opacity: .6
           color: '#ffffff'
         fill:
-          color: '#0000000'
+          color: '#bf4c26'
         placement:
           point:
             x: .5
@@ -36,7 +35,7 @@ feature-styles:
           opacity: .6
           color: '#ffffff'
         fill:
-          color: '#0000000'
+          color: '#bf4c26'
         placement:
           point:
             x: .5

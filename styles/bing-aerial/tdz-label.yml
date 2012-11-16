@@ -1,7 +1,16 @@
 name: Labels for county layers
+defaults:
+  label-color: &label-color "#FFFF3C"
+  halo-color: &halo-color "#000000"
+  font-family: &font-family Droid Serif
+  label-property: &label-property 
+    property: name
+  label-placement: &label-placement
+    point:
+      x: .5
+      y: .5
 feature-styles:
 - rules:
-
   - zoom-levels:
       max: 6
       min: 8
@@ -10,19 +19,15 @@ feature-styles:
         halo:
           radius: 2
           opacity: .6
-          color: '#ffffff'
+          color: *halo-color
         fill:
-          color: '#043f4c'
-        placement:
-          point:
-            x: .5
-            y: .5
+          color: *label-color
+        placement: *label-placement
         font:
           weight: bold
           size: 10
-          family: Droid Sans
-        label:
-          property: name
+          family: *font-family
+        label: *label-property
 
   - zoom-levels:
       max: 8
@@ -32,20 +37,15 @@ feature-styles:
         halo:
           radius: 2
           opacity: .8
-          color: '#ffffff'
+          color: *halo-color
         fill:
-          color: '#043f4c'
-        placement:
-          point:
-            x: .5
-            y: .5
+          color: *label-color
+        placement: *label-placement
         font:
           weight: bold
           size: 12
-          family: Droid Sans
-        label:
-          property: name
-
+          family: *font-family
+        label: *label-property
 
   - zoom-levels:
       max: 10
@@ -55,16 +55,12 @@ feature-styles:
         halo:
           radius: 4
           opacity: .8
-          color: '#ffffff'
+          color: *halo-color
         fill:
-          color: '#043f4c'
-        placement:
-          point:
-            x: .5
-            y: .5
+          color: *label-color
+        placement: *label-placement
         font:
           weight: bold
           size: 18
-          family: Droid Sans
-        label:
-          property: name
+          family: *font-family
+        label: *label-property
