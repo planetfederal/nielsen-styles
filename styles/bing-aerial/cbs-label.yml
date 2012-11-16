@@ -1,7 +1,18 @@
 name: Style for cbs label
+
+defaults:
+  label-color: &label-color "#FF0808"
+  halo-color: &halo-color "#FFFFFF"
+  font-family: &font-family Droid Serif
+  label-property: &label-property 
+    property: name
+  label-placement: &label-placement
+    point:
+      x: .5
+      y: .5
+
 feature-styles:
 - rules:
-
   - zoom-levels:
       max: 6
       min: 10
@@ -9,21 +20,16 @@ feature-styles:
       text:
         halo:
           radius: 2
-          opacity: .6
-          color: '#ffffff'
+          opacity: .66
+          color: *halo-color
         fill:
-          color: '#bf4c26'
-        placement:
-          point:
-            x: .5
-            y: .5
+          color: *label-color
+        placement: *label-placement
         font:
           weight: bold
           size: 12
-          family: Droid Sans
-        label:
-          property: name
-
+          family: *font-family
+        label: *label-property
 
   - zoom-levels:
       max: 10
@@ -32,17 +38,13 @@ feature-styles:
       text:
         halo:
           radius: 4
-          opacity: .6
-          color: '#ffffff'
+          opacity: .66
+          color: *halo-color
         fill:
-          color: '#bf4c26'
-        placement:
-          point:
-            x: .5
-            y: .5
+          color: *label-color
+        placement: *label-placement
         font:
           weight: bold
           size: 14
-          family: Droid Sans
-        label:
-          property: name
+          family: *font-family
+        label: *label-property
