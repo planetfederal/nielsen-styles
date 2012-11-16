@@ -1,52 +1,83 @@
-name: Style for csa
+name: Style for CSA
+defaults:
+  line-color: &line-color '#FF0808'
+  casing-color: &casing-color '#000000'
+  zooms:
+    0: &zoom-0
+      min: 6
+    1: &zoom-1
+      max: 6
+      min: 8
+    2: &zoom-2
+      max: 8
+      min: 12
+    3: &zoom-3
+      max: 12
+      min: 20
+
+
 feature-styles:
 - rules:
-
-  - zoom-levels:
-      min: 6
+  - zoom-levels: *zoom-0
     symbolizers:
       line:
         stroke:
-          width: .5
-          opacity: .4
-          color: '#ff00ff'
+          width: 4
+          opacity: .33
+          color: *casing-color
 
-  - zoom-levels:
-      max: 6
-      min: 14
+  - zoom-levels: *zoom-0
     symbolizers:
       line:
         stroke:
-          width: 1
-          opacity: .6
-          color: '#ff00ff'
+          width: .75
+          opacity: .5
+          color: *line-color
 
-  - zoom-levels:
-      max: 6
-      min: 14
+
+  - zoom-levels: *zoom-1
     symbolizers:
       line:
         stroke:
           width: 6
-          opacity: .1
-          color: '#ff00ff'
+          opacity: .33
+          color: *casing-color
 
-  - zoom-levels:
-      max: 14
-      min: 20
+  - zoom-levels: *zoom-1
     symbolizers:
       line:
         stroke:
-          width: 2
-          color: '#ff00ff'
+          width: 1
+          color: *line-color
 
 
-  - zoom-levels:
-      max: 14
-      min: 20
+  - zoom-levels: *zoom-2
     symbolizers:
       line:
         stroke:
           width: 8
-          opacity: .1
-          color: '#ff00ff'
+          opacity: .66
+          color: *casing-color
+
+  - zoom-levels: *zoom-2
+    symbolizers:
+      line:
+        stroke:
+          width: 1
+          color: *line-color
+
+  - zoom-levels: *zoom-3
+    symbolizers:
+      line:
+        stroke:
+          width: 10
+          opacity: .66
+          color: *casing-color
+
+  - zoom-levels: *zoom-3
+    symbolizers:
+      line:
+        stroke:
+          width: 2
+          color: *line-color          
+
