@@ -40,7 +40,7 @@ feature-styles:
       line:
         stroke:
           width: 6
-          opacity: .33
+          opacity: .5
           color: *casing-color
 
   - zoom-levels: *zoom-1

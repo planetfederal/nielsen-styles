@@ -22,55 +22,39 @@ feature-styles:
     symbolizers:
       line:
         stroke:
-          width: 4
-          opacity: .33
-          color: *casing-color
-
-  - zoom-levels: *zoom-0
-    symbolizers:
-      line:
-        stroke:
-          width: .75
-          opacity: .5
+          width: .5
+          opacity: .66
           color: *line-color
 
 
   - zoom-levels: *zoom-1
+    symbolizers:
+      line:
+        stroke:
+          width: .5
+          color: *line-color
+
+
+  - zoom-levels: *zoom-2
+    symbolizers:
+      line:
+        stroke:
+          width: 4
+          opacity: .5
+          color: *casing-color
+
+  - zoom-levels: *zoom-2
+    symbolizers:
+      line:
+        stroke:
+          width: 1
+          color: *line-color
+
+  - zoom-levels: *zoom-3
     symbolizers:
       line:
         stroke:
           width: 6
-          opacity: .33
-          color: *casing-color
-
-  - zoom-levels: *zoom-1
-    symbolizers:
-      line:
-        stroke:
-          width: 1
-          color: *line-color
-
-
-  - zoom-levels: *zoom-2
-    symbolizers:
-      line:
-        stroke:
-          width: 8
-          opacity: .66
-          color: *casing-color
-
-  - zoom-levels: *zoom-2
-    symbolizers:
-      line:
-        stroke:
-          width: 1
-          color: *line-color
-
-  - zoom-levels: *zoom-3
-    symbolizers:
-      line:
-        stroke:
-          width: 10
           opacity: .66
           color: *casing-color
 
@@ -78,6 +62,6 @@ feature-styles:
     symbolizers:
       line:
         stroke:
-          width: 2
+          width: 1
           color: *line-color          
 
