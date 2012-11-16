@@ -1,63 +1,47 @@
 name: Labels for county layers
+defaults:
+  font-color: &font-color '#043f4c'
+  halo-color: &halo-color '#ffffff'
+  font: &font Droid Sans
+  zooms:
+    0: &zoom-0
+      max: 6
+      min: 10
+    1: &zoom-1
+      max: 10
+      min: 20
+
 feature-styles:
 - rules:
 
-  - zoom-levels:
-      max: 6
-      min: 8
+  - zoom-levels: *zoom-0
     symbolizers:
       text:
         halo:
           radius: 2
           opacity: .6
-          color: '#ffffff'
+          color: *halo-color
         fill:
-          color: '#043f4c'
+          color: *font-color
         placement:
           point:
             x: .5
             y: .5
         font:
-          weight: bold
-          size: 10
-          family: Droid Serif
+          size: 14
+          family: *font
         label:
           property: name
 
-  - zoom-levels:
-      max: 8
-      min: 10
+  - zoom-levels: *zoom-1
     symbolizers:
       text:
         halo:
           radius: 2
           opacity: .8
-          color: '#ffffff'
+          color: *halo-color
         fill:
-          color: '#043f4c'
-        placement:
-          point:
-            x: .5
-            y: .5
-        font:
-          weight: bold
-          size: 12
-          family: Droid Serif
-        label:
-          property: name
-
-
-  - zoom-levels:
-      max: 10
-      min: 12
-    symbolizers:
-      text:
-        halo:
-          radius: 4
-          opacity: .8
-          color: '#ffffff'
-        fill:
-          color: '#043f4c'
+          color: *font-color
         placement:
           point:
             x: .5
@@ -65,6 +49,6 @@ feature-styles:
         font:
           weight: bold
           size: 18
-          family: Droid Serif
+          family: *font
         label:
           property: name
