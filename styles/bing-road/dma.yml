@@ -1,43 +1,47 @@
 name: Style for dma
+defaults:
+  line-color: &line-color '#bf4c26'
+  casing-color: &casing-color '#bf4c26'
+  zooms:
+    0: &zoom-0
+      min: 12
+    1: &zoom-1
+      max: 12
+      min: 20
+
 feature-styles:
 - rules:
 
 
-  - zoom-levels:
-      min: 12
+  - zoom-levels: *zoom-0
     symbolizers:
       line:
         stroke:
           width: 6
           opacity: .1
-          color: '#bf4c26'
+          color: *casing-color
 
 
-  - zoom-levels:
-      min: 12
+  - zoom-levels: *zoom-0
     symbolizers:
       line:
         stroke:
           width: 1.5
-          color: '#bf4c26'
+          color: *line-color
 
 
-  - zoom-levels:
-      max: 12
-      min: 20
+  - zoom-levels: *zoom-1
     symbolizers:
       line:
         stroke:
           width: 8
           opacity: .1
-          color: '#bf4c26'
+          color: *casing-color
 
-  - zoom-levels:
-      max: 12
-      min: 20
+  - zoom-levels: *zoom-1
     symbolizers:
       line:
         stroke:
           width: 4
-          color: '#bf4c26'
+          color: *line-color
 
