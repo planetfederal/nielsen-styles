@@ -7,6 +7,7 @@ defaults:
     point:
       x: .5
       y: .5
+
   zooms:
     0: &zoom-0
       max: 6
