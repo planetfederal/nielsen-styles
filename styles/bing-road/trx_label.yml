@@ -1,8 +1,12 @@
-name: Style for airport point
+name: Style for census tract
 defaults:
-  font: &font '#4c0f27'
+  color: &color '#4c0f27'
   family: &family Droid Sans
   halo: &halo '#ffffff'
+  placement: &placement
+    point:
+      x: .5
+      y: .5
   zooms:
     0: &zoom-0
       max: 10
@@ -29,11 +33,8 @@ feature-styles:
           opacity: .6
           color: *halo
         fill:
-          color: *font
-        placement:
-          point:
-            x: .5
-            y: .5
+          color: *color
+        placement: *placement
         font:
           weight: bold
           size: 10
@@ -49,11 +50,8 @@ feature-styles:
           opacity: .6
           color: *halo
         fill:
-          color: *font
-        placement:
-          point:
-            x: .5
-            y: .5
+          color: *color
+        placement: *placement
         font:
           weight: bold
           size: 12
@@ -70,11 +68,8 @@ feature-styles:
           opacity: .6
           color: *halo
         fill:
-          color: *font
-        placement:
-          point:
-            x: .5
-            y: .5
+          color: *color
+        placement: *placement
         font:
           weight: bold
           size: 14
