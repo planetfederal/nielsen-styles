@@ -1,62 +1,59 @@
 name: Style for trx
+defaults:
+  line-color: &line-color '#4c0f27'
+  casing-color: &casing-color '#4c0f27'
+  zooms:
+    0: &zoom-0
+      max: 1
+      min: 10
+    1: &zoom-1
+      max: 10
+      min: 12
+    2: &zoom-2
+      max: 12
+      min: 20
+
 feature-styles:
 - rules:
 
-
-  - zoom-levels:
-      max: 6
-      min: 10
+  - zoom-levels: *zoom-0
     symbolizers:
       line:
         stroke:
           width: .5
           opacity: .4
-          color: '#4c0f27'
-#          color: '#ff6633'
+          color: *line-color
 
 
-  - zoom-levels:
-      max: 10
-      min: 12
-    symbolizers:
-      line:
-        stroke:
-          width: 1
-          opacity: .6
-          color: '#4c0f27'
-#          color: '#ff6633'
-
-
-  - zoom-levels:
-      max: 10
-      min: 12
+  - zoom-levels: *zoom-1
     symbolizers:
       line:
         stroke:
           width: 6
           opacity: .1
-          color: '#4c0f27'
-#          color: '#ff6633'
+          color: *casing-color
 
-
-  - zoom-levels:
-      max: 12
-      min: 20
+  - zoom-levels: *zoom-1
     symbolizers:
       line:
         stroke:
-          width: 2
-          color: '#4c0f27'
-#          color: '#ff6633'
+          width: 1
+          opacity: .6
+          color: *line-color
 
 
-  - zoom-levels:
-      max: 12
-      min: 20
+  - zoom-levels: *zoom-2
     symbolizers:
       line:
         stroke:
           width: 8
           opacity: .1
-          color: '#4c0f27'
-#          color: '#ff6633'
+          color: *casing-color
+
+  - zoom-levels: *zoom-2
+    symbolizers:
+      line:
+        stroke:
+          width: 2
+          color: *line-color
+

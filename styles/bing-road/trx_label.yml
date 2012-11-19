@@ -1,19 +1,35 @@
 name: Style for airport point
+defaults:
+  font: &font '#4c0f27'
+  family: &family Droid Sans
+  halo: &halo '#ffffff'
+  zooms:
+    0: &zoom-0
+      max: 10
+      min: 12
+    1: &zoom-1
+      max: 12
+      min: 14
+    2: &zoom-2
+      max: 12
+      min: 14
+    3: &zoom-3
+      max: 14
+      min: 16
+
+
 feature-styles:
 - rules:
 
-  - zoom-levels:
-      max: 10
-      min: 12
+  - zoom-levels: *zoom-0
     symbolizers:
       text:
         halo:
           radius: 2
           opacity: .6
-          color: '#ffffff'
+          color: *halo
         fill:
-          color: '#4c0f27'
-          #color: '#ff6633'
+          color: *font
         placement:
           point:
             x: .5
@@ -21,22 +37,19 @@ feature-styles:
         font:
           weight: bold
           size: 10
-          family: Droid Sans
+          family: *family
         label:
           property: name
 
-  - zoom-levels:
-      max: 12
-      min: 14
+  - zoom-levels: *zoom-2
     symbolizers:
       text:
         halo:
           radius: 2
           opacity: .6
-          color: '#ffffff'
+          color: *halo
         fill:
-          color: '#4c0f27'
-#          color: '#ff6633'
+          color: *font
         placement:
           point:
             x: .5
@@ -44,23 +57,20 @@ feature-styles:
         font:
           weight: bold
           size: 12
-          family: Droid Sans
+          family: *family
         label:
           property: name
 
 
-  - zoom-levels:
-      max: 14
-      min: 16
+  - zoom-levels: *zoom-3
     symbolizers:
       text:
         halo:
           radius: 4
           opacity: .6
-          color: '#ffffff'
+          color: *halo
         fill:
-          color: '#4c0f27'
-#          color: '#ff6633'
+          color: *font
         placement:
           point:
             x: .5
@@ -68,6 +78,6 @@ feature-styles:
         font:
           weight: bold
           size: 14
-          family: Droid Sans
+          family: *family
         label:
           property: name
