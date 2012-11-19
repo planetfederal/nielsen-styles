@@ -41,11 +41,6 @@ maps:
       #   style: bing-road-mcd-label
 
       # ## Combined Statical Area ###
-      # - table: csa_clip
-      #   style: bing-road-csa
-
-      # - table: csa_label
-      #   style: bing-road-csa-label
 
       # - table: cbs_clip
       #   style: bing-road-cbs
@@ -53,9 +48,15 @@ maps:
       # - table: cbs_label
       #   style: bing-road-cbs-label
 
-      ###############################
-      ### nielsen designated area ###
-      ###############################
+      # - table: csa_clip
+      #   style: bing-road-csa
+
+      # - table: csa_label
+      #   style: bing-road-csa-label
+
+      
+      #   ### nielsen designated area ###
+      
       # - table: dma_clip
       #   style: bing-road-dma
 
@@ -66,25 +67,25 @@ maps:
 
       ### zip code ###
 
-      - table: tdz_clip
-        style: bing-road-tdz
+      # - table: tdz_clip
+      #   style: bing-road-tdz
 
-      - table: tdz_label
-        style: bing-road-tdz-label
+      # - table: tdz_label
+      #   style: bing-road-tdz-label
 
-      - table: zp5_clip
-        style: bing-road-zp5
+      # - table: zp5_clip
+      #   style: bing-road-zp5
 
-      - table: zp5_label
-        style: bing-road-zp5-label
+      # - table: zp5_label
+      #   style: bing-road-zp5-label
 
-      # ### county ###
+      # # ### county ###
 
-      # - table: cty_clip
-      #   style: bing-road-cty
+      - table: cty_clip
+        style: bing-road-cty
 
-      # - table: cty_point_clip
-      #   style: bing-road-cty-label
+      - table: cty_point_clip
+        style: bing-road-cty-label
 
 
       # - table: sta_clip
@@ -543,10 +544,10 @@ maps:
 
 datastores:
 - name: nielsen
-  host: 192.168.56.101
-  port: 5432
-  user: geonode
-  password: geonode
+#  host: 192.168.56.101
+#  port: 5432
+#  user: geonode
+#  password: geonode
   type: postgis
 
 
