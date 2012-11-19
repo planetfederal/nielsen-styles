@@ -1,44 +1,53 @@
-name: zp5 labels
+name: Census Place label
+defaults:
+  label-color: &label-color '#00C9F3'
+  halo-color: &halo-color '#000000'
+  font-family: &font-family Droid Serif
+  label-property: &label-property 
+    property: name
+  label-placement: &label-placement
+    point:
+      x: .5
+      y: .5
+  zooms:
+    0: &zoom-0
+      max: 10
+      min: 12
+    1: &zoom-1
+      max: 12
+      min: 16
+
 feature-styles:
 - rules:
 
-  - zoom-levels:
-      max: 10
-      min: 12
+  - zoom-levels: *zoom-0
     symbolizers:
       text:
         halo:
-          radius: 1
-          color: '#ffffff'
+          radius: 2
+          opacity: .6
+          color: *halo-color
         fill:
-          color: '#4c0f27'
-        placement:
-          point:
-            x: .5
-            y: .5
+          color: *label-color
+        placement: *label-placement
         font:
-          size: 14
-          family: Droid Sans
-        label:
-          property: name
+          size: 16
+          style: italic
+          family: *font-family
+        label: *label-property
 
-  - zoom-levels:
-      max: 12
-      min: 16
+  - zoom-levels: *zoom-1
     symbolizers:
       text:
         halo:
           radius: 4
           opacity: .6
-          color: '#ffffff'
+          color: *halo-color
         fill:
-          color: '#4c0f27'
-        placement:
-          point:
-            x: .5
-            y: .5
+          color: *label-color
+        placement: *label-placement
         font:
           size: 20
-          family: Droid Sans
-        label:
-          property: name
+          style: italic
+          family: *font-family
+        label: *label-property

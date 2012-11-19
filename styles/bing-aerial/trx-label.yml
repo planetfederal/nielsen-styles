@@ -1,75 +1,72 @@
-name: Style for airport point
+name: Style for Census Tract label
+defaults:
+  label-color: &label-color '#00C9F3'
+  halo-color: &halo-color '#000000'
+  font-family: &font-family Droid Serif
+  label-property: &label-property 
+    property: name
+  label-placement: &label-placement
+    point:
+      x: .5
+      y: .5
+  zooms:
+    0: &zoom-0
+      max: 10
+      min: 12
+    1: &zoom-1
+      max: 12
+      min: 14
+    2: &zoom-2
+      max: 14
+      min: 16
+
 feature-styles:
 - rules:
 
-  - zoom-levels:
-      max: 10
-      min: 12
+  - zoom-levels: *zoom-0
     symbolizers:
       text:
         halo:
           radius: 2
           opacity: .6
-          color: '#000000'
-#          color: '#ffffff'
+          color: *halo-color
         fill:
-          color: '#0000FF'
-          #color: '#000000'
-        placement:
-          point:
-            x: .5
-            y: .5
+          color: *label-color
+        placement: *label-placement
         font:
           weight: bold
           size: 10
-          family: Droid Sans
-        label:
-          property: name
+          family: *font-family
+        label: *label-property
 
-  - zoom-levels:
-      max: 12
-      min: 14
+  - zoom-levels: *zoom-1
     symbolizers:
       text:
         halo:
           radius: 2
           opacity: .6
-          color: '#000000'
+          color: *halo-color
         fill:
-          color: '#0000FF'
-          #color: '#000000'
-        placement:
-          point:
-            x: .5
-            y: .5
+          color: *label-color
+        placement: *label-placement
         font:
           weight: bold
           size: 12
-          family: Droid Sans
-        label:
-          property: name
+          family: *font-family
+        label: *label-property
 
-
-  - zoom-levels:
-      max: 14
-      min: 16
+  - zoom-levels: *zoom-2
     symbolizers:
       text:
         halo:
-          radius: 3
-          opacity: .4
-          color: '#000000'
-          #color: '#ffffff'
+          radius: 2
+          opacity: .6
+          color: *halo-color
         fill:
-          color: '#0000FF'
-          # color: '#000000'
-        placement:
-          point:
-            x: .5
-            y: .5
+          color: *label-color
+        placement: *label-placement
         font:
           weight: bold
           size: 14
-          family: Droid Sans
-        label:
-          property: name
+          family: *font-family
+        label: *label-property
