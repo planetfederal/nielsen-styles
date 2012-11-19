@@ -1,12 +1,14 @@
 name: Style for dma
 defaults:
+#  line-color: &line-color '#ff33ff'
   line-color: &line-color '#bf4c26'
   casing-color: &casing-color '#bf4c26'
   zooms:
     0: &zoom-0
-      min: 12
+      max: 4
+      min: 10
     1: &zoom-1
-      max: 12
+      max: 10
       min: 20
 
 feature-styles:
