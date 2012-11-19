@@ -11,7 +11,7 @@ defaults:
       x: .5
       y: .5
   vendor-options: &vendor-options
-    autoWrap: '90'
+    autoWrap: '110'
 
 feature-styles:
 - rules:
@@ -22,7 +22,7 @@ feature-styles:
       text:
         halo:
           radius: 2
-          opacity: .66
+          opacity: .6
           color: *halo-color
         fill:
           color: *label-color
@@ -41,7 +41,7 @@ feature-styles:
       text:
         halo:
           radius: 4
-          opacity: .66
+          opacity: .6
           color: *halo-color
         fill:
           color: *label-color
