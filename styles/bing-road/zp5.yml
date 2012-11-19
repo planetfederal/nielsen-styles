@@ -1,57 +1,57 @@
 name: Style for zp5
+defaults:
+  line-color: &line-color '#043f4c'
+  casing-color: &casing-color '#043f4c'
+  zooms:
+    0: &zoom-0
+      max: 6
+      min: 10
+    1: &zoom-1
+      max: 10
+      min: 12
+    2: &zoom-2
+      max: 12
+      min: 20
+
 feature-styles:
 - rules:
 
-  - zoom-levels:
-      max: 6
-      min: 10
+  - zoom-levels: *zoom-0
     symbolizers:
       line:
         stroke:
           width: .5
           opacity: .6
-          color: '#043f4c'
-          #color: '#4c0f27'
+          color: *line-color
 
-  - zoom-levels:
-      max: 10
-      min: 12
+  - zoom-levels: *zoom-1
+    symbolizers:
+      line:
+        stroke:
+          width: 6
+          opacity: .1
+          color: *casing-color
+
+  - zoom-levels: *zoom-1
     symbolizers:
       line:
         stroke:
           width: 1
           opacity: .6
-          color: '#043f4c'
-#          color: '#4c0f27'
+          color: *line-color
 
-  - zoom-levels:
-      max: 10
-      min: 12
+
+  - zoom-levels: *zoom-2
     symbolizers:
       line:
         stroke:
           width: 6
           opacity: .1
-          color: '#043f4c'
-#          color: '#4c0f27'
+          color: *casing-color
 
-  - zoom-levels:
-      max: 12
-      min: 20
+  - zoom-levels: *zoom-2
     symbolizers:
       line:
         stroke:
           width: 2
-          color: '#043f4c'
-#          color: '#4c0f27'
-
-  - zoom-levels:
-      max: 12
-      min: 20
-    symbolizers:
-      line:
-        stroke:
-          width: 6
-          opacity: .1
-          color: '#043f4c'
-#          color: '#4c0f27'
+          color: *line-color
