@@ -3,6 +3,10 @@ defaults:
   font-color: &font-color '#043f4c'
   halo-color: &halo-color '#ffffff'
   font: &font Droid Sans
+  placement: &placement
+    point:
+      x: .5
+      y: .5
   zooms:
     0: &zoom-0
       max: 6
@@ -24,10 +28,7 @@ feature-styles:
           color: *halo-color
         fill:
           color: *font-color
-        placement:
-          point:
-            x: .5
-            y: .5
+        placement: *placement
         font:
           size: 12
           family: *font
@@ -45,10 +46,7 @@ feature-styles:
           color: *halo-color
         fill:
           color: *font-color
-        placement:
-          point:
-            x: .5
-            y: .5
+        placement: *placement
         font:
           size: 14
           family: *font
