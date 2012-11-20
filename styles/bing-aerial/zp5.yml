@@ -1,71 +1,71 @@
 name: Style for zp5
+defaults:
+  line-color: &line-color '#FF4400'
+  casing-color: &casing-color '#000000'
+  zooms:
+    0: &zoom-0
+      max: 6
+      min: 10
+    1: &zoom-1
+      max: 10
+      min: 12
+    2: &zoom-2
+      max: 12
+      min: 16
+    3: &zoom-3
+      max: 16
+
 feature-styles:
 - rules:
 
-  - zoom-levels:
-      max: 6
-      min: 10
+  - zoom-levels: *zoom-0
     symbolizers:
       line:
         stroke:
           width: .5
-          opacity: .6
-          color: '#FFFF3C'
+          color: *line-color
 
-  - zoom-levels:
-      max: 10
-      min: 12
-    symbolizers:
-      line:
-        stroke:
-          width: 6
-          opacity: .1
-          color: '#0000000'
-          
-  - zoom-levels:
-      max: 10
-      min: 12
-    symbolizers:
-      line:
-        stroke:
-          width: 1
-          opacity: .6
-          color: '#FFFF3C'
-
-  - zoom-levels:
-      max: 12
-      min: 16
+  - zoom-levels: *zoom-1
     symbolizers:
       line:
         stroke:
           width: 6
           opacity: .33
-          color: '#0000000'
+          color: *casing-color
+          
+  - zoom-levels: *zoom-1
+    symbolizers:
+      line:
+        stroke:
+          width: 1
+          color: *line-color
 
-  - zoom-levels:
-      max: 12
-      min: 16
+  - zoom-levels: *zoom-2
+    symbolizers:
+      line:
+        stroke:
+          width: 6
+          opacity: .33
+          color: *casing-color
+
+  - zoom-levels: *zoom-2
     symbolizers:
       line:
         stroke:
           width: 2
-          color: '#FFFF3C'
+          color: *line-color
 
-  - zoom-levels:
-      max: 16
-      min: 20
+  - zoom-levels: *zoom-3
     symbolizers:
       line:
         stroke:
           width: 9
-          opacity: .67
-          color: '#0000000' 
+          opacity: .66
+          color: *casing-color
 
-  - zoom-levels:
-      max: 16
-      min: 20
+  - zoom-levels: *zoom-3
     symbolizers:
       line:
         stroke:
           width: 3
-          color: '#FFFF3C'         
+          color: *line-color
