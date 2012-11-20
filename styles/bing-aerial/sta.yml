@@ -1,4 +1,4 @@
-name: Style for DMA
+name: Style for State
 defaults:
   line-color: &line-color '#000000'
   casing-color: &casing-color '#000000'
@@ -10,10 +10,12 @@ defaults:
       min: 8
     2: &zoom-2
       max: 8
-      min: 12
+      min: 10
     3: &zoom-3
+      max: 10
+      min: 12
+    4: &zoom-4
       max: 12
-      min: 20
 
 feature-styles:
 - rules:
@@ -22,7 +24,7 @@ feature-styles:
     symbolizers:
       line:
         stroke:
-          width: 6
+          width: 4
           opacity: .33
           color: *casing-color
 
@@ -39,7 +41,7 @@ feature-styles:
     symbolizers:
       line:
         stroke:
-          width: 8
+          width: 6
           opacity: .33
           color: *casing-color
 
@@ -47,7 +49,7 @@ feature-styles:
     symbolizers:
       line:
         stroke:
-          width: 2
+          width: 1
           opacity: .66
           color: *line-color
 
@@ -56,7 +58,7 @@ feature-styles:
     symbolizers:
       line:
         stroke:
-          width: 10
+          width: 8
           opacity: .33
           color: *casing-color
 
@@ -64,7 +66,8 @@ feature-styles:
     symbolizers:
       line:
         stroke:
-          width: 2
+          width: 1
+          opacity: .66
           color: *line-color
 
   - zoom-levels: *zoom-3
@@ -81,4 +84,18 @@ feature-styles:
         stroke:
           width: 3
           color: *line-color           
+  
+  - zoom-levels: *zoom-4
+    symbolizers:
+      line:
+        stroke:
+          width: 12
+          opacity: .5
+          color: *casing-color
 
+  - zoom-levels: *zoom-4
+    symbolizers:
+      line:
+        stroke:
+          width: 4
+          color: *line-color
