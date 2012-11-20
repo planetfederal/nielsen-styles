@@ -1,6 +1,6 @@
 name: Labels for 3-digit zip layers
 defaults:
-  label-color: &label-color "#FF4400"
+  label-color: &label-color "#FFFF3C"
   halo-color: &halo-color "#000000"
   font-family: &font-family Droid Serif
   label-property: &label-property 
