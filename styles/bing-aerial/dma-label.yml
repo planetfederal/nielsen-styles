@@ -1,7 +1,8 @@
 name: Style for DMA label
 
 defaults:
-  label-color: &label-color "#FF0808"
+#  label-color: &label-color "#FF0808"
+  label-color: &label-color '#DF66F9'
   halo-color: &halo-color "#FFFFFF"
   font-family: &font-family Droid Serif
   label-property: &label-property 
