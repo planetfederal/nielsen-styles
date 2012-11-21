@@ -1,6 +1,8 @@
 name: Style for CSA
 defaults:
-  line-color: &line-color '#FF0808'
+  # line-color: &line-color '#FF4400'
+  # line-color: &line-color '#800080'
+  line-color: &line-color '#DF66F9'
   casing-color: &casing-color '#000000'
   zooms:
     0: &zoom-0
