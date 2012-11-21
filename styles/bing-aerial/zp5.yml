@@ -1,6 +1,6 @@
 name: Style for zp5
 defaults:
-  line-color: &line-color '#FF4400'
+  line-color: &line-color '#FFFF3C'
   casing-color: &casing-color '#000000'
   zooms:
     0: &zoom-0
