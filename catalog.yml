@@ -19,11 +19,11 @@ maps:
       # - table: bgp_point_clip
       #   style: bing-road-bgp-label
 
-      # - table: trx_clip
-      #   style: bing-road-trx
+      - table: trx_clip
+        style: bing-road-trx
 
-      # - table: trx_point_clip
-      #   style: bing-road-trx-label
+      - table: trx_point_clip
+        style: bing-road-trx-label
 
       # - table: pla_clip
       #   style: bing-road-pla
@@ -433,113 +433,113 @@ maps:
 
 
 
-  - name: base-map
-    bgcolor: '#b9c9d5'
-    bbox: [-77.09163824122207,
-           38.858978635249166,
-           -76.96941534083204,
-           38.91336209502852]
-    layers:
+  # - name: base-map
+  #   bgcolor: '#b9c9d5'
+  #   bbox: [-77.09163824122207,
+  #          38.858978635249166,
+  #          -76.96941534083204,
+  #          38.91336209502852]
+  #   layers:
 
-      - table: sta_clip
-        style: base-sta
+  #     - table: sta_clip
+  #       style: base-sta
 
-      - table: parks_clip
-        style: base-parks
+  #     - table: parks_clip
+  #       style: base-parks
 
-      - table: water_clip
-        style: base-water
+  #     - table: water_clip
+  #       style: base-water
 
-        # polygon areas
-      - table: golf_courses_poly_clip
-        style: base-parks
+  #       # polygon areas
+  #     - table: golf_courses_poly_clip
+  #       style: base-parks
 
-      - table: airport_clip
-        style: base-airport
+  #     - table: airport_clip
+  #       style: base-airport
 
-      - table: indstr_ofic_bldgs_clip
-        style: base-airport
+  #     - table: indstr_ofic_bldgs_clip
+  #       style: base-airport
 
-      - table: mil_bases_clip
-        style: base-mil_bases
+  #     - table: mil_bases_clip
+  #       style: base-mil_bases
 
-      - table: stadiums_clip
-        style: base-airport
+  #     - table: stadiums_clip
+  #       style: base-airport
 
-      - table: shop_ctr_clip
-        style: base-shop_ctr
+  #     - table: shop_ctr_clip
+  #       style: base-shop_ctr
 
-      - table: hospitals_poly_clip
-        style: base-hospitals_poly
+  #     - table: hospitals_poly_clip
+  #       style: base-hospitals_poly
 
-      - table: cemeterys_poly_clip
-        style: base-cemeterys_poly
+  #     - table: cemeterys_poly_clip
+  #       style: base-cemeterys_poly
 
-      - table: amusement_centers_clip
-        style: base-airport
+  #     - table: amusement_centers_clip
+  #       style: base-airport
 
-      - table: educ_inst_poly_clip
-        style: base-educ_inst_poly
+  #     - table: educ_inst_poly_clip
+  #       style: base-educ_inst_poly
 
-        # roads layers
-      - table: railroad_clip
-        style: base-railroad
+  #       # roads layers
+  #     - table: railroad_clip
+  #       style: base-railroad
 
-      - table: local_road_se_clip
-        style: base-local_road_se
+  #     - table: local_road_se_clip
+  #       style: base-local_road_se
 
-      - table: major_road_clip
-        style: base-major_road
+  #     - table: major_road_clip
+  #       style: base-major_road
 
-      - table: state_hwy_clip
-        style: base-us_hwy
+  #     - table: state_hwy_clip
+  #       style: base-us_hwy
 
-      - table: major_hwy_clip
-        style: base-us_hwy
+  #     - table: major_hwy_clip
+  #       style: base-us_hwy
 
-      - table: us_hwy_clip
-        style: base-us_hwy
+  #     - table: us_hwy_clip
+  #       style: base-us_hwy
 
-      - table: interstate_clip
-        style: base-interstate
+  #     - table: interstate_clip
+  #       style: base-interstate
 
-        # icon layers
+  #       # icon layers
 
-      - table: airport_point_clip
-        style: base-airport_point
+  #     - table: airport_point_clip
+  #       style: base-airport_point
 
-      - table: parks_point_clip
-        style: base-parks_point
+  #     - table: parks_point_clip
+  #       style: base-parks_point
 
-      - table: marine_terms_clip
-        style: base-marine_terms
+  #     - table: marine_terms_clip
+  #       style: base-marine_terms
 
-      - table: cemeterys_clip
-        style: base-cemeterys
+  #     - table: cemeterys_clip
+  #       style: base-cemeterys
 
-      - table: bus_terms_clip
-        style: base-bus_terms
+  #     - table: bus_terms_clip
+  #       style: base-bus_terms
 
-      - table: shop_clip
-        style: base-shop
+  #     - table: shop_clip
+  #       style: base-shop
 
-      - table: educ_inst_clip
-        style: base-educ_inst
+  #     - table: educ_inst_clip
+  #       style: base-educ_inst
 
-      - table: hospitals_clip
-        style: base-hospitals
+  #     - table: hospitals_clip
+  #       style: base-hospitals
 
-      - table: train_stations_clip
-        style: base-train_stations
+  #     - table: train_stations_clip
+  #       style: base-train_stations
 
-      - table: govt_centers_clip
-        style: base-govt_centers
+  #     - table: govt_centers_clip
+  #       style: base-govt_centers
 
-      - table: major_city_clip
-        style: base-major_city
+  #     - table: major_city_clip
+  #       style: base-major_city
 
-      - table: state_capital_clip
-        style: base-state_capital
+  #     - table: state_capital_clip
+  #       style: base-state_capital
 
 
 datastores:
@@ -1178,69 +1178,151 @@ styles:
 
 tables:
 
-- name: airport_clip
-  datastore: nielsen
-
-
 - name: cty_point_clip
   datastore: nielsen
-
+  styles:
+    - name: bing-road-cty-label
+    - name: bing-aerial-cty-label
 
 - name: trx_point_clip
   datastore: nielsen
+  styles:
+    - name: bing-road-trx-label
+    - name: bing-aerial-trx-label
 
 
 - name: zp5_label
   datastore: nielsen
+  styles:
+    - name: bing-road-zp5-label
+    - name: bing-aerial-zp5-label
 
 - name: mcd_label
   datastore: nielsen
+  styles:
+    - name: bing-road-mcd-label
+    - name: bing-aerial-zp5-label
+
 
 - name: pla_label
   datastore: nielsen
-
+  styles:
+    - name: bing-road-pla-label
+    - name: bing-aerial-pla-label
 
 - name: csa_label
   datastore: nielsen
+  styles:
+    - name: bing-road-csa-label
+    - name: bing-aerial-csa-label
 
 - name: dma_label
   datastore: nielsen
+  styles:
+    - name: bing-road-dma-label
+    - name: bing-aerial-dma-label
 
 - name: cbs_label
   datastore: nielsen
+  styles:
+    - name: bing-road-csb-label
+    - name: bing-aerial-csb-label
 
 - name: tdz_label
   datastore: nielsen
+  styles:
+    - name: bing-road-tdz-label
+    - name: bing-aerial-tdz-label
 
 - name: bgp_point_clip
   datastore: nielsen
-
-
-- name: airport_point_clip
-  datastore: nielsen
-
-
-- name: parks_point_clip
-  datastore: nielsen
-
-
-- name: amusement_centers_clip
-  datastore: nielsen
-
+  styles:
+    - name: bing-road-bgp-label
+    - name: bing-aerial-bgp-label
 
 - name: bgp_clip
   datastore: nielsen
-
+  styles:
+    - name: bing-road-bgp
+    - name: bing-aerial-bgp
 
 - name: blk_clip
   datastore: nielsen
-
-
-- name: bus_terms_clip
-  datastore: nielsen
-
+  styles:
+    - name: bing-road-blk
+    - name: bing-aerial-blk
 
 - name: cbs_clip
+  datastore: nielsen
+  styles:
+    - name: bing-road-cbs
+    - name: bing-aerial-cbs
+
+
+- name: zp5_clip
+  datastore: nielsen
+  styles:
+    - name: bing-road-zp5
+    - name: bing-aerial-zp5
+
+- name: csa_clip
+  datastore: nielsen
+  styles:
+    - name: bing-road-csa
+    - name: bing-aerial-csb
+
+
+- name: cty_clip
+  datastore: nielsen
+  styles:
+    - name: bing-road-cty
+    - name: bing-aerial-cty
+
+- name: dma_clip
+  datastore: nielsen
+  styles:
+    - name: bing-road-dma
+    - name: bing-aerial-dma
+
+- name: mcd_clip
+  datastore: nielsen
+  styles:
+    - name: bing-road-mcd
+    - name: bing-aerial-mcd
+
+- name: pla_clip
+  datastore: nielsen
+  styles:
+    - name: bing-road-pla
+    - name: bing-aerial-pla
+
+- name: sta_clip
+  datastore: nielsen
+  styles:
+    - name: bing-road-sta
+    - name: bing-aerial-sta
+
+- name: tdz_clip
+  datastore: nielsen
+  styles:
+    - name: bing-road-tdz
+    - name: bing-aerial-tdz
+
+
+- name: trx_clip
+  datastore: nielsen
+  styles:
+    - name: bing-road-trx
+    - name: bing-aerial-trx
+
+
+
+
+
+- name: zip_clip
+  datastore: nielsen
+
+- name: bus_terms_clip
   datastore: nielsen
 
 
@@ -1251,17 +1333,6 @@ tables:
 - name: cemeterys_poly_clip
   datastore: nielsen
 
-
-- name: csa_clip
-  datastore: nielsen
-
-
-- name: cty_clip
-  datastore: nielsen
-
-
-- name: dma_clip
-  datastore: nielsen
 
 
 - name: educ_inst_clip
@@ -1340,9 +1411,6 @@ tables:
   datastore: nielsen
 
 
-- name: mcd_clip
-  datastore: nielsen
-
 
 - name: midsize_city_clip
   datastore: nielsen
@@ -1364,9 +1432,6 @@ tables:
   datastore: nielsen
 
 
-- name: pla_clip
-  datastore: nielsen
-
 
 - name: pois_clip
   datastore: nielsen
@@ -1384,9 +1449,6 @@ tables:
   datastore: nielsen
 
 
-- name: sta_clip
-  datastore: nielsen
-
 
 - name: stadiums_clip
   datastore: nielsen
@@ -1400,19 +1462,12 @@ tables:
   datastore: nielsen
 
 
-- name: tdz_clip
-  datastore: nielsen
-
 
 - name: traffic_clip
   datastore: nielsen
 
 
 - name: train_stations_clip
-  datastore: nielsen
-
-
-- name: trx_clip
   datastore: nielsen
 
 
@@ -1432,10 +1487,14 @@ tables:
   datastore: nielsen
 
 
-- name: zip_clip
+- name: airport_point_clip
   datastore: nielsen
 
 
-- name: zp5_clip
+- name: parks_point_clip
+  datastore: nielsen
+
+
+- name: amusement_centers_clip
   datastore: nielsen
 
