@@ -129,48 +129,48 @@ maps:
 
       ### census layers ###
 
-      - table: bgp_clip
-        style: bing-aerial-bgp
+      # - table: bgp_clip
+      #   style: bing-aerial-bgp
 
-      # - table: bgp_point_clip
-      #   style: bing-aerial-bgp-label
+      # # - table: bgp_point_clip
+      # #   style: bing-aerial-bgp-label
 
-      - table: trx_clip
-        style: bing-aerial-trx
+      # - table: trx_clip
+      #   style: bing-aerial-trx
 
-      # - table: trx_point_clip
-      #   style: bing-aerial-trx-label
+      # # - table: trx_point_clip
+      # #   style: bing-aerial-trx-label
 
-      - table: pla_clip
-        style: bing-aerial-pla
+      # - table: pla_clip
+      #   style: bing-aerial-pla
 
-      # - table: pla_label
-      #   style: bing-aerial-pla-label
+      # # - table: pla_label
+      # #   style: bing-aerial-pla-label
 
-      - table: mcd_clip
-        style: bing-aerial-mcd
+      # - table: mcd_clip
+      #   style: bing-aerial-mcd
 
-      # - table: mcd_label
-      #   style: bing-aerial-mcd-label
+      # # - table: mcd_label
+      # #   style: bing-aerial-mcd-label
 
-      # ### nielsen geography layers ###
+      # # ### nielsen geography layers ###
 
-      # ## Combined Statical Area ###
-      - table: csa_clip
-        style: bing-aerial-csa
+      # # ## Combined Statical Area ###
+      # - table: csa_clip
+      #   style: bing-aerial-csa
 
-      # - table: csa_label
-      #   style: bing-aerial-csa-label
+      # # - table: csa_label
+      # #   style: bing-aerial-csa-label
 
-      - table: cbs_clip
-        style: bing-aerial-cbs
+      # - table: cbs_clip
+      #   style: bing-aerial-cbs
 
-      # - table: cbs_label
-      #   style: bing-aerial-cbs-label
+      # # - table: cbs_label
+      # #   style: bing-aerial-cbs-label
 
-      ###############################
-      ### nielsen designated area ###
-      ###############################
+      # ###############################
+      # ### nielsen designated area ###
+      # ###############################
       - table: dma_clip
         style: bing-aerial-dma
 
@@ -179,29 +179,29 @@ maps:
 
 
 
-      ### zip code ###
+      # ### zip code ###
 
-      - table: zp5_clip
-        style: bing-aerial-zp5
+      # - table: zp5_clip
+      #   style: bing-aerial-zp5
 
-      # - table: zp5_label
-      #   style: bing-aerial-zp5-label
+      # # - table: zp5_label
+      # #   style: bing-aerial-zp5-label
 
-      - table: tdz_clip
-        style: bing-aerial-tdz
+      # - table: tdz_clip
+      #   style: bing-aerial-tdz
 
-      # - table: tdz_label
-      #   style: bing-aerial-tdz-label
+      # # - table: tdz_label
+      # #   style: bing-aerial-tdz-label
 
       
 
-      ### county ###
+      # ### county ###
 
-      - table: cty_clip
-        style: bing-aerial-cty
+      # - table: cty_clip
+      #   style: bing-aerial-cty
 
-      - table: cty_point_clip
-        style: bing-aerial-cty-label
+      # - table: cty_point_clip
+      #   style: bing-aerial-cty-label
 
 
       - table: sta_clip
