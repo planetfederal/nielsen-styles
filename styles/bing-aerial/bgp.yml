@@ -3,7 +3,7 @@ feature-styles:
 - rules:
 
   - zoom-levels:
-      max: 6
+      max: 0
       min: 10
     symbolizers:
       line:

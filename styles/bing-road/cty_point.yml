@@ -3,7 +3,6 @@ feature-styles:
 - rules:
 
   - zoom-levels:
-      max: 6
       min: 8
     symbolizers:
       text:

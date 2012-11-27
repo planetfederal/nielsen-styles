@@ -1,10 +1,8 @@
 # #bf4c26
-name: Labels for csa labels
+name: Labels for csa labels  
 feature-styles:
 - rules:
-
   - zoom-levels:
-      max: 6
       min: 10
     symbolizers:
       text:

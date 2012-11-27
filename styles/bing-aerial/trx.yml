@@ -1,9 +1,7 @@
 name: Style for Census Tract
 feature-styles:
 - rules:
-
   - zoom-levels:
-      max: 6
       min: 10
     symbolizers:
       line:

@@ -2,7 +2,7 @@ name: Style for block group labels
 defaults:
   label-color: &label-color '#00C9F3'
   halo-color: &halo-color '#000000'
-  font-family: &font-family Droid Serif
+  font-family: &font-family Droid Sans
   label-property: &label-property 
     property: name
   label-placement: &label-placement

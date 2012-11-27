@@ -2,7 +2,7 @@ name: Labels for 3-digit zip layers
 defaults:
   label-color: &label-color "#FFFF3C"
   halo-color: &halo-color "#000000"
-  font-family: &font-family Droid Serif
+  font-family: &font-family Droid Sans
   label-property: &label-property 
     property: name
   label-placement: &label-placement
@@ -13,7 +13,7 @@ feature-styles:
 - rules:
   - zoom-levels:
       # max: 6
-      min: 8
+      min: 0
     symbolizers:
       text:
         halo:

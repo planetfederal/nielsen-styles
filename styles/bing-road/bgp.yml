@@ -3,7 +3,6 @@ defaults:
   line-color: &line-color '#4c0f27'
   zooms:
     0: &zoom-0
-      max: 10
       min: 12
     1: &zoom-1
       max: 12

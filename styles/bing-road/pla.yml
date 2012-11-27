@@ -3,7 +3,6 @@ feature-styles:
 - rules:
 
   - zoom-levels:
-      max: 6
       min: 10
     symbolizers:
       line:
@@ -22,7 +21,7 @@ feature-styles:
           width: 1
           opacity: .6
           color: '#4c0f27'
-#          color: '#000000'
+
 
   - zoom-levels:
       max: 10
@@ -33,7 +32,7 @@ feature-styles:
           width: 6
           opacity: .1
           color: '#4c0f27'
-#          color: '#000000'
+
 
   - zoom-levels:
       max: 12
@@ -43,7 +42,7 @@ feature-styles:
         stroke:
           width: 2
           color: '#4c0f27'
-#          color: '#000000'
+
 
   - zoom-levels:
       max: 12
@@ -54,4 +53,3 @@ feature-styles:
           width: 6
           opacity: .1
           color: '#4c0f27'
-#          color: '#000000'

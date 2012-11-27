@@ -3,7 +3,7 @@ name: Labels for zip5
 defaults:
   label-color: &label-color "#FFFF3C"
   halo-color: &halo-color "#000000"
-  font-family: &font-family Droid Serif
+  font-family: &font-family Droid Sans
   label-property: &label-property 
     property: label
   label-placement: &label-placement

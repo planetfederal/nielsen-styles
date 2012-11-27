@@ -1,9 +1,8 @@
 name: Labels for csa labels
 defaults:
-#  label-color: &label-color "#FF0808"
   label-color: &label-color '#DF66F9'
   halo-color: &halo-color "#FFFFFF"
-  font-family: &font-family Droid Serif
+  font-family: &font-family Droid Sans
   label-property: &label-property 
     property: name
   label-placement: &label-placement
@@ -15,7 +14,7 @@ feature-styles:
 - rules:
   - zoom-levels:
       # max: 6
-      min: 10
+      min: 0
     symbolizers:
       text:
         halo:

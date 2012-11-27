@@ -1,9 +1,7 @@
 name: Style for Census Place
 feature-styles:
 - rules:
-
   - zoom-levels:
-      max: 6
       min: 8
     symbolizers:
       line:
@@ -11,7 +9,6 @@ feature-styles:
           width: .75
           opacity: .66
           color: &lclr '#00C9F3'
-
 
   - zoom-levels:
       max: 8

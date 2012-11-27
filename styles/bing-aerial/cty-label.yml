@@ -3,8 +3,7 @@ feature-styles:
 - rules:
 
   - zoom-levels:
-      # max: 6
-      min: 8
+      min: 0
     symbolizers:
       text:
         halo:

@@ -2,7 +2,7 @@ name: Census Place label
 defaults:
   label-color: &label-color '#00C9F3'
   halo-color: &halo-color '#000000'
-  font-family: &font-family Droid Serif
+  font-family: &font-family Droid Sans
   label-property: &label-property 
     property: name
   label-placement: &label-placement
@@ -12,7 +12,7 @@ defaults:
   zooms:
     0: &zoom-0
       # max: 10
-      min: 12
+      min: 1
     1: &zoom-1
       max: 12
       min: 20
