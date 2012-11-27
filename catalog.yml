@@ -3,30 +3,37 @@
 
 workspace: nielsen
 
-maps:
 
+datastores:
+- name: nielsen_full
+  type: postgis
+
+maps:
 
   - name: bing-road
     bgcolor: '#ffffff'
-    bbox: [-79.40551229971192,37.654112521799384,-75.12908407705577,39.760699547115514]
+    bbox: [-79.40551229971192,
+           37.654112521799384,
+           -75.12908407705577,
+           39.760699547115514]
     layers:
 
       ### census layers ###
 
-      # - table: bgp_clip
-      #   style: bing-road-bgp
+      - table: bgp
+        style: bing-road-bgp
 
-      # - table: bgp_point_clip
-      #   style: bing-road-bgp-label
+      #- table: bgp_point_clip
+      #  style: bing-road-bgp-label
 
-      - table: trx_clip
+      - table: trx
         style: bing-road-trx
 
-      - table: trx_point_clip
-        style: bing-road-trx-label
+      #- table: trx_point_clip
+      #  style: bing-road-trx-label
 
-      # - table: pla_clip
-      #   style: bing-road-pla
+      - table: pla
+        style: bing-road-pla
 
       # - table: pla_label
       #   style: bing-road-pla-label
@@ -81,11 +88,11 @@ maps:
 
       # # ### county ###
 
-      - table: cty_clip
-        style: bing-road-cty
+      # - table: cty_clip
+      #   style: bing-road-cty
 
-      - table: cty_point_clip
-        style: bing-road-cty-label
+      # - table: cty_point_clip
+      #   style: bing-road-cty-label
 
 
       # - table: sta_clip
@@ -122,314 +129,314 @@ maps:
       # - table: govt_centers_clip
       #   style: base-govt_centers
 
-  - name: bing-aerial
-    bgcolor: '#000000'
-    bbox: [-79.40551229971192,37.654112521799384,-75.12908407705577,39.760699547115514]
-    layers:
+  # - name: bing-aerial
+  #   bgcolor: '#000000'
+  #   bbox: [-79.40551229971192,37.654112521799384,-75.12908407705577,39.760699547115514]
+  #   layers:
 
-      ### census layers ###
+  #     ### census layers ###
 
-      # - table: bgp_clip
-      #   style: bing-aerial-bgp
+  #     # - table: bgp_clip
+  #     #   style: bing-aerial-bgp
 
-      # # - table: bgp_point_clip
-      # #   style: bing-aerial-bgp-label
+  #     # # - table: bgp_point_clip
+  #     # #   style: bing-aerial-bgp-label
 
-      # - table: trx_clip
-      #   style: bing-aerial-trx
+  #     # - table: trx_clip
+  #     #   style: bing-aerial-trx
 
-      # # - table: trx_point_clip
-      # #   style: bing-aerial-trx-label
+  #     # # - table: trx_point_clip
+  #     # #   style: bing-aerial-trx-label
 
-      # - table: pla_clip
-      #   style: bing-aerial-pla
+  #     # - table: pla_clip
+  #     #   style: bing-aerial-pla
 
-      # # - table: pla_label
-      # #   style: bing-aerial-pla-label
+  #     # # - table: pla_label
+  #     # #   style: bing-aerial-pla-label
 
-      # - table: mcd_clip
-      #   style: bing-aerial-mcd
+  #     # - table: mcd_clip
+  #     #   style: bing-aerial-mcd
 
-      # # - table: mcd_label
-      # #   style: bing-aerial-mcd-label
+  #     # # - table: mcd_label
+  #     # #   style: bing-aerial-mcd-label
 
-      # # ### nielsen geography layers ###
+  #     # # ### nielsen geography layers ###
 
-      # # ## Combined Statical Area ###
-      # - table: csa_clip
-      #   style: bing-aerial-csa
+  #     # # ## Combined Statical Area ###
+  #     # - table: csa_clip
+  #     #   style: bing-aerial-csa
 
-      # # - table: csa_label
-      # #   style: bing-aerial-csa-label
+  #     # - table: csa_label
+  #     #   style: bing-aerial-csa-label
 
-      # - table: cbs_clip
-      #   style: bing-aerial-cbs
+  #     # - table: cbs_clip
+  #     #   style: bing-aerial-cbs
 
-      # # - table: cbs_label
-      # #   style: bing-aerial-cbs-label
+  #     # - table: cbs_label
+  #     #   style: bing-aerial-cbs-label
 
-      # ###############################
-      # ### nielsen designated area ###
-      # ###############################
-      - table: dma_clip
-        style: bing-aerial-dma
+  #     # ###############################
+  #     # ### nielsen designated area ###
+  #     # ###############################
+  #     # - table: dma_clip
+  #     #   style: bing-aerial-dma
 
-      - table: dma_label
-        style: bing-aerial-dma-label
+  #     # - table: dma_label
+  #     #   style: bing-aerial-dma-label
 
 
 
-      # ### zip code ###
+  #     # ### zip code ###
 
-      # - table: zp5_clip
-      #   style: bing-aerial-zp5
+  #     # - table: zp5_clip
+  #     #   style: bing-aerial-zp5
 
-      # # - table: zp5_label
-      # #   style: bing-aerial-zp5-label
+  #     # # - table: zp5_label
+  #     # #   style: bing-aerial-zp5-label
 
-      # - table: tdz_clip
-      #   style: bing-aerial-tdz
+  #     # - table: tdz_clip
+  #     #   style: bing-aerial-tdz
 
-      # # - table: tdz_label
-      # #   style: bing-aerial-tdz-label
+  #     # # - table: tdz_label
+  #     # #   style: bing-aerial-tdz-label
 
       
 
-      # ### county ###
+  #     # ### county ###
 
-      # - table: cty_clip
-      #   style: bing-aerial-cty
+  #     # - table: cty_clip
+  #     #   style: bing-aerial-cty
 
-      # - table: cty_point_clip
-      #   style: bing-aerial-cty-label
+  #     # - table: cty_point_clip
+  #     #   style: bing-aerial-cty-label
 
 
-      - table: sta_clip
-        style: bing-aerial-sta
+  #     # - table: sta_clip
+  #     #   style: bing-aerial-sta
 
-      ### Culture ###
+  #     ### Culture ###
       
-      # - table: airport_point_clip
-      #   style: base-airport_point
+  #     # - table: airport_point_clip
+  #     #   style: base-airport_point
 
-      # - table: parks_point_clip
-      #   style: base-parks_point
+  #     # - table: parks_point_clip
+  #     #   style: base-parks_point
 
-      # - table: marine_terms_clip
-      #   style: base-marine_terms
+  #     # - table: marine_terms_clip
+  #     #   style: base-marine_terms
 
-      # - table: cemeterys_clip
-      #   style: base-cemeterys
+  #     # - table: cemeterys_clip
+  #     #   style: base-cemeterys
 
-      # - table: bus_terms_clip
-      #   style: base-bus_terms
+  #     # - table: bus_terms_clip
+  #     #   style: base-bus_terms
 
-      # - table: shop_clip
-      #   style: base-shop
+  #     # - table: shop_clip
+  #     #   style: base-shop
 
-      # - table: educ_inst_clip
-      #   style: base-educ_inst
+  #     # - table: educ_inst_clip
+  #     #   style: base-educ_inst
 
-      # - table: hospitals_clip
-      #   style: base-hospitals
+  #     # - table: hospitals_clip
+  #     #   style: base-hospitals
 
-      # - table: train_stations_clip
-      #   style: base-train_stations
+  #     # - table: train_stations_clip
+  #     #   style: base-train_stations
 
-      # - table: govt_centers_clip
-      #   style: base-govt_centers
+  #     # - table: govt_centers_clip
+  #     #   style: base-govt_centers
 
        
-  - name: bing-dark-road
-    bgcolor: '#ffffff'
-    bbox: [-79.40551229971192,37.654112521799384,-75.12908407705577,39.760699547115514]
-    layers:
+  # - name: bing-dark-road
+  #   bgcolor: '#ffffff'
+  #   bbox: [-79.40551229971192,37.654112521799384,-75.12908407705577,39.760699547115514]
+  #   layers:
 
-      ### census layers ###
+  #     ### census layers ###
 
-      - table: bgp_clip
-        style: bing-dark-bgp
+  #     - table: bgp_clip
+  #       style: bing-dark-bgp
 
-      - table: bgp_point_clip
-        style: bing-dark-bgp-label
+  #     - table: bgp_point_clip
+  #       style: bing-dark-bgp-label
 
-      # - table: trx_clip
-      #   style: bing-dark-trx
+  #     # - table: trx_clip
+  #     #   style: bing-dark-trx
 
-      # - table: trx_point_clip
-      #   style: bing-dark-trx-label
+  #     # - table: trx_point_clip
+  #     #   style: bing-dark-trx-label
     
-      # census place
-      - table: pla_clip
-        style: bing-dark-pla
+  #     # census place
+  #     - table: pla_clip
+  #       style: bing-dark-pla
 
-      - table: pla_label
-        style: bing-dark-pla-label
-
-
-      ### nielsen geography layers ###
-
-      # - table: mcd_clip
-      #   style: bing-dark-mcd
-
-      # - table: mcd_label
-      #   style: bing-dark-mcd-label
-
-      ## Combined Statical Area ###
-      # - table: csa_clip
-      #   style: bing-dark-csa
-
-      # - table: csa_label
-      #   style: bing-dark-road-csa-label
+  #     - table: pla_label
+  #       style: bing-dark-pla-label
 
 
-      ### zip code ###
+  #     ### nielsen geography layers ###
 
-      - table: zp5_clip
-        style: bing-dark-zp5
+  #     # - table: mcd_clip
+  #     #   style: bing-dark-mcd
 
-      - table: zp5_label
-        style: bing-dark-zp5-label
+  #     # - table: mcd_label
+  #     #   style: bing-dark-mcd-label
 
-      ### county ###
+  #     ## Combined Statical Area ###
+  #     # - table: csa_clip
+  #     #   style: bing-dark-csa
 
-      - table: cty_clip
-        style: bing-dark-cty
-
-      - table: cty_point_clip
-        style: bing-dark-cty-label
-
-      ###############################
-      ### nielsen designated area ###
-      ###############################
-
-      - table: dma_clip
-        style: bing-dark-road-dma
-
-      - table: dma_label
-        style: bing-dark-road-dma-label
-
-      - table: sta_clip
-        style: bing-dark-sta
+  #     # - table: csa_label
+  #     #   style: bing-dark-road-csa-label
 
 
+  #     ### zip code ###
 
-  - name: bing-light-road
-    bgcolor: '#ffffff'
-    bbox: [-79.40551229971192,37.654112521799384,-75.12908407705577,39.760699547115514]
-    layers:
+  #     - table: zp5_clip
+  #       style: bing-dark-zp5
 
-      ### census layers ###
+  #     - table: zp5_label
+  #       style: bing-dark-zp5-label
 
-      - table: bgp_clip
-        style: bing-light-bgp
+  #     ### county ###
 
-      - table: bgp_point_clip
-        style: bing-light-bgp-label
+  #     - table: cty_clip
+  #       style: bing-dark-cty
 
-      # - table: trx_clip
-      #   style: bing-light-trx
+  #     - table: cty_point_clip
+  #       style: bing-dark-cty-label
 
-      # - table: trx_point_clip
-      #   style: bing-light-trx-label
+  #     ###############################
+  #     ### nielsen designated area ###
+  #     ###############################
+
+  #     - table: dma_clip
+  #       style: bing-dark-road-dma
+
+  #     - table: dma_label
+  #       style: bing-dark-road-dma-label
+
+  #     - table: sta_clip
+  #       style: bing-dark-sta
+
+
+
+  # - name: bing-light-road
+  #   bgcolor: '#ffffff'
+  #   bbox: [-79.40551229971192,37.654112521799384,-75.12908407705577,39.760699547115514]
+  #   layers:
+
+  #     ### census layers ###
+
+  #     - table: bgp_clip
+  #       style: bing-light-bgp
+
+  #     - table: bgp_point_clip
+  #       style: bing-light-bgp-label
+
+  #     # - table: trx_clip
+  #     #   style: bing-light-trx
+
+  #     # - table: trx_point_clip
+  #     #   style: bing-light-trx-label
     
-      # census place
-      - table: pla_clip
-        style: bing-light-pla
+  #     # census place
+  #     - table: pla_clip
+  #       style: bing-light-pla
 
-      - table: pla_label
-        style: bing-light-pla-label
-
-
-      ### nielsen geography layers ###
-
-      # - table: mcd_clip
-      #   style: bing-light-mcd
-
-      # - table: mcd_label
-      #   style: bing-light-mcd-label
-
-      ## Combined Statical Area ###
-      # - table: csa_clip
-      #   style: bing-light-csa
-
-      # - table: csa_label
-      #   style: bing-light-road-csa-label
+  #     - table: pla_label
+  #       style: bing-light-pla-label
 
 
-      ### zip code ###
+  #     ### nielsen geography layers ###
 
-      - table: zp5_clip
-        style: bing-light-zp5
+  #     # - table: mcd_clip
+  #     #   style: bing-light-mcd
 
-      - table: zp5_label
-        style: bing-light-zp5-label
+  #     # - table: mcd_label
+  #     #   style: bing-light-mcd-label
 
-      ### county ###
+  #     ## Combined Statical Area ###
+  #     # - table: csa_clip
+  #     #   style: bing-light-csa
 
-      - table: cty_clip
-        style: bing-light-cty
-
-      - table: cty_point_clip
-        style: bing-light-cty-label
-
-      ###############################
-      ### nielsen designated area ###
-      ###############################
-      # - table: dma_clip
-      #   style: bing-light-road-dma
-
-      # - table: dma_label
-      #   style: bing-light-road-dma-label
-
-      - table: sta_clip
-        style: bing-light-sta
+  #     # - table: csa_label
+  #     #   style: bing-light-road-csa-label
 
 
+  #     ### zip code ###
+
+  #     - table: zp5_clip
+  #       style: bing-light-zp5
+
+  #     - table: zp5_label
+  #       style: bing-light-zp5-label
+
+  #     ### county ###
+
+  #     - table: cty_clip
+  #       style: bing-light-cty
+
+  #     - table: cty_point_clip
+  #       style: bing-light-cty-label
+
+  #     ###############################
+  #     ### nielsen designated area ###
+  #     ###############################
+  #     # - table: dma_clip
+  #     #   style: bing-light-road-dma
+
+  #     # - table: dma_label
+  #     #   style: bing-light-road-dma-label
+
+  #     - table: sta_clip
+  #       style: bing-light-sta
 
 
 
-  - name: icons
-    bgcolor: '#ffffff'
-    bbox: [-77.09163824122207,
-           38.858978635249166,
-           -76.96941534083204,
-           38.91336209502852]
-    layers:
 
-      - table: railroad_clip
-        style: base-railroad
 
-      # # icon layers
-      - table: airport_point_clip
-        style: bing-airport_point
+  # - name: icons
+  #   bgcolor: '#ffffff'
+  #   bbox: [-77.09163824122207,
+  #          38.858978635249166,
+  #          -76.96941534083204,
+  #          38.91336209502852]
+  #   layers:
 
-      - table: parks_point_clip
-        style: base-parks_point
+  #     - table: railroad_clip
+  #       style: base-railroad
 
-      - table: marine_terms_clip
-        style: base-marine_terms
+  #     # # icon layers
+  #     - table: airport_point_clip
+  #       style: bing-airport_point
 
-      - table: cemeterys_clip
-        style: base-cemeterys
+  #     - table: parks_point_clip
+  #       style: base-parks_point
 
-      - table: bus_terms_clip
-        style: base-bus_terms
+  #     - table: marine_terms_clip
+  #       style: base-marine_terms
 
-      - table: shop_clip
-        style: bing-shop
+  #     - table: cemeterys_clip
+  #       style: base-cemeterys
 
-      - table: educ_inst_clip
-        style: bing-educ_inst
+  #     - table: bus_terms_clip
+  #       style: base-bus_terms
 
-      - table: hospitals_clip
-        style: bing-hospitals
+  #     - table: shop_clip
+  #       style: bing-shop
 
-      - table: train_stations_clip
-        style: bing-train_stations
+  #     - table: educ_inst_clip
+  #       style: bing-educ_inst
 
-      - table: govt_centers_clip
-        style: bing-govt_centers
+  #     - table: hospitals_clip
+  #       style: bing-hospitals
+
+  #     - table: train_stations_clip
+  #       style: bing-train_stations
+
+  #     - table: govt_centers_clip
+  #       style: bing-govt_centers
 
 
 
@@ -540,15 +547,6 @@ maps:
 
   #     - table: state_capital_clip
   #       style: base-state_capital
-
-
-datastores:
-- name: nielsen
-#  host: 192.168.56.101
-#  port: 5432
-#  user: geonode
-#  password: geonode
-  type: postgis
 
 
 styles:
@@ -1178,323 +1176,320 @@ styles:
 
 tables:
 
-- name: cty_point_clip
-  datastore: nielsen
-  styles:
-    - name: bing-road-cty-label
-    - name: bing-aerial-cty-label
+# - name: cty_point_clip
+#   datastore: nielsen
+#   styles:
+#     - name: bing-road-cty-label
+#     - name: bing-aerial-cty-label
 
-- name: trx_point_clip
-  datastore: nielsen
-  styles:
-    - name: bing-road-trx-label
-    - name: bing-aerial-trx-label
-
-
-- name: zp5_label
-  datastore: nielsen
-  styles:
-    - name: bing-road-zp5-label
-    - name: bing-aerial-zp5-label
-
-- name: mcd_label
-  datastore: nielsen
-  styles:
-    - name: bing-road-mcd-label
-    - name: bing-aerial-zp5-label
+# - name: trx_point_clip
+#   datastore: nielsen
+#   styles:
+#     - name: bing-road-trx-label
+#     - name: bing-aerial-trx-label
 
 
-- name: pla_label
-  datastore: nielsen
-  styles:
-    - name: bing-road-pla-label
-    - name: bing-aerial-pla-label
+# - name: zp5_label
+#   datastore: nielsen
+#   styles:
+#     - name: bing-road-zp5-label
+#     - name: bing-aerial-zp5-label
 
-- name: csa_label
-  datastore: nielsen
-  styles:
-    - name: bing-road-csa-label
-    - name: bing-aerial-csa-label
+# - name: mcd_label
+#   datastore: nielsen
+#   styles:
+#     - name: bing-road-mcd-label
+#     - name: bing-aerial-zp5-label
 
-- name: dma_label
-  datastore: nielsen
-  styles:
-    - name: bing-road-dma-label
-    - name: bing-aerial-dma-label
 
-- name: cbs_label
-  datastore: nielsen
-  styles:
-    - name: bing-road-csb-label
-    - name: bing-aerial-csb-label
+# - name: pla_label
+#   datastore: nielsen
+#   styles:
+#     - name: bing-road-pla-label
+#     - name: bing-aerial-pla-label
 
-- name: tdz_label
-  datastore: nielsen
-  styles:
-    - name: bing-road-tdz-label
-    - name: bing-aerial-tdz-label
+# - name: csa_label
+#   datastore: nielsen
+#   styles:
+#     - name: bing-road-csa-label
+#     - name: bing-aerial-csa-label
 
-- name: bgp_point_clip
-  datastore: nielsen
-  styles:
-    - name: bing-road-bgp-label
-    - name: bing-aerial-bgp-label
+# - name: dma_label
+#   datastore: nielsen
+#   styles:
+#     - name: bing-road-dma-label
+#     - name: bing-aerial-dma-label
 
-- name: bgp_clip
-  datastore: nielsen
+# - name: cbs_label
+#   datastore: nielsen
+#   styles:
+#     - name: bing-road-csb-label
+#     - name: bing-aerial-csb-label
+
+# - name: tdz_label
+#   datastore: nielsen
+#   styles:
+#     - name: bing-road-tdz-label
+#     - name: bing-aerial-tdz-label
+
+# - name: bgp_point_clip
+#   datastore: nielsen
+#   styles:
+#     - name: bing-road-bgp-label
+#     - name: bing-aerial-bgp-label
+
+- name: bgp
+  datastore: nielsen_full
   styles:
     - name: bing-road-bgp
     - name: bing-aerial-bgp
 
-- name: blk_clip
-  datastore: nielsen
+- name: blk
+  datastore: nielsen_full
   styles:
     - name: bing-road-blk
     - name: bing-aerial-blk
 
-- name: cbs_clip
-  datastore: nielsen
+- name: cbs
+  datastore: nielsen_full
   styles:
     - name: bing-road-cbs
     - name: bing-aerial-cbs
 
 
-- name: zp5_clip
-  datastore: nielsen
+- name: zp5
+  datastore: nielsen_full
   styles:
     - name: bing-road-zp5
     - name: bing-aerial-zp5
 
-- name: csa_clip
-  datastore: nielsen
+- name: csa
+  datastore: nielsen_full
   styles:
     - name: bing-road-csa
     - name: bing-aerial-csb
 
 
-- name: cty_clip
-  datastore: nielsen
+- name: cty
+  datastore: nielsen_full
   styles:
     - name: bing-road-cty
     - name: bing-aerial-cty
 
-- name: dma_clip
-  datastore: nielsen
+- name: dma
+  datastore: nielsen_full
   styles:
     - name: bing-road-dma
     - name: bing-aerial-dma
 
-- name: mcd_clip
-  datastore: nielsen
+- name: mcd
+  datastore: nielsen_full
   styles:
     - name: bing-road-mcd
     - name: bing-aerial-mcd
 
-- name: pla_clip
-  datastore: nielsen
+- name: pla
+  datastore: nielsen_full
   styles:
     - name: bing-road-pla
     - name: bing-aerial-pla
 
-- name: sta_clip
-  datastore: nielsen
+- name: sta
+  datastore: nielsen_full
   styles:
     - name: bing-road-sta
     - name: bing-aerial-sta
 
-- name: tdz_clip
-  datastore: nielsen
+- name: tdz
+  datastore: nielsen_full
   styles:
     - name: bing-road-tdz
     - name: bing-aerial-tdz
 
 
-- name: trx_clip
-  datastore: nielsen
+- name: trx
+  datastore: nielsen_full
   styles:
     - name: bing-road-trx
     - name: bing-aerial-trx
 
 
+# - name: zip_clip
+#   datastore: nielsen
 
+# - name: bus_terms_clip
+#   datastore: nielsen
 
 
-- name: zip_clip
-  datastore: nielsen
+# - name: cemeterys_clip
+#   datastore: nielsen
 
-- name: bus_terms_clip
-  datastore: nielsen
 
+# - name: cemeterys_poly_clip
+#   datastore: nielsen
 
-- name: cemeterys_clip
-  datastore: nielsen
 
 
-- name: cemeterys_poly_clip
-  datastore: nielsen
+# - name: educ_inst_clip
+#   datastore: nielsen
 
 
+# - name: educ_inst_poly_clip
+#   datastore: nielsen
 
-- name: educ_inst_clip
-  datastore: nielsen
 
+# - name: golf_courses_clip
+#   datastore: nielsen
 
-- name: educ_inst_poly_clip
-  datastore: nielsen
 
+# - name: golf_courses_poly_clip
+#   datastore: nielsen
 
-- name: golf_courses_clip
-  datastore: nielsen
 
+# - name: govt_centers_clip
+#   datastore: nielsen
 
-- name: golf_courses_poly_clip
-  datastore: nielsen
 
+# - name: great_lake_clip
+#   datastore: nielsen
 
-- name: govt_centers_clip
-  datastore: nielsen
 
+# - name: hospitals_clip
+#   datastore: nielsen
 
-- name: great_lake_clip
-  datastore: nielsen
 
+# - name: hospitals_poly_clip
+#   datastore: nielsen
 
-- name: hospitals_clip
-  datastore: nielsen
 
+# - name: indstr_ofic_bldgs_clip
+#   datastore: nielsen
 
-- name: hospitals_poly_clip
-  datastore: nielsen
 
+# - name: interstate_clip
+#   datastore: nielsen
 
-- name: indstr_ofic_bldgs_clip
-  datastore: nielsen
 
+# - name: local_road_ne_clip
+#   datastore: nielsen
 
-- name: interstate_clip
-  datastore: nielsen
 
+# - name: local_road_nne_clip
+#   datastore: nielsen
 
-- name: local_road_ne_clip
-  datastore: nielsen
 
+# - name: local_road_nw_clip
+#   datastore: nielsen
 
-- name: local_road_nne_clip
-  datastore: nielsen
 
+# - name: local_road_se_clip
+#   datastore: nielsen
 
-- name: local_road_nw_clip
-  datastore: nielsen
 
+# - name: local_road_sw_clip
+#   datastore: nielsen
 
-- name: local_road_se_clip
-  datastore: nielsen
 
+# - name: major_city_clip
+#   datastore: nielsen
 
-- name: local_road_sw_clip
-  datastore: nielsen
 
+# - name: major_hwy_clip
+#   datastore: nielsen
 
-- name: major_city_clip
-  datastore: nielsen
 
+# - name: major_road_clip
+#   datastore: nielsen
 
-- name: major_hwy_clip
-  datastore: nielsen
 
+# - name: marine_terms_clip
+#   datastore: nielsen
 
-- name: major_road_clip
-  datastore: nielsen
 
 
-- name: marine_terms_clip
-  datastore: nielsen
+# - name: midsize_city_clip
+#   datastore: nielsen
 
 
+# - name: mil_bases_clip
+#   datastore: nielsen
 
-- name: midsize_city_clip
-  datastore: nielsen
 
+# - name: minor_city_clip
+#   datastore: nielsen
 
-- name: mil_bases_clip
-  datastore: nielsen
 
+# - name: ocean_clip
+#   datastore: nielsen
 
-- name: minor_city_clip
-  datastore: nielsen
 
+# - name: parks_clip
+#   datastore: nielsen
 
-- name: ocean_clip
-  datastore: nielsen
 
 
-- name: parks_clip
-  datastore: nielsen
+# - name: pois_clip
+#   datastore: nielsen
 
 
+# - name: railroad_clip
+#   datastore: nielsen
 
-- name: pois_clip
-  datastore: nielsen
 
+# - name: shop_clip
+#   datastore: nielsen
 
-- name: railroad_clip
-  datastore: nielsen
 
+# - name: shop_ctr_clip
+#   datastore: nielsen
 
-- name: shop_clip
-  datastore: nielsen
 
 
-- name: shop_ctr_clip
-  datastore: nielsen
+# - name: stadiums_clip
+#   datastore: nielsen
 
 
+# - name: state_capital_clip
+#   datastore: nielsen
 
-- name: stadiums_clip
-  datastore: nielsen
 
+# - name: state_hwy_clip
+#   datastore: nielsen
 
-- name: state_capital_clip
-  datastore: nielsen
 
 
-- name: state_hwy_clip
-  datastore: nielsen
+# - name: traffic_clip
+#   datastore: nielsen
 
 
+# - name: train_stations_clip
+#   datastore: nielsen
 
-- name: traffic_clip
-  datastore: nielsen
 
+# - name: us_hwy_clip
+#   datastore: nielsen
 
-- name: train_stations_clip
-  datastore: nielsen
 
+# - name: usa_clip
+#   datastore: nielsen
 
-- name: us_hwy_clip
-  datastore: nielsen
 
+# - name: water_clip
+#   datastore: nielsen
 
-- name: usa_clip
-  datastore: nielsen
 
+# - name: worship_places_clip
+#   datastore: nielsen
 
-- name: water_clip
-  datastore: nielsen
 
+# - name: airport_point_clip
+#   datastore: nielsen
 
-- name: worship_places_clip
-  datastore: nielsen
 
+# - name: parks_point_clip
+#   datastore: nielsen
 
-- name: airport_point_clip
-  datastore: nielsen
 
-
-- name: parks_point_clip
-  datastore: nielsen
-
-
-- name: amusement_centers_clip
-  datastore: nielsen
+# - name: amusement_centers_clip
+#   datastore: nielsen
 
