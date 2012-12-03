@@ -14,7 +14,7 @@ defaults:
 feature-styles:
 - rules:
   - zoom-levels:
-      min: 0
+      min: 10
     symbolizers:
       text:
         halo:
