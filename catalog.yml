@@ -3,7 +3,6 @@
 
 workspace: nielsen
 
-
 datastores:
 - name: nielsen_full
   type: postgis
@@ -20,20 +19,20 @@ maps:
 
       ### census layers ###
 
-      - table: bgp
-        style: bing-road-bgp
+      # - table: bgp
+      #   style: bing-road-bgp
 
       #- table: bgp_point_clip
       #  style: bing-road-bgp-label
 
-      - table: trx
-        style: bing-road-trx
+      # - table: trx
+      #   style: bing-road-trx
 
       #- table: trx_point_clip
       #  style: bing-road-trx-label
 
-      - table: pla
-        style: bing-road-pla
+      # - table: pla
+      #   style: bing-road-pla
 
       # - table: pla_label
       #   style: bing-road-pla-label
@@ -88,15 +87,15 @@ maps:
 
       # # ### county ###
 
-      # - table: cty_clip
-      #   style: bing-road-cty
+      - table: cty
+        style: bing-road-cty
 
-      # - table: cty_point_clip
+      # # - table: cty_point_clip
       #   style: bing-road-cty-label
 
 
-      # - table: sta_clip
-      #   style: bing-road-sta
+      - table: sta
+        style: bing-road-sta
 
 
       # - table: airport_point_clip
@@ -1172,71 +1171,69 @@ styles:
   path: nielsen-data/styles/light/pla-label.yml
 
 
-
-
 tables:
 
-# - name: cty_point_clip
-#   datastore: nielsen
-#   styles:
-#     - name: bing-road-cty-label
-#     - name: bing-aerial-cty-label
+- name: cty_label
+  datastore: nielsen_full
+  styles:
+    - name: bing-road-cty-label
+    - name: bing-aerial-cty-label
 
-# - name: trx_point_clip
-#   datastore: nielsen
-#   styles:
-#     - name: bing-road-trx-label
-#     - name: bing-aerial-trx-label
-
-
-# - name: zp5_label
-#   datastore: nielsen
-#   styles:
-#     - name: bing-road-zp5-label
-#     - name: bing-aerial-zp5-label
-
-# - name: mcd_label
-#   datastore: nielsen
-#   styles:
-#     - name: bing-road-mcd-label
-#     - name: bing-aerial-zp5-label
+- name: trx_label
+  datastore: nielsen_full
+  styles:
+    - name: bing-road-trx-label
+    - name: bing-aerial-trx-label
 
 
-# - name: pla_label
-#   datastore: nielsen
-#   styles:
-#     - name: bing-road-pla-label
-#     - name: bing-aerial-pla-label
+- name: zp5_label
+  datastore: nielsen_full
+  styles:
+    - name: bing-road-zp5-label
+    - name: bing-aerial-zp5-label
 
-# - name: csa_label
-#   datastore: nielsen
-#   styles:
-#     - name: bing-road-csa-label
-#     - name: bing-aerial-csa-label
+- name: mcd_label
+  datastore: nielsen_full
+  styles:
+    - name: bing-road-mcd-label
+    - name: bing-aerial-zp5-label
 
-# - name: dma_label
-#   datastore: nielsen
-#   styles:
-#     - name: bing-road-dma-label
-#     - name: bing-aerial-dma-label
 
-# - name: cbs_label
-#   datastore: nielsen
-#   styles:
-#     - name: bing-road-csb-label
-#     - name: bing-aerial-csb-label
+- name: pla_label
+  datastore: nielsen_full
+  styles:
+    - name: bing-road-pla-label
+    - name: bing-aerial-pla-label
 
-# - name: tdz_label
-#   datastore: nielsen
-#   styles:
-#     - name: bing-road-tdz-label
-#     - name: bing-aerial-tdz-label
+- name: csa_label
+  datastore: nielsen_full
+  styles:
+    - name: bing-road-csa-label
+    - name: bing-aerial-csa-label
 
-# - name: bgp_point_clip
-#   datastore: nielsen
-#   styles:
-#     - name: bing-road-bgp-label
-#     - name: bing-aerial-bgp-label
+- name: dma_label
+  datastore: nielsen_full
+  styles:
+    - name: bing-road-dma-label
+    - name: bing-aerial-dma-label
+
+- name: cbs_label
+  datastore: nielsen_full
+  styles:
+    - name: bing-road-csb-label
+    - name: bing-aerial-csb-label
+
+- name: tdz_label
+  datastore: nielsen_full
+  styles:
+    - name: bing-road-tdz-label
+    - name: bing-aerial-tdz-label
+
+- name: bgp_label
+  datastore: nielsen_full
+  styles:
+    - name: bing-road-bgp-label
+    - name: bing-aerial-bgp-label
 
 - name: bgp
   datastore: nielsen_full
@@ -1244,18 +1241,11 @@ tables:
     - name: bing-road-bgp
     - name: bing-aerial-bgp
 
-- name: blk
-  datastore: nielsen_full
-  styles:
-    - name: bing-road-blk
-    - name: bing-aerial-blk
-
 - name: cbs
   datastore: nielsen_full
   styles:
     - name: bing-road-cbs
     - name: bing-aerial-cbs
-
 
 - name: zp5
   datastore: nielsen_full
@@ -1267,8 +1257,7 @@ tables:
   datastore: nielsen_full
   styles:
     - name: bing-road-csa
-    - name: bing-aerial-csb
-
+    - name: bing-aerial-csa
 
 - name: cty
   datastore: nielsen_full
