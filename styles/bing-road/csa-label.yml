@@ -1,17 +1,25 @@
-# #bf4c26
 name: Labels for csa labels  
+defaults:
+  color:  &color '#bf4c26'
+  halo:   &halo '#ffffff'
+  family: &family Droid Sans
+  zooms:
+    0: &zoom-0
+      min: 10
+    1: &zoom-1
+      max: 10
+
 feature-styles:
 - rules:
-  - zoom-levels:
-      min: 10
+  - zoom-levels: *zoom-1
     symbolizers:
       text:
         halo:
           radius: 2
           opacity: .6
-          color: '#ffffff'
+          color: *halo
         fill:
-          color: '#bf4c26'
+          color: *color
         placement:
           point:
             x: .5
@@ -19,7 +27,7 @@ feature-styles:
         font:
           weight: bold
           size: 12
-          family: Droid Sans
+          family: *family
         label:
           property: name
 
@@ -32,9 +40,9 @@ feature-styles:
         halo:
           radius: 4
           opacity: .6
-          color: '#ffffff'
+          color: *halo
         fill:
-          color: '#bf4c26'
+          color: *color
         placement:
           point:
             x: .5
@@ -42,6 +50,6 @@ feature-styles:
         font:
           weight: bold
           size: 14
-          family: Droid Sans
+          family: *family
         label:
           property: name

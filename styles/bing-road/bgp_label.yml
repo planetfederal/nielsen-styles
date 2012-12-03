@@ -8,7 +8,6 @@ defaults:
       min: 14
     1: &zoom-1
       max: 14
-      min: 20
 
 feature-styles:
 - rules:

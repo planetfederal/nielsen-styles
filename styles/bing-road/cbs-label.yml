@@ -9,11 +9,9 @@ defaults:
       y: .5
   zooms:
     0: &zoom-0
-      max: 6
       min: 10
     1: &zoom-1
       max: 10
-      min: 12
 
 feature-styles:
 - rules:

@@ -1,44 +1,50 @@
 name: zp5 labels
+defaults:
+  color:  &color '#4c0f27'
+  halo:   &halo '#ffffff'
+  family: &family Droid Sans
+  zooms:
+    0: &zoom-0
+      min: 12
+    1: &zoom-1
+      max: 12
+
 feature-styles:
 - rules:
 
-  - zoom-levels:
-      max: 10
-      min: 12
+  - zoom-levels: *zoom-0
     symbolizers:
       text:
         halo:
           radius: 1
-          color: '#ffffff'
+          color: *halo
         fill:
-          color: '#4c0f27'
+          color: *color
         placement:
           point:
             x: .5
             y: .5
         font:
           size: 14
-          family: Droid Sans
+          family: *family
         label:
           property: name
 
-  - zoom-levels:
-      max: 12
-      min: 16
+  - zoom-levels: *zoom-1
     symbolizers:
       text:
         halo:
           radius: 4
           opacity: .6
-          color: '#ffffff'
+          color: *halo
         fill:
-          color: '#4c0f27'
+          color: *color
         placement:
           point:
             x: .5
             y: .5
         font:
           size: 20
-          family: Droid Sans
+          family: *family
         label:
           property: name
